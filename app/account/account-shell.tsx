@@ -20,7 +20,6 @@ export default function AccountShell({
   }
 
   return (
-      {/* Tab Navigation */}
       <div className="mb-8 flex border-b-2 border-[var(--border)]">
         {tabs.map((tab) => {
           const active = isActive(tab.href);
