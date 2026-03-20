@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useState } from "react";
 import { useToken } from "naystack/auth/client";
 import AuthModal from "./auth-modal";
-import { usePathname } from "next/navigation";
 import Image from "next/image";
 import { User } from "@phosphor-icons/react";
 import { useCart } from "@/lib/cart/cart-context";
@@ -12,7 +11,6 @@ import { useCart } from "@/lib/cart/cart-context";
 export default function Navbar() {
   const token = useToken();
   const [showAuth, setShowAuth] = useState(false);
-  const path = usePathname();
   const { totalItems } = useCart();
 
   return (
