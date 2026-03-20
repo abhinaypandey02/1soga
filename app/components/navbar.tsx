@@ -25,17 +25,17 @@ export default function Navbar() {
           <Image src={'/black-transparent-logo.png'} alt={"SOGA"} width={32} height={32}/>
         </Link>
         <div className="flex items-center gap-3 sm:gap-4">
-          {path.startsWith('/account') ? null : token ? (
+          {token ? (
             <Link
               href="/account"
-              className="border-2 border-[var(--border)] p-2 text-[var(--muted)] transition-all duration-200 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
+              className="p-2 text-[var(--muted)] transition-all duration-200 hover:text-[var(--foreground)]"
             >
               <User size={18} weight="bold" />
             </Link>
           ) : (
             <button
               onClick={() => setShowAuth(true)}
-              className="border-2 border-[var(--border)] p-2 text-[var(--muted)] transition-all duration-200 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
+              className="p-2 text-[var(--muted)] transition-all duration-200 hover:text-[var(--foreground)]"
             >
               <User size={18} weight="bold" />
             </button>
