@@ -5,7 +5,6 @@ import "./globals.css";
 import Navbar from "./components/navbar";
 import { AuthWrapper } from "naystack/auth";
 import { ApolloWrapperNext } from "naystack/graphql/client";
-import {Suspense} from "react";
 import { getSEO } from "@/lib/seo";
 import { CartProvider } from "@/lib/cart/cart-context";
 
@@ -39,10 +38,7 @@ export default function RootLayout({
         <ApolloWrapperNext>
         <CartProvider>
         <div className="min-h-screen bg-[var(--background)] flex flex-col">
-          <Suspense>
-
           <Navbar />
-          </Suspense>
 
           <div className="flex-1">
             {children}
