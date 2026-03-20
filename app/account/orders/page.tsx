@@ -3,6 +3,12 @@ import getOrders from "@/app/api/(graphql)/order/resolvers/get-orders";
 import statusField from "@/app/api/(graphql)/order/resolvers/status-field";
 import {FieldResponseType, Injector, QueryResponseType} from "naystack/graphql";
 import {formatPrice, findProductBySku, formatDate} from "./utils";
+import { getSEO } from "@/lib/seo";
+
+export const metadata = getSEO({
+  title: "My Orders",
+  description: "Track your ONE SOGA orders. Every purchase is a statement for the movement.",
+});
 
 export default async function OrdersPage() {
   return <Injector fetch={async ()=>{

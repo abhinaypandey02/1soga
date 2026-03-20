@@ -3,6 +3,12 @@ import statusField from "@/app/api/(graphql)/order/resolvers/status-field";
 import {Injector} from "naystack/graphql";
 import OrderDetailClient from "./order-detail-client";
 import {notFound} from "next/navigation";
+import { getSEO } from "@/lib/seo";
+
+export const metadata = getSEO({
+  title: "Order Details",
+  description: "View the details of your ONE SOGA order.",
+});
 
 export default async function OrderDetailPage({
   params,
