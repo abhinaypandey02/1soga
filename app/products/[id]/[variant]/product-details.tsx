@@ -248,7 +248,7 @@ export default function ProductDetails({ product, variant }: {
           <span className="font-semibold text-[var(--accent)]">
             (&#8377;{(profit * quantity).toFixed(2)})
           </span>{" "}
-          goes into community initiatives across SOGA
+          goes into community initiatives
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
