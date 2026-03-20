@@ -5,11 +5,7 @@ import { Product } from "./types";
 import StaggerReveal from "./components/stagger-reveal";
 import { getSEO } from "@/lib/seo";
 
-export const metadata = getSEO({
-  title: "ONE SOGA — The Revolution Starts Here",
-  description:
-    "They drew lines between neighborhoods. We erased them. ONE SOGA united the NCR — no divisions, no postcodes. Official merch for the movement.",
-});
+export const metadata = getSEO();
 
 function getPriceDisplay(product: Product): string {
   const prices = product.variants

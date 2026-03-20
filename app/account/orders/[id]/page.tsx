@@ -5,10 +5,7 @@ import OrderDetailClient from "./order-detail-client";
 import {notFound} from "next/navigation";
 import { getSEO } from "@/lib/seo";
 
-export const metadata = getSEO({
-  title: "Order Details",
-  description: "View the details of your ONE SOGA order.",
-});
+export const metadata = getSEO("Order Details", "View the details of your ONE SOGA order.");
 
 export default async function OrderDetailPage({
   params,
