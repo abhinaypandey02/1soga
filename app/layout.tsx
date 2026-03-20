@@ -2,6 +2,7 @@ import { Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
 import "./globals.css";
+import Image from "next/image";
 import Navbar from "./components/navbar";
 import { AuthWrapper } from "naystack/auth";
 import { ApolloWrapperNext } from "naystack/graphql/client";
@@ -47,9 +48,7 @@ export default function RootLayout({
           {/* ── Footer ── */}
           <footer className="border-t-2 border-[var(--foreground)] bg-[var(--foreground)] px-4 py-6 sm:px-6 sm:py-8 md:px-12">
             <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 sm:gap-4 md:flex-row">
-              <span className="font-[family-name:var(--font-display)] text-lg tracking-wide text-white">
-                ONE SOGA
-              </span>
+              <Image src={'/black-transparent-logo.png'} alt={"SOGA"} width={32} height={32} className="invert" />
               <span className="font-[family-name:var(--font-body)] text-[10px] text-white/40 sm:text-xs">
                 Soga &mdash; For the people, by the people
               </span>
