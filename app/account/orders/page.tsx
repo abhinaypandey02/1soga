@@ -5,8 +5,6 @@ import {FieldResponseType, Injector, QueryResponseType} from "naystack/graphql";
 import {formatPrice, findProductBySku, formatDate} from "./utils";
 
 export default async function OrdersPage() {
-
-  console.log("Hello")
   return <Injector fetch={async ()=>{
     const ordersWithoutStatus = await getOrders.authCall();
     return Promise.all(ordersWithoutStatus.map(async (o)=>({...o, status:await statusField.call(o)})));

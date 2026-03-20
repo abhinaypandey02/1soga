@@ -4,8 +4,8 @@ import { useState } from "react";
 import { useToken } from "naystack/auth/client";
 import { useAuthMutation } from "naystack/graphql/client";
 import { CREATE_ORDER } from "@/gql/mutations";
-import Modal from "../../components/modal";
-import AuthModal from "../../components/auth-modal";
+import Modal from "../../../components/modal";
+import AuthModal from "../../../components/auth-modal";
 
 type CheckoutModalProps = {
   productId: string;
@@ -46,6 +46,7 @@ export default function CheckoutModal({ productId, productName, skuId, amount, q
         theme: { color: "#FF2D20" },
       };
 
+      // eslint-disable-next-line
       const rzp = new (window as any).Razorpay(options);
       rzp.on("payment.failed", (res:{error:string}) => {
         console.error("Payment failed:", res.error);

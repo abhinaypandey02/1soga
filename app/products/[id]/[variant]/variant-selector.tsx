@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import { useEffect, useMemo, useState } from "react";
-import { Product, Variant } from "../../types";
+import { useMemo, useState } from "react";
+import { Product, Variant } from "../../../types";
 import CheckoutModal from "./checkout-modal";
+import Link from "next/link";
 
 function getOptionValues(variants: Variant[], type: string): string[] {
   const seen = new Set<string>();
@@ -97,16 +98,6 @@ export default function ProductPageClient({ data, loading }: { data?:{
 
   const matchedVariant = findVariant(data?.product.variants||[], selected);
 
-  useEffect(() => {
-    const url = new URL(window.location.href);
-    if (matchedVariant) {
-      url.searchParams.set("variant", matchedVariant.sku);
-    } else {
-      url.searchParams.delete("variant");
-    }
-    window.history.replaceState({}, "", url.toString());
-  }, [matchedVariant]);
-
   const displayPrice = matchedVariant?.price ?? data?.product.price;
   const displayImage = matchedVariant?.image ?? data?.product.image;
   const costPrice = matchedVariant?.costPrice ?? data?.product.costPrice;
@@ -125,9 +116,6 @@ export default function ProductPageClient({ data, loading }: { data?:{
     setSelected((prev) => ({ ...prev, ...newSelected }));
   };
 
-  const handleSelect = (type: string, value: string) => {
-    setSelected((prev) => ({ ...prev, [type]: value }));
-  };
 
   const [quantity, setQuantity] = useState(1);
   const [showCheckout, setShowCheckout] = useState(false);
@@ -249,15 +237,18 @@ export default function ProductPageClient({ data, loading }: { data?:{
                       type,
                       value
                     );
+                    const variantId = findVariant(data?.product.variants||[], {...selected, [type]:value})?.sku
+                    if(!variantId) return null;
+                    const url = `/products/${data.product.id}/${variantId}`
                     return (
-                      <OptionButton
-                        key={value}
-                        onClick={() => handleSelect(type, value)}
-                        disabled={!available}
-                        selected={isSelected}
-                      >
-                        {value}
-                      </OptionButton>
+                      <Link key={value} href={url}>
+                        <OptionButton
+                          disabled={!available}
+                          selected={isSelected}
+                        >
+                          {value}
+                        </OptionButton>
+                      </Link>
                     );
                   })}
                 </div>

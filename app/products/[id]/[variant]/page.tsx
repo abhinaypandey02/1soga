@@ -1,24 +1,23 @@
 import { notFound } from "next/navigation";
-import products from "../../data/products";
+import products from "../../../data/products";
 import {Injector} from "naystack/graphql";
 import ProductPageClient from "./variant-selector";
 
 export function generateStaticParams() {
-  return products.map((product) => ({
+  return products.flatMap((product) => (product.variants.map(p=>({
     id: product.id,
-  }));
+    variant: p.sku,
+  }))));
 }
 
 export default async function ProductPage({
   params,
-  searchParams,
 }: {
-  params: Promise<{ id: string }>;
-  searchParams: Promise<{ variant?: string }>;
+  params: Promise<{ id: string; variant?: string }>;
 }) {
+
   return <Injector fetch={async ()=>{
-    const { id } = await params;
-    const { variant } = await searchParams;
+    const { id, variant } = await params;
     const product = products.find((p) => p.id === id);
 
     if (!product) {
