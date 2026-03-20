@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import {PropsWithChildren} from "react";
 
 const tabs = [
   { label: "Profile", href: "/account" },
@@ -10,10 +11,8 @@ const tabs = [
 
 export default function AccountShell({
   children,
-}: {
-  children: React.ReactNode;
-}) {
-  const pathname = "/account";
+}: PropsWithChildren) {
+  const pathname = usePathname();
 
   function isActive(href: string) {
     if (href === "/account") return pathname === "/account";

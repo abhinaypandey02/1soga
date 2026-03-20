@@ -9,6 +9,7 @@ export default async function OrderDetailPage({
 }: {
   params: Promise<{ id: string }>;
 }) {
+  console.log("Hello")
   return (
     <Injector
       fetch={async () => {

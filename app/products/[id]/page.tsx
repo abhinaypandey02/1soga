@@ -4,10 +4,9 @@ import {Injector} from "naystack/graphql";
 import ProductPageClient from "./variant-selector";
 
 export function generateStaticParams() {
-  return products.flatMap((product) => product.variants.map(variant=>({
+  return products.map((product) => ({
     id: product.id,
-    variant:variant.sku
-  })));
+  }));
 }
 
 export default async function ProductPage({
@@ -17,7 +16,7 @@ export default async function ProductPage({
   params: Promise<{ id: string }>;
   searchParams: Promise<{ variant?: string }>;
 }) {
-
+  console.log("Product")
   return <Injector fetch={async ()=>{
     const { id } = await params;
     const { variant } = await searchParams;

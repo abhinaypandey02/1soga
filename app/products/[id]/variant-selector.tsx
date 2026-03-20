@@ -72,10 +72,10 @@ function OptionButton({ selected, disabled, onClick, children }: {
   );
 }
 
-export default function ProductPageClient({ data }: { data?:{
+export default function ProductPageClient({ data, loading }: { data?:{
   product: Product;
   variant ? : string
-}
+}, loading: boolean
 }) {
   const defaultSelections = useMemo(() => {
     const selections: Record<string, string> = {};
@@ -137,24 +137,34 @@ export default function ProductPageClient({ data }: { data?:{
     setShowCheckout(true);
   };
 
+  const isLoading = loading || !data;
+
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
       <div>
         <div className="product-image relative aspect-square overflow-hidden border-2 border-[var(--border)]">
-          <Image
-            src={displayImage||""}
-            alt={data?.product.name||""}
-            fill
-            className="object-cover transition-transform duration-500 hover:scale-105"
-            sizes="(max-width: 768px) 100vw, 50vw"
-            priority
-          />
+          {isLoading ? (
+            <div className="h-full w-full animate-pulse bg-[var(--border)]" />
+          ) : (
+            <Image
+              src={displayImage||""}
+              alt={data?.product.name||""}
+              fill
+              className="object-cover transition-transform duration-500 hover:scale-105"
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
+            />
+          )}
         </div>
 
-        {featuredVariants.length > 0 && (
-          <div className="mt-3 flex gap-2">
-            {featuredVariants.map((v) => {
+        <div className="mt-3 flex gap-2">
+          {isLoading ? (
+            [1, 2].map((i) => (
+              <div key={i} className="h-16 w-16 animate-pulse border-2 border-[var(--border)] bg-[var(--border)]" />
+            ))
+          ) : (
+            featuredVariants.map((v) => {
               const isActive = matchedVariant?.sku === v.sku ||
                 (v.image && displayImage === v.image);
               return (
@@ -176,62 +186,94 @@ export default function ProductPageClient({ data }: { data?:{
                   />
                 </button>
               );
-            })}
-          </div>
-        )}
+            })
+          )}
+        </div>
       </div>
 
       <div className="flex flex-col justify-center">
-        <h1 className="font-[family-name:var(--font-display)] text-3xl uppercase tracking-wide text-[var(--foreground)] sm:text-5xl">
-          {data?.product.name}
-        </h1>
-        <p className="mt-2 font-[family-name:var(--font-display)] text-2xl text-[var(--accent)] sm:text-3xl">
-          &#8377;{displayPrice?.toFixed(2)||0}
-        </p>
-        <p className="mt-6 font-[family-name:var(--font-body)] leading-relaxed text-[var(--muted)]">
-          {data?.product.description}
-        </p>
+        {isLoading ? (
+          <div className="h-10 w-64 animate-pulse rounded bg-[var(--border)] sm:h-12" />
+        ) : (
+          <h1 className="font-[family-name:var(--font-display)] text-3xl uppercase tracking-wide text-[var(--foreground)] sm:text-5xl">
+            {data?.product.name}
+          </h1>
+        )}
 
-        {data?.product.optionTypes.map((type) => {
-          const values = getOptionValues(data?.product.variants||[], type);
-          return (
-            <div key={type} className="mt-6">
-              <label className="mb-2 block font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
-                {type}
-              </label>
-              <div className="flex flex-wrap gap-2">
-                {values.map((value) => {
-                  const isSelected = selected[type] === value;
-                  const available = isOptionAvailable(
-                    data?.product.variants,
-                    selected,
-                    type,
-                    value
-                  );
-                  return (
-                    <OptionButton
-                      key={value}
-                      onClick={() => handleSelect(type, value)}
-                      disabled={!available}
-                      selected={isSelected}
-                    >
-                      {value}
-                    </OptionButton>
-                  );
-                })}
+        {isLoading ? (
+          <div className="mt-3 h-8 w-32 animate-pulse rounded bg-[var(--border)]" />
+        ) : (
+          <p className="mt-2 font-[family-name:var(--font-display)] text-2xl text-[var(--accent)] sm:text-3xl">
+            &#8377;{displayPrice?.toFixed(2)||0}
+          </p>
+        )}
+
+        {isLoading ? (
+          <div className="mt-6 animate-pulse space-y-2">
+            <div className="h-4 w-full rounded bg-[var(--border)]" />
+            <div className="h-4 w-3/4 rounded bg-[var(--border)]" />
+          </div>
+        ) : (
+          <p className="mt-6 font-[family-name:var(--font-body)] leading-relaxed text-[var(--muted)]">
+            {data?.product.description}
+          </p>
+        )}
+
+        {isLoading ? (
+          <>
+            {[1, 2].map((i) => (
+              <div key={i} className="mt-6 animate-pulse">
+                <div className="mb-2 h-3 w-16 rounded bg-[var(--border)]" />
+                <div className="flex gap-2">
+                  {[1, 2, 3].map((j) => (
+                    <div key={j} className="h-10 w-16 rounded border-2 border-[var(--border)] bg-[var(--border)]" />
+                  ))}
+                </div>
               </div>
-            </div>
-          );
-        })}
+            ))}
+          </>
+        ) : (
+          data?.product.optionTypes.map((type) => {
+            const values = getOptionValues(data?.product.variants||[], type);
+            return (
+              <div key={type} className="mt-6">
+                <label className="mb-2 block font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
+                  {type}
+                </label>
+                <div className="flex flex-wrap gap-2">
+                  {values.map((value) => {
+                    const isSelected = selected[type] === value;
+                    const available = isOptionAvailable(
+                      data?.product.variants,
+                      selected,
+                      type,
+                      value
+                    );
+                    return (
+                      <OptionButton
+                        key={value}
+                        onClick={() => handleSelect(type, value)}
+                        disabled={!available}
+                        selected={isSelected}
+                      >
+                        {value}
+                      </OptionButton>
+                    );
+                  })}
+                </div>
+              </div>
+            );
+          })
+        )}
 
-        <div  className="mt-6">
+        <div className="mt-6">
           <label className="mb-2 block font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
            Quantity
           </label>
           <div className="flex flex-wrap gap-2">
             <OptionButton
               onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-              disabled={quantity <= 1}
+              disabled={isLoading || quantity <= 1}
             >
               -
             </OptionButton>
@@ -240,24 +282,28 @@ export default function ProductPageClient({ data }: { data?:{
             </OptionButton>
             <OptionButton
               onClick={() => setQuantity((q) => q + 1)}
+              disabled={isLoading}
             >
               +
             </OptionButton>
           </div>
         </div>
 
-        <p className="mt-8 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
-          100% of the profit{" "}
-          <span className="font-semibold text-[var(--accent)]">
-            (&#8377;{(profit * quantity).toFixed(2)})
-          </span>{" "}
-          goes into charities across SOGA
-        </p>
-
+        {isLoading ? (
+          <div className="mt-8 h-4 w-48 animate-pulse rounded bg-[var(--border)]" />
+        ) : (
+          <p className="mt-8 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
+            100% of the profit{" "}
+            <span className="font-semibold text-[var(--accent)]">
+              (&#8377;{(profit * quantity).toFixed(2)})
+            </span>{" "}
+            goes into charities across SOGA
+          </p>
+        )}
 
         <button
           onClick={handleBuy}
-          disabled={!matchedVariant}
+          disabled={isLoading || !matchedVariant}
           className="mt-8 w-full border-2 border-[var(--foreground)] bg-[var(--foreground)] px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:py-3"
         >
           GET THIS
