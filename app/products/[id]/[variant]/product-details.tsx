@@ -196,7 +196,7 @@ export default function ProductDetails({ product, variant }: {
                   const variantId = findVariant(product.variants, {...selected, [type]:value})?.sku
                   const url = `/products/${product.id}/${variantId}`
                   return (
-                    <LinkWrapper key={value} href={variantId?url:null}>
+                    <LinkWrapper key={value} href={variantId?url:null} scroll={false}>
                       <OptionButton
                         disabled={!available}
                         selected={isSelected}

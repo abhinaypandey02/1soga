@@ -9,11 +9,13 @@ export default function LinkWrapper({
                                       className,
                                       children,
                                       prefetch,
+                                      scroll,
                                     }: PropsWithChildren<{
   href?: string | null;
   external?: boolean;
   className?: string;
   prefetch?: boolean;
+  scroll?: boolean;
 }>) {
   if (!href) return <span className={className}>{children}</span>;
   if (
@@ -28,7 +30,7 @@ export default function LinkWrapper({
       </a>
     );
   return (
-    <Link prefetch={prefetch} className={className} href={href}>
+    <Link prefetch={prefetch} scroll={scroll} className={className} href={href}>
       {children}
     </Link>
   );
