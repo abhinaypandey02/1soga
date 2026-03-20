@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  push-schema:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node (with Corepack)
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Enable pnpm via Corepack
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run push-schema
+        run: pnpm push-schema
+        env:
+          POSTGRES_URL: ${{ secrets.POSTGRES_URL }}

@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --background: #FAFAFA;
+  --foreground: #0A0A0A;
+  --accent: #FF2D20;
+  --accent-dark: #CC241A;
+  --surface: #FFFFFF;
+  --muted: #737373;
+  --border: #E5E5E5;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --color-accent-dark: var(--accent-dark);
+  --color-surface: var(--surface);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Marquee animation */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+}
+
+@media (max-width: 639px) {
+  .animate-marquee {
+    animation-duration: 12s;
+  }
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+/* Noise texture overlay */
+.noise-overlay::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.03;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-size: 256px 256px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Product card hover lift */
+.product-card {
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent) !important;
+}
+
+.product-card:hover .product-image {
+  transform: scale(1.08);
+}
+
+.product-image {
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Stagger animation for grid items */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.stagger-item {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.stagger-visible .stagger-item {
+  animation: fadeSlideUp 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Hero headline — fills the viewport on mobile like a banner */
+.hero-headline {
+  font-size: clamp(5.5rem, 24vw, 13rem);
+  line-height: 0.82;
+  letter-spacing: -0.02em;
+}
+
+/* Mobile accent slash — diagonal cut across the hero */
+.hero-accent-slash {
+  display: none;
+}
+
+@media (max-width: 639px) {
+  .hero-accent-slash {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: -1rem;
+    width: 6px;
+    height: 100%;
+    background: var(--accent);
+    transform: skewX(-6deg);
+    z-index: 2;
+  }
+}
+
+/* Manifesto number punch — oversized on mobile */
+.manifesto-number {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+@media (max-width: 639px) {
+  .manifesto-number {
+    font-size: 3.5rem;
+  }
+}
+
+/* Mobile product card active state for touch */
+@media (max-width: 639px) {
+  .product-card:active {
+    transform: scale(0.98);
+    border-color: var(--accent) !important;
+  }
+
+  .product-card:active .product-image {
+    transform: scale(1.04);
+  }
+}
+
+/* Halftone dot pattern for CTA section on mobile */
+.halftone-overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.04;
+  background-image: radial-gradient(circle, white 1px, transparent 1px);
+  background-size: 8px 8px;
+  pointer-events: none;
+  z-index: 1;
+}
