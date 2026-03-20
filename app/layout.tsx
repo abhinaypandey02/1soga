@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
 import Script from "next/script";
@@ -7,6 +6,7 @@ import Navbar from "./components/navbar";
 import { AuthWrapper } from "naystack/auth";
 import { ApolloWrapperNext } from "naystack/graphql/client";
 import {Suspense} from "react";
+import { getSEO } from "@/lib/seo";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -19,10 +19,7 @@ const sans = localFont({
   variable: "--font-body",
 });
 
-export const metadata: Metadata = {
-  title: "ONE SOGA \u2014 The NCR Movement",
-  description: "The movement that united the NCR. Official merch for the revolution.",
-};
+export const metadata = getSEO();
 
 export default function RootLayout({
   children,
@@ -31,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="SOGA" />
+      </head>
       <body
         className={`${bebasNeue.variable} ${sans.variable} antialiased`}
       >

@@ -1,5 +1,11 @@
 import AccountShell from "./account-shell";
 import {Suspense} from "react";
+import { getSEO } from "@/lib/seo";
+
+export const metadata = getSEO({
+  title: "My Account",
+  description: "Manage your ONE SOGA membership. View your profile, orders, and stay connected to the movement.",
+});
 
 export default function AccountLayout({
   children,
