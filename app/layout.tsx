@@ -28,6 +28,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <meta name="apple-mobile-web-app-title" content="SOGA" />
+      </head>
       <body
         className={`${bebasNeue.variable} ${sans.variable} antialiased`}
       >
