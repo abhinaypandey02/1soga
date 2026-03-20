@@ -45,10 +45,10 @@ export default function Home() {
               </span>
             </div>
 
-            {/* Main Headline \u2014 MASSIVE on mobile */}
-            <h1 className="font-[family-name:var(--font-display)] text-[clamp(6rem,25vw,13rem)] uppercase leading-[0.82] tracking-tight text-[var(--foreground)]">
-              ONE
-              <br />
+            {/* Main Headline \u2014 single line on mobile, two lines on sm+ */}
+            <h1 className="font-[family-name:var(--font-display)] text-[clamp(3rem,13vw,13rem)] sm:text-[clamp(6rem,25vw,13rem)] uppercase leading-[0.82] tracking-tight text-[var(--foreground)]">
+              <span className="sm:hidden">ONE </span>
+              <span className="hidden sm:inline">ONE<br /></span>
               <span className="relative inline-block">
                 SOGA
                 <svg className="absolute -bottom-1 left-0 w-full sm:-bottom-2 md:-bottom-3" viewBox="0 0 300 12" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -80,7 +80,7 @@ export default function Home() {
         </div>
 
         {/* Decorative accent block \u2014 visible on mobile as a smaller corner mark */}
-        <div className="absolute bottom-0 right-0 h-16 w-16 bg-[var(--accent)] sm:h-24 sm:w-24 md:h-40 md:w-40 lg:h-56 lg:w-56" aria-hidden="true" />
+        <div className="absolute top-0 right-0 h-16 w-16 bg-[var(--accent)] sm:h-24 sm:w-24 md:h-40 md:w-40 lg:h-56 lg:w-56" aria-hidden="true" />
       </section>
 
       {/* \u2500\u2500 Marquee Ticker \u2500\u2500 */}
