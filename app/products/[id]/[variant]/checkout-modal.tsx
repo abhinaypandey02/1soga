@@ -2,11 +2,10 @@
 
 import { useState } from "react";
 import { useToken } from "naystack/auth/client";
-import { useAuthMutation } from "naystack/graphql/client";
-import { CREATE_ORDER } from "@/gql/mutations";
 import Modal from "../../../components/modal";
 import AuthModal from "../../../components/auth-modal";
 import { DELIVERY_FEE } from "@/app/data/constants";
+import { useCheckout } from "@/lib/checkout/use-checkout";
 
 type CheckoutModalProps = {
   productId: string;
@@ -19,44 +18,23 @@ type CheckoutModalProps = {
 
 export default function CheckoutModal({ productId, productName, skuId, amount, quantity, onClose }: CheckoutModalProps) {
   const token = useToken();
-  const [createOrder, { loading }] = useAuthMutation(CREATE_ORDER);
   const [showAuth, setShowAuth] = useState(!token);
 
   const subtotal = amount * quantity;
   const total = subtotal + DELIVERY_FEE;
 
+  const { checkout, loading } = useCheckout(() => {
+    alert("Payment successful!");
+    onClose();
+  });
+
   const handleCheckout = async () => {
     try {
-      const response = await createOrder({
-            lineItems: [{ productId, skuId, quantity }],
-      });
-      const orderId = response.data?.createOrder;
-      if (!orderId) throw new Error("Failed to create order");
-
-      const options = {
-        key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-        amount: Math.round(total * 100),
-        currency: "INR",
-        name: "One Soga",
-        description: productName,
-        order_id: orderId,
-        one_click_checkout:true,
-        handler: (res: { razorpay_payment_id: string; razorpay_order_id: string; razorpay_signature: string }) => {
-          console.log("Payment successful:", res);
-          alert("Payment successful!");
-          onClose();
-        },
-        prefill: {},
-        theme: { color: "#FF2D20" },
-      };
-
-      // eslint-disable-next-line
-      const rzp = new (window as any).Razorpay(options);
-      rzp.on("payment.failed", (res:{error:string}) => {
-        console.error("Payment failed:", res.error);
-        alert("Payment failed. Please try again.");
-      });
-      rzp.open();
+      await checkout(
+        [{ productId, skuId, quantity }],
+        total,
+        productName
+      );
     } catch (err) {
       console.error("Checkout error:", err);
       alert("Something went wrong. Please try again.");

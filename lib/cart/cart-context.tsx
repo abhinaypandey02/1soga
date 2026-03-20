@@ -1,0 +1,97 @@
+"use client";
+
+import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { CartItem } from "./types";
+
+const STORAGE_KEY = "soga-cart";
+
+type CartContextType = {
+  items: CartItem[];
+  addToCart: (item: CartItem) => void;
+  removeFromCart: (skuId: string) => void;
+  updateQuantity: (skuId: string, quantity: number) => void;
+  clearCart: () => void;
+  totalItems: number;
+};
+
+const CartContext = createContext<CartContextType | null>(null);
+
+function loadCart(): CartItem[] {
+  if (typeof window === "undefined") return [];
+  try {
+    const stored = localStorage.getItem(STORAGE_KEY);
+    return stored ? JSON.parse(stored) : [];
+  } catch {
+    return [];
+  }
+}
+
+function saveCart(items: CartItem[]) {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(items));
+  } catch {
+    // localStorage may be unavailable
+  }
+}
+
+export function CartProvider({ children }: { children: React.ReactNode }) {
+  const [items, setItems] = useState<CartItem[]>([]);
+  const [hydrated, setHydrated] = useState(false);
+
+  useEffect(() => {
+    setItems(loadCart());
+    setHydrated(true);
+  }, []);
+
+  useEffect(() => {
+    if (hydrated) {
+      saveCart(items);
+    }
+  }, [items, hydrated]);
+
+  const addToCart = useCallback((item: CartItem) => {
+    setItems((prev) => {
+      const existing = prev.find((i) => i.skuId === item.skuId);
+      if (existing) {
+        return prev.map((i) =>
+          i.skuId === item.skuId
+            ? { ...i, quantity: i.quantity + item.quantity }
+            : i
+        );
+      }
+      return [...prev, item];
+    });
+  }, []);
+
+  const removeFromCart = useCallback((skuId: string) => {
+    setItems((prev) => prev.filter((i) => i.skuId !== skuId));
+  }, []);
+
+  const updateQuantity = useCallback((skuId: string, quantity: number) => {
+    if (quantity <= 0) {
+      setItems((prev) => prev.filter((i) => i.skuId !== skuId));
+      return;
+    }
+    setItems((prev) =>
+      prev.map((i) => (i.skuId === skuId ? { ...i, quantity } : i))
+    );
+  }, []);
+
+  const clearCart = useCallback(() => {
+    setItems([]);
+  }, []);
+
+  const totalItems = items.reduce((sum, item) => sum + item.quantity, 0);
+
+  return (
+    <CartContext value={{ items, addToCart, removeFromCart, updateQuantity, clearCart, totalItems }}>
+      {children}
+    </CartContext>
+  );
+}
+
+export function useCart() {
+  const ctx = useContext(CartContext);
+  if (!ctx) throw new Error("useCart must be used within CartProvider");
+  return ctx;
+}

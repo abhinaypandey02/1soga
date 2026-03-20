@@ -7,6 +7,7 @@ import { AuthWrapper } from "naystack/auth";
 import { ApolloWrapperNext } from "naystack/graphql/client";
 import {Suspense} from "react";
 import { getSEO } from "@/lib/seo";
+import { CartProvider } from "@/lib/cart/cart-context";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -36,9 +37,10 @@ export default function RootLayout({
       >
       <AuthWrapper>
         <ApolloWrapperNext>
+        <CartProvider>
         <div className="min-h-screen bg-[var(--background)] flex flex-col">
           <Suspense>
-            
+
           <Navbar />
           </Suspense>
 
@@ -59,6 +61,7 @@ export default function RootLayout({
           </footer>
         </div>
 
+        </CartProvider>
         </ApolloWrapperNext>
       </AuthWrapper>
         <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="lazyOnload" />

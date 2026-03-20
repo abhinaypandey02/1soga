@@ -13,6 +13,7 @@
     "watch": "graphql-codegen -w"
   },
   "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
     "class-validator": "^0.15.1",
     "drizzle-orm": "^0.45.1",
     "naystack": "^1.7.6",

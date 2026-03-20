@@ -4,8 +4,10 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import { Product, Variant } from "../../../types";
 import CheckoutModal from "./checkout-modal";
+import CartAddedModal from "@/app/components/cart-added-modal";
 import Link from "next/link";
 import LinkWrapper from "@/components/link-wrapper";
+import { useCart } from "@/lib/cart/cart-context";
 
 function getOptionValues(variants: Variant[], type: string): string[] {
   const seen = new Set<string>();
@@ -116,10 +118,18 @@ export default function ProductDetails({ product, variant }: {
 
   const [quantity, setQuantity] = useState(1);
   const [showCheckout, setShowCheckout] = useState(false);
+  const [showCartAdded, setShowCartAdded] = useState(false);
+  const { addToCart } = useCart();
 
   const handleBuy = () => {
     if (!matchedVariant) return;
     setShowCheckout(true);
+  };
+
+  const handleAddToCart = () => {
+    if (!matchedVariant) return;
+    addToCart({ productId: product.id, skuId: matchedVariant.sku, quantity });
+    setShowCartAdded(true);
   };
 
   return (
@@ -241,13 +251,22 @@ export default function ProductDetails({ product, variant }: {
           goes into charities across SOGA
         </p>
 
-        <button
-          onClick={handleBuy}
-          disabled={!matchedVariant}
-          className="mt-8 w-full border-2 border-[var(--foreground)] bg-[var(--foreground)] px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:py-3"
-        >
-          GET THIS
-        </button>
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <button
+            onClick={handleAddToCart}
+            disabled={!matchedVariant}
+            className="w-full border-2 border-[var(--foreground)] bg-[var(--surface)] px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-[var(--foreground)] transition-all duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:py-3"
+          >
+            Add to Cart
+          </button>
+          <button
+            onClick={handleBuy}
+            disabled={!matchedVariant}
+            className="w-full border-2 border-[var(--foreground)] bg-[var(--foreground)] px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:py-3"
+          >
+            Buy Now
+          </button>
+        </div>
       </div>
 
       {showCheckout && matchedVariant && (
@@ -258,6 +277,15 @@ export default function ProductDetails({ product, variant }: {
           amount={displayPrice}
           quantity={quantity}
           onClose={() => setShowCheckout(false)}
+        />
+      )}
+
+      {showCartAdded && matchedVariant && (
+        <CartAddedModal
+          productName={product.name}
+          quantity={quantity}
+          amount={displayPrice}
+          onClose={() => setShowCartAdded(false)}
         />
       )}
     </div>

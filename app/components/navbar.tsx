@@ -4,13 +4,16 @@ import Link from "next/link";
 import { useState } from "react";
 import { useToken } from "naystack/auth/client";
 import AuthModal from "./auth-modal";
-import {usePathname} from "next/navigation";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
+import { User } from "@phosphor-icons/react";
+import { useCart } from "@/lib/cart/cart-context";
 
 export default function Navbar() {
   const token = useToken();
   const [showAuth, setShowAuth] = useState(false);
-  const path = usePathname()
+  const path = usePathname();
+  const { totalItems } = useCart();
 
   return (
     <>
@@ -22,29 +25,26 @@ export default function Navbar() {
           <Image src={'/black-transparent-logo.png'} alt={"SOGA"} width={32} height={32}/>
         </Link>
         <div className="flex items-center gap-3 sm:gap-4">
-          <span className="hidden text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)] md:inline">
-            The NCR Movement
-          </span>
-          {path.startsWith('/account')?null:token ? (
+          {path.startsWith('/account') ? null : token ? (
             <Link
               href="/account"
-              className="border-2 border-[var(--border)] px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)] transition-all duration-200 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
+              className="border-2 border-[var(--border)] p-2 text-[var(--muted)] transition-all duration-200 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
             >
-              Account
+              <User size={18} weight="bold" />
             </Link>
           ) : (
             <button
               onClick={() => setShowAuth(true)}
-              className="border-2 border-[var(--border)] px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)] transition-all duration-200 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
+              className="border-2 border-[var(--border)] p-2 text-[var(--muted)] transition-all duration-200 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
             >
-              Join Now
+              <User size={18} weight="bold" />
             </button>
           )}
           <Link
-            href="/#drops"
+            href="/checkout"
             className="border-2 border-[var(--foreground)] bg-[var(--foreground)] px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)]"
           >
-            Shop
+            Cart ({totalItems})
           </Link>
         </div>
       </nav>
