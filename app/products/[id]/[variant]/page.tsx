@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import products from "../../../data/products";
 import ProductDetails from "./product-details";
 import { getSEO } from "@/lib/seo";
+import { Metadata } from "next";
 
 export function generateStaticParams() {
   return products.flatMap((product) => (product.variants.map(p=>({
