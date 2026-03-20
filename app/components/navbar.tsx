@@ -4,10 +4,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { useToken } from "naystack/auth/client";
 import AuthModal from "./auth-modal";
+import {usePathname} from "next/navigation";
 
 export default function Navbar() {
   const token = useToken();
   const [showAuth, setShowAuth] = useState(false);
+  const path = usePathname()
 
   return (
     <>
@@ -22,7 +24,7 @@ export default function Navbar() {
           <span className="hidden text-xs font-medium uppercase tracking-[0.2em] text-[var(--muted)] md:inline">
             The NCR Movement
           </span>
-          {token ? (
+          {path.startsWith('/account')?null:token ? (
             <Link
               href="/account"
               className="border-2 border-[var(--border)] px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)] transition-all duration-200 hover:border-[var(--foreground)] hover:text-[var(--foreground)]"
