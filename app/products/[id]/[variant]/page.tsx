@@ -1,6 +1,5 @@
 import { notFound } from "next/navigation";
 import products from "../../../data/products";
-import {Injector} from "naystack/graphql";
 import ProductDetails from "./product-details";
 
 export function generateStaticParams() {
@@ -15,18 +14,12 @@ export default async function ProductPage({
 }: {
   params: Promise<{ id: string; variant?: string }>;
 }) {
+  const { id, variant } = await params;
+  const product = products.find((p) => p.id === id);
 
-  return <Injector fetch={async ()=>{
-    const { id, variant } = await params;
-    const product = products.find((p) => p.id === id);
+  if (!product) {
+    notFound();
+  }
 
-    if (!product) {
-      notFound();
-    }
-    return {
-      product,variant
-    }
-  }} Component={ProductDetails}/>
-
-
+  return <ProductDetails product={product} variant={variant} />;
 }

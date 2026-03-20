@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { Product, Variant } from "../../../types";
 import CheckoutModal from "./checkout-modal";
 import Link from "next/link";
+import LinkWrapper from "@/components/link-wrapper";
 
 function getOptionValues(variants: Variant[], type: string): string[] {
   const seen = new Set<string>();
@@ -73,39 +74,36 @@ function OptionButton({ selected, disabled, onClick, children }: {
   );
 }
 
-export default function ProductDetails({ data, loading }: { data?:{
+export default function ProductDetails({ product, variant }: {
   product: Product;
-  variant ? : string
-}, loading: boolean
+  variant?: string;
 }) {
   const defaultSelections = useMemo(() => {
     const selections: Record<string, string> = {};
-    const initialVariant = data?.variant
-      ? data.product.variants.find((v) => v.sku === data.variant)
+    const initialVariant = variant
+      ? product.variants.find((v) => v.sku === variant)
       : undefined;
-    const source = initialVariant ?? data?.product.variants[0];
-    if (source) {
-      for (const opt of source.options) {
-        selections[opt.type] = opt.value;
-      }
+    const source = initialVariant ?? product.variants[0];
+    for (const opt of source.options) {
+      selections[opt.type] = opt.value;
     }
     return selections;
-  }, [data]);
+  }, [product, variant]);
 
   const [selected, setSelected] = useState<Record<string, string>>(
     defaultSelections
   );
 
-  const matchedVariant = findVariant(data?.product.variants||[], selected);
+  const matchedVariant = findVariant(product.variants, selected);
 
-  const displayPrice = matchedVariant?.price ?? data?.product.price;
-  const displayImage = matchedVariant?.image ?? data?.product.image;
-  const costPrice = matchedVariant?.costPrice ?? data?.product.costPrice;
-  const profit = (displayPrice||0) - (costPrice||0);
+  const displayPrice = matchedVariant?.price ?? product.price;
+  const displayImage = matchedVariant?.image ?? product.image;
+  const costPrice = matchedVariant?.costPrice ?? product.costPrice;
+  const profit = displayPrice - costPrice;
 
   const featuredVariants = useMemo(
-    () => data?.product.variants.filter((v) => v.featured && v.image)||[],
-    [data]
+    () => product.variants.filter((v) => v.featured && v.image),
+    [product]
   );
 
   const handleSelectVariant = (variant: Variant) => {
@@ -116,7 +114,6 @@ export default function ProductDetails({ data, loading }: { data?:{
     setSelected((prev) => ({ ...prev, ...newSelected }));
   };
 
-
   const [quantity, setQuantity] = useState(1);
   const [showCheckout, setShowCheckout] = useState(false);
 
@@ -125,137 +122,94 @@ export default function ProductDetails({ data, loading }: { data?:{
     setShowCheckout(true);
   };
 
-  const isLoading = loading || !data;
-
   return (
     <div className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
       <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10">
       <div>
         <div className="product-image relative aspect-square overflow-hidden border-2 border-[var(--border)]">
-          {isLoading ? (
-            <div className="h-full w-full animate-pulse bg-[var(--border)]" />
-          ) : (
-            <Image
-              src={displayImage||""}
-              alt={data?.product.name||""}
-              fill
-              className="object-cover transition-transform duration-500 hover:scale-105"
-              sizes="(max-width: 768px) 100vw, 50vw"
-              priority
-            />
-          )}
+          <Image
+            src={displayImage}
+            alt={product.name}
+            fill
+            className="object-cover transition-transform duration-500 hover:scale-105"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            priority
+          />
         </div>
 
         <div className="mt-3 flex gap-2">
-          {isLoading ? (
-            [1, 2].map((i) => (
-              <div key={i} className="h-16 w-16 animate-pulse border-2 border-[var(--border)] bg-[var(--border)]" />
-            ))
-          ) : (
-            featuredVariants.map((v) => {
-              const isActive = matchedVariant?.sku === v.sku ||
-                (v.image && displayImage === v.image);
-              return (
-                <button
-                  key={v.sku}
-                  onClick={() => handleSelectVariant(v)}
-                  className={`relative h-16 w-16 overflow-hidden border-2 transition-all duration-200 ${
-                    isActive
-                      ? "border-[var(--accent)]"
-                      : "border-[var(--border)] hover:border-[var(--foreground)]"
-                  }`}
-                >
-                  <Image
-                    src={v.image!}
-                    alt={v.options.map((o) => o.value).join(" ")}
-                    fill
-                    className="object-cover"
-                    sizes="64px"
-                  />
-                </button>
-              );
-            })
-          )}
+          {featuredVariants.map((v) => {
+            const isActive = matchedVariant?.sku === v.sku ||
+              (v.image && displayImage === v.image);
+            return (
+              <button
+                key={v.sku}
+                onClick={() => handleSelectVariant(v)}
+                className={`relative h-16 w-16 overflow-hidden border-2 transition-all duration-200 ${
+                  isActive
+                    ? "border-[var(--accent)]"
+                    : "border-[var(--border)] hover:border-[var(--foreground)]"
+                }`}
+              >
+                <Image
+                  src={v.image!}
+                  alt={v.options.map((o) => o.value).join(" ")}
+                  fill
+                  className="object-cover"
+                  sizes="64px"
+                />
+              </button>
+            );
+          })}
         </div>
       </div>
 
       <div className="flex flex-col justify-center">
-        {isLoading ? (
-          <div className="h-10 w-64 animate-pulse rounded bg-[var(--border)] sm:h-12" />
-        ) : (
-          <h1 className="font-[family-name:var(--font-display)] text-3xl uppercase tracking-wide text-[var(--foreground)] sm:text-5xl">
-            {data?.product.name}
-          </h1>
-        )}
+        <h1 className="font-[family-name:var(--font-display)] text-3xl uppercase tracking-wide text-[var(--foreground)] sm:text-5xl">
+          {product.name}
+        </h1>
 
-        {isLoading ? (
-          <div className="mt-3 h-8 w-32 animate-pulse rounded bg-[var(--border)]" />
-        ) : (
-          <p className="mt-2 font-[family-name:var(--font-display)] text-2xl text-[var(--accent)] sm:text-3xl">
-            &#8377;{displayPrice?.toFixed(2)||0}
-          </p>
-        )}
+        <p className="mt-2 font-[family-name:var(--font-display)] text-2xl text-[var(--accent)] sm:text-3xl">
+          &#8377;{displayPrice.toFixed(2)}
+        </p>
 
-        {isLoading ? (
-          <div className="mt-6 animate-pulse space-y-2">
-            <div className="h-4 w-full rounded bg-[var(--border)]" />
-            <div className="h-4 w-3/4 rounded bg-[var(--border)]" />
-          </div>
-        ) : (
-          <p className="mt-6 font-[family-name:var(--font-body)] leading-relaxed text-[var(--muted)]">
-            {data?.product.description}
-          </p>
-        )}
+        <p className="mt-6 font-[family-name:var(--font-body)] leading-relaxed text-[var(--muted)]">
+          {product.description}
+        </p>
 
-        {isLoading ? (
-          <>
-            {[1, 2].map((i) => (
-              <div key={i} className="mt-6 animate-pulse">
-                <div className="mb-2 h-3 w-16 rounded bg-[var(--border)]" />
-                <div className="flex gap-2">
-                  {[1, 2, 3].map((j) => (
-                    <div key={j} className="h-10 w-16 rounded border-2 border-[var(--border)] bg-[var(--border)]" />
-                  ))}
-                </div>
+        {product.optionTypes.map((type) => {
+          const values = getOptionValues(product.variants, type);
+          return (
+            <div key={type} className="mt-6">
+              <label className="mb-2 block font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
+                {type}
+              </label>
+              <div className="flex flex-wrap gap-2">
+                {values.map((value) => {
+                  const isSelected = selected[type] === value;
+                  const available = isOptionAvailable(
+                    product.variants,
+                    selected,
+                    type,
+                    value
+                  );
+                  const variantId = findVariant(product.variants, {...selected, [type]:value})?.sku
+                  const url = `/products/${product.id}/${variantId}`
+                  return (
+                    <LinkWrapper key={value} href={variantId?url:null}>
+                      <OptionButton
+                        disabled={!available}
+                        selected={isSelected}
+                      >
+                        {value}
+                      </OptionButton>
+                    </LinkWrapper>
+                  );
+                })}
               </div>
-            ))}
-          </>
-        ) : (
-          data?.product.optionTypes.map((type) => {
-            const values = getOptionValues(data?.product.variants||[], type);
-            return (
-              <div key={type} className="mt-6">
-                <label className="mb-2 block font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
-                  {type}
-                </label>
-                <div className="flex flex-wrap gap-2">
-                  {values.map((value) => {
-                    const isSelected = selected[type] === value;
-                    const available = isOptionAvailable(
-                      data?.product.variants,
-                      selected,
-                      type,
-                      value
-                    );
-                    const variantId = findVariant(data?.product.variants||[], {...selected, [type]:value})?.sku
-                    if(!variantId) return null;
-                    const url = `/products/${data.product.id}/${variantId}`
-                    return (
-                      <Link key={value} href={url}>
-                        <OptionButton
-                          disabled={!available}
-                          selected={isSelected}
-                        >
-                          {value}
-                        </OptionButton>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            );
-          })
-        )}
+            </div>
+          );
+        })}
 
         <div className="mt-6">
           <label className="mb-2 block font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
@@ -264,7 +218,7 @@ export default function ProductDetails({ data, loading }: { data?:{
           <div className="flex flex-wrap gap-2">
             <OptionButton
               onClick={() => setQuantity((q) => Math.max(1, q - 1))}
-              disabled={isLoading || quantity <= 1}
+              disabled={quantity <= 1}
             >
               -
             </OptionButton>
@@ -273,38 +227,33 @@ export default function ProductDetails({ data, loading }: { data?:{
             </OptionButton>
             <OptionButton
               onClick={() => setQuantity((q) => q + 1)}
-              disabled={isLoading}
             >
               +
             </OptionButton>
           </div>
         </div>
 
-        {isLoading ? (
-          <div className="mt-8 h-4 w-48 animate-pulse rounded bg-[var(--border)]" />
-        ) : (
-          <p className="mt-8 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
-            100% of the profit{" "}
-            <span className="font-semibold text-[var(--accent)]">
-              (&#8377;{(profit * quantity).toFixed(2)})
-            </span>{" "}
-            goes into charities across SOGA
-          </p>
-        )}
+        <p className="mt-8 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
+          100% of the profit{" "}
+          <span className="font-semibold text-[var(--accent)]">
+            (&#8377;{(profit * quantity).toFixed(2)})
+          </span>{" "}
+          goes into charities across SOGA
+        </p>
 
         <button
           onClick={handleBuy}
-          disabled={isLoading || !matchedVariant}
+          disabled={!matchedVariant}
           className="mt-8 w-full border-2 border-[var(--foreground)] bg-[var(--foreground)] px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:py-3"
         >
           GET THIS
         </button>
       </div>
 
-      {showCheckout && matchedVariant&&data&&displayPrice && (
+      {showCheckout && matchedVariant && (
         <CheckoutModal
-          productId={data.product.id}
-          productName={data.product.name}
+          productId={product.id}
+          productName={product.name}
           skuId={matchedVariant.sku}
           amount={displayPrice}
           quantity={quantity}
