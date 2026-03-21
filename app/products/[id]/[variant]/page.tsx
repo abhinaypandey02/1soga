@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import products from "@/data/products";
 import ProductDetails from "./product-details";
+import YouMayAlsoLike from "@/app/components/you-may-also-like";
 import { getSEO } from "@/lib/seo";
 import { Metadata } from "next";
 
@@ -34,5 +35,10 @@ export default async function ProductPage({
     notFound();
   }
 
-  return <ProductDetails product={product} variant={variant} />;
+  return (
+    <>
+      <ProductDetails product={product} variant={variant} />
+      <YouMayAlsoLike currentProductId={product.id} />
+    </>
+  );
 }
