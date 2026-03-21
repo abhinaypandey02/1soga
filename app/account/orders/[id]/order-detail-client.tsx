@@ -110,7 +110,7 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
                     </p>
                     {charity > 0 && (
                       <p className="font-[family-name:var(--font-body)] text-xs text-[var(--accent)]">
-                        {formatPrice(charity)} to community
+                        {formatPrice(charity)} to charity
                       </p>
                     )}
                   </div>
@@ -151,7 +151,7 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
             <span className="font-bold text-[var(--accent)]">
               {formatPrice(totalCharity)}
             </span>{" "}
-            to community initiatives.
+            to charity.
           </p>
         </div>
       )}
