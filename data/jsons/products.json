@@ -6,6 +6,7 @@
     "price": 449,
     "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
     "costPrice": 399,
+    "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png",
     "optionTypes": [
       "Material",
       "Color",
@@ -759,6 +760,7 @@
     "price": 349,
     "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
     "costPrice": 283.5,
+    "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png",
     "optionTypes": [
       "Material",
       "Color",
@@ -1621,6 +1623,7 @@
     "price": 299,
     "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
     "costPrice": 252,
+    "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png",
     "optionTypes": [
       "Text",
       "Color",
@@ -2323,6 +2326,7 @@
     "price": 449,
     "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31958571/images/Front_1_c_2.jpg",
     "costPrice": 378,
+    "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png",
     "optionTypes": [
       "Material",
       "Text",

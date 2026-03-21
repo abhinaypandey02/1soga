@@ -13,6 +13,7 @@ export function mapToProduct(product: ProductListItem, details: FetchProductResp
     price: Number(product.price_range.split(" - ")[0]),
     image: `${imageBase}${details.variants[0]?.variant_image ?? details.default_image}`,
     costPrice: details.product_price,
+    sizeChartLink: details.size_chart_link ?? undefined,
     optionTypes: details.options.map(o => o as OptionType),
     variants: details.variants.map(v => {
       const options: {type: OptionType; value: string}[] = [];
@@ -122,10 +123,11 @@ export function applyMerges(products: Product[], mergeConfig: MergeConfigEntry[]
     result.push({
       id: merge.id,
       name: merge.title,
-      description: "",
+      description: merge.description ?? "",
       price: first.price,
       image: mergedVariants[0].image!,
       costPrice: first.costPrice,
+      sizeChartLink: sourceProducts.find(s => s.product.sizeChartLink)?.product.sizeChartLink,
       optionTypes: allOptionTypes,
       variants: mergedVariants,
     });

@@ -5,6 +5,7 @@ import { useMemo, useState } from "react";
 import { Product, Variant } from "@/data/types";
 import CheckoutModal from "./checkout-modal";
 import CartAddedModal from "@/app/components/cart-added-modal";
+import Modal from "@/app/components/modal";
 import Link from "next/link";
 import LinkWrapper from "@/components/link-wrapper";
 import { useCart } from "@/lib/cart/cart-context";
@@ -107,6 +108,7 @@ export default function ProductDetails({ product, variant }: {
   const [quantity, setQuantity] = useState(1);
   const [showCheckout, setShowCheckout] = useState(false);
   const [showCartAdded, setShowCartAdded] = useState(false);
+  const [showSizeChart, setShowSizeChart] = useState(false);
   const { addToCart } = useCart();
 
   const handleBuy = () => {
@@ -170,9 +172,20 @@ export default function ProductDetails({ product, variant }: {
           &#8377;{displayPrice.toFixed(2)}
         </p>
 
-        <p className="mt-6 font-[family-name:var(--font-body)] leading-relaxed text-[var(--muted)]">
-          {product.description}
-        </p>
+        {product.description && (
+          <p className="mt-4 font-[family-name:var(--font-body)] leading-relaxed text-[var(--muted)]">
+            {product.description}
+          </p>
+        )}
+
+        {product.sizeChartLink && (
+          <button
+            onClick={() => setShowSizeChart(true)}
+            className="mt-3 font-[family-name:var(--font-body)] text-sm font-medium text-[var(--accent)] underline underline-offset-2 transition-colors hover:text-[var(--accent-dark)]"
+          >
+            View size chart
+          </button>
+        )}
 
         {product.optionTypes.map((type) => {
           const values = getOptionValues(product.variants, type);
@@ -275,6 +288,31 @@ export default function ProductDetails({ product, variant }: {
           amount={displayPrice}
           onClose={() => setShowCartAdded(false)}
         />
+      )}
+
+      {showSizeChart && product.sizeChartLink && (
+        <Modal open onClose={() => setShowSizeChart(false)}>
+          <div className="mb-4 flex items-center justify-between">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl uppercase tracking-wide">
+              Size Chart
+            </h2>
+            <button
+              onClick={() => setShowSizeChart(false)}
+              className="text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
+            >
+              &#10005;
+            </button>
+          </div>
+          <div className="relative w-full">
+            <Image
+              src={product.sizeChartLink}
+              alt="Size Chart"
+              width={600}
+              height={400}
+              className="w-full h-auto"
+            />
+          </div>
+        </Modal>
       )}
     </div>
     </div>

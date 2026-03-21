@@ -133,11 +133,13 @@ export type Product = {
   optionTypes: OptionType[];
   variants: Variant[];
   costPrice: number;
+  sizeChartLink?: string;
 };
 
 export type MergeConfigEntry = {
   id: string;
   title: string;
+  description?: string;
   featuredSKU?: string;
   ignoredFeaturedFields?: string[];
   products: {
