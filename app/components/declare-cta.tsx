@@ -8,7 +8,10 @@ export default function DeclareCTA() {
   const token = useToken();
   const [showAuth, setShowAuth] = useState(false);
 
+  console.log("[DeclareCTA] render, token =", !!token, "showAuth =", showAuth);
+
   const handleClick = () => {
+    console.log("[DeclareCTA] button clicked, token =", !!token);
     if (!token) {
       setShowAuth(true);
     } else {

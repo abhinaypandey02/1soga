@@ -7,8 +7,10 @@ type ModalProps = {
 };
 
 export default function Modal({ open, onClose, children }: ModalProps) {
+  console.log("[Modal] render, open =", open);
   if (!open) return null;
 
+  console.log("[Modal] rendering visible modal");
   return (
     <div
       className="fixed inset-0 z-50 flex items-end justify-center bg-black/50 sm:items-center"
