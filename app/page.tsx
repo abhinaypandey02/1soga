@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import products from "@/data/products";
-import { Product } from "./types";
+import { Product } from "@/data/types";
 import StaggerReveal from "./components/stagger-reveal";
 import DeclareCTA from "./components/declare-cta";
 // import { getSEO } from "@/lib/seo";

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useMemo, useState } from "react";
-import { Product, Variant } from "../../../types";
+import { Product, Variant } from "@/data/types";
 import CheckoutModal from "./checkout-modal";
 import CartAddedModal from "@/app/components/cart-added-modal";
 import Link from "next/link";
