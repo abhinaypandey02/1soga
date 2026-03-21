@@ -122,6 +122,7 @@ export type Variant = {
   image?: string;
   costPrice?: number;
   featured?: boolean;
+  sizeChartLink?: string;
 };
 
 export type Product = {
@@ -133,7 +134,6 @@ export type Product = {
   optionTypes: OptionType[];
   variants: Variant[];
   costPrice: number;
-  sizeChartLink?: string;
 };
 
 export type MergeConfigEntry = {

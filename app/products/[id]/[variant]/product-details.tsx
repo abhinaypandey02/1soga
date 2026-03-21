@@ -98,6 +98,7 @@ export default function ProductDetails({ product, variant }: {
   const displayPrice = matchedVariant?.price ?? product.price;
   const displayImage = matchedVariant?.image ?? product.image;
   const costPrice = matchedVariant?.costPrice ?? product.costPrice;
+  const sizeChartLink = matchedVariant?.sizeChartLink;
   const profit = displayPrice - costPrice;
 
   const featuredVariants = useMemo(
@@ -178,7 +179,7 @@ export default function ProductDetails({ product, variant }: {
           </p>
         )}
 
-        {product.sizeChartLink && (
+        {sizeChartLink && (
           <button
             onClick={() => setShowSizeChart(true)}
             className="mt-3 font-[family-name:var(--font-body)] text-sm font-medium text-[var(--accent)] underline underline-offset-2 transition-colors hover:text-[var(--accent-dark)]"
@@ -290,7 +291,7 @@ export default function ProductDetails({ product, variant }: {
         />
       )}
 
-      {showSizeChart && product.sizeChartLink && (
+      {showSizeChart && sizeChartLink && (
         <Modal open onClose={() => setShowSizeChart(false)}>
           <div className="mb-4 flex items-center justify-between">
             <h2 className="font-[family-name:var(--font-display)] text-2xl uppercase tracking-wide">
@@ -305,7 +306,7 @@ export default function ProductDetails({ product, variant }: {
           </div>
           <div className="relative w-full">
             <Image
-              src={product.sizeChartLink}
+              src={sizeChartLink}
               alt="Size Chart"
               width={600}
               height={400}
