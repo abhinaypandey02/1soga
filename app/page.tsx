@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import products from "@/data/products";
 import { Product } from "@/data/types";
-import StaggerReveal from "./components/stagger-reveal";
 import DeclareCTA from "./components/declare-cta";
 // import { getSEO } from "@/lib/seo";
 
@@ -89,7 +88,7 @@ export default function Home() {
 
       {/* \u2500\u2500 Product Grid \u2500\u2500 */}
       <section id="drops" className="mx-auto max-w-7xl px-4 py-5 my-5 sm:px-6 sm:py-8 sm:my-8 md:px-12 md:py-10 md:my-10">
-        <StaggerReveal>
+        <div>
           <div className="mb-6 flex items-end justify-between sm:mb-12">
             <div>
             <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold uppercase tracking-[0.3em] text-[var(--accent)] sm:text-xs">
@@ -109,8 +108,7 @@ export default function Home() {
               <Link
                 key={product.id}
                 href={`/products/${product.id}/${product.variants[0].sku}`}
-                className="product-card stagger-item group border-2 border-[var(--border)] bg-[var(--surface)]"
-                style={{ animationDelay: `${index * 80}ms` }}
+                className="product-card group border-2 border-[var(--border)] bg-[var(--surface)]"
               >
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden bg-neutral-100">
@@ -153,7 +151,7 @@ export default function Home() {
               </Link>
             ))}
           </div>
-        </StaggerReveal>
+        </div>
       </section>
 
       {/* \u2500\u2500 Community CTA Banner \u2500\u2500 */}

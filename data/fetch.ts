@@ -10,11 +10,11 @@ export const FILE_PRODUCT = (id: string) => `product_${id}`;
 export const FILE_PRODUCTS = "products";
 
 function saveJson(name: string, data: unknown) {
-  writeFileSync(join(process.cwd(), "data", `${name}.json`), JSON.stringify(data, null, 2));
+  writeFileSync(join(process.cwd(), "data", "jsons", `${name}.json`), JSON.stringify(data, null, 2));
 }
 
 function loadJson<T>(name: string): T {
-  return JSON.parse(readFileSync(join(process.cwd(), "data", `${name}.json`), "utf-8"));
+  return JSON.parse(readFileSync(join(process.cwd(), "data", "jsons", `${name}.json`), "utf-8"));
 }
 
 function fetchQikink(url:string, body:string){
