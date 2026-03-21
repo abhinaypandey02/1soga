@@ -1,4 +1,4 @@
-import {MergeConfigEntry} from "./types";
+import {MergeConfigEntry} from "../app/types";
 
 export const mergeConfig: MergeConfigEntry[] = [
   {
@@ -27,7 +27,7 @@ export const mergeConfig: MergeConfigEntry[] = [
     products: [
       { variants: { Material:"Oversized (Thin)" }, product_id: "31957411" },
       { variants: { Material:"Oversized (Thick)" }, product_id: "31957430" },
-      { variants: { Material:"Regular" }, product_id: "31957383" },
+      { variants: { Material:"Regular" }, product_id: "31958588" },
     ],
     featuredSKU:"31957430-UOsTMRnHs-Wh-S"
   },
@@ -59,12 +59,12 @@ export const mergeConfig: MergeConfigEntry[] = [
     products: [
       { variants: { Material:"Oversized (Thick)", Text:"Pink" }, product_id: "31957441" },
       { variants: { Material:"Oversized (Thin)", Text:"Pink" }, product_id: "31957420" },
-      { variants: { Material:"Regular", Text:"Pink" }, product_id: "31957391" },
+      { variants: { Material:"Regular", Text:"Pink" }, product_id: "31958571" },
       { variants: { Material:"Oversized (Thin)", Text:"Red" }, product_id: "31957422" },
       { variants: { Material:"Oversized (Thick)", Text:"Red" }, product_id: "31957437" },
-      { variants: { Material:"Regular", Text:"Red" }, product_id: "31957386" },
+      { variants: { Material:"Regular", Text:"Red" }, product_id: "31958575" },
     ],
-    featuredSKU:"31957391-UCoSRnHs-Bk-S",
+    featuredSKU:"31958571-UCoSRnHs-Bk-S",
     ignoredFeaturedFields:["Size","Material"]
   },
 
