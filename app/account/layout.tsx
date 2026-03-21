@@ -2,7 +2,7 @@ import AccountShell from "./account-shell";
 import {Suspense} from "react";
 import { getSEO } from "@/lib/seo";
 
-export const metadata = getSEO("My Account", "Manage your ONE SOGA membership. View your profile, orders, and stay connected to the movement.");
+export const metadata = getSEO("My Account", "Manage your ONE SOGA membership. View your profile, orders, and stay connected to the scenic capital of the NCR.");
 
 export default function AccountLayout({
   children,

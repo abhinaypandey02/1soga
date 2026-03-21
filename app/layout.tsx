@@ -51,7 +51,7 @@ export default function RootLayout({
             <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 sm:gap-4 md:flex-row">
               <Link href="/"><Image src={'/black-transparent-logo.png'} alt={"SOGA"} width={24} height={24} className="invert" /></Link>
               <span className="font-[family-name:var(--font-body)] text-[10px] text-white/40 sm:text-xs">
-                Soga &mdash; For the people, by the people
+                Soga &mdash; Where the NCR comes to feel something
               </span>
             </div>
           </footer>

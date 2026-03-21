@@ -30,7 +30,7 @@ export default function YouMayAlsoLike({ currentProductId }: { currentProductId:
     <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 sm:py-12 md:px-12 md:py-16">
       <div className="mb-6 sm:mb-8">
         <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold uppercase tracking-[0.3em] text-[var(--accent)] sm:text-xs">
-          More Drops
+          More From The Collection
         </span>
         <h2 className="mt-1 font-[family-name:var(--font-display)] text-3xl tracking-tight text-[var(--foreground)] sm:text-4xl">
           YOU MAY ALSO LIKE

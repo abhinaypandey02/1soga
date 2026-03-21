@@ -19,7 +19,7 @@ function getPriceDisplay(product: Product): string {
   return `from ₹${min.toFixed(2)}`;
 }
 
-const MARQUEE_TEXT = 'ONE PEOPLE \u2022 ONE SOGA \u2022 NO DIVISIONS \u2022 THE MOVEMENT IS NOW \u2022 NCR BELONGS TO EVERYONE \u2022 WE ARE ALL SOGA \u2022 ';
+const MARQUEE_TEXT = 'ONE PEOPLE \u2022 ONE SOGA \u2022 NOIDA TO GURGAON, ALL SOGA \u2022 SOBO IS MID \u2022 FARIDABAD IS SOGA \u2022 WE ARE ALL SOGA \u2022 ';
 
 export default function Home() {
   return (
@@ -60,9 +60,9 @@ export default function Home() {
 
             {/* Manifesto line */}
             <p className="mt-6 max-w-lg font-[family-name:var(--font-body)] text-sm leading-relaxed text-[var(--muted)] sm:mt-8 sm:text-base md:text-lg">
-              They drew lines between neighborhoods.
+              SoBo had its moment. SoDe had its run. Soga is forever.
               <br />
-              We erased them. Soga didn&apos;t ask for permission.
+              The alpine views start at Indirapuram. The NCR just didn&apos;t have a name for it yet.
             </p>
 
             {/* CTA */}
@@ -160,16 +160,16 @@ export default function Home() {
       <section className="halftone-overlay noise-overlay relative overflow-hidden bg-[var(--accent)] px-4 py-16 text-center sm:px-6 sm:py-20 md:py-28">
         <div className="relative z-10">
           <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold uppercase tracking-[0.4em] text-white/60 sm:text-xs">
-            This is bigger than merch
+            From Indirapuram to Cyber City, all one
           </span>
           <h2 className="mx-auto mt-3 max-w-4xl font-[family-name:var(--font-display)] text-[clamp(2.5rem,12vw,8rem)] uppercase leading-[0.85] tracking-tight text-white sm:mt-4">
             THE NCR IS
             <br />
-            ONE CITY
+            ONE SOGA
           </h2>
           <p className="mx-auto mt-5 max-w-md font-[family-name:var(--font-body)] text-sm text-white/70 sm:mt-6 sm:text-base md:text-lg">
-            No more divisions. No more postcodes.
-            Soga united the NCR. You&apos;re already part of it.
+            Gurgaon&apos;s ambition. Noida&apos;s skyline. Faridabad&apos;s grit. Vaishali&apos;s charm.
+            SoBo&apos;s insecurity. One movement — effortlessly extraordinary.
           </p>
           <div className="mt-8 sm:mt-10">
             <DeclareCTA />
