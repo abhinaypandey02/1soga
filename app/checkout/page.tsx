@@ -67,7 +67,7 @@ export default function CheckoutPage() {
           Your Cart is Empty
         </h1>
         <p className="mt-4 font-[family-name:var(--font-body)] text-[var(--muted)]">
-          Looks like you haven&apos;t added anything yet.
+          Nothing here yet. Even the potholes have more content than this cart.
         </p>
         <Link
           href="/#drops"

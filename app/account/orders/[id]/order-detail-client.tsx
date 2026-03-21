@@ -143,15 +143,15 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
           <div className="flex items-center gap-3">
             <div className="h-[3px] w-6 bg-[var(--accent)]" />
             <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold uppercase tracking-[0.3em] text-[var(--accent)] sm:text-xs">
-              Movement Impact
+              Soga Gives Back
             </span>
           </div>
           <p className="mt-2 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
-            This order contributed{" "}
+            This order sent{" "}
             <span className="font-bold text-[var(--accent)]">
               {formatPrice(totalCharity)}
             </span>{" "}
-            to charity.
+            to charity. Soga takes care of its own.
           </p>
         </div>
       )}

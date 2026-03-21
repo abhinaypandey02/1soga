@@ -5,7 +5,7 @@ import {FieldResponseType, Injector, QueryResponseType} from "naystack/graphql";
 import {formatPrice, findProductBySku, formatDate} from "./utils";
 import { getSEO } from "@/lib/seo";
 
-export const metadata = getSEO("My Orders", "Track your ONE SOGA orders. Every purchase is a statement for the movement.");
+export const metadata = getSEO("My Orders", "Track your ONE SOGA orders. Every purchase proves you have taste — and an NH-24 survival story.");
 
 export default async function OrdersPage() {
   return <Injector fetch={async ()=>{
@@ -41,7 +41,7 @@ function OrdersPageClient({data:orders,loading}:{
       {orders&&orders.length === 0 &&!loading&& (
         <div className="border-2 border-[var(--border)] bg-[var(--surface)] p-8 text-center">
           <p className="font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
-            No orders yet. Start shopping to see your orders here.
+            No orders yet. Even Soga&apos;s beauty can&apos;t fill an empty cart.
           </p>
         </div>
       )}

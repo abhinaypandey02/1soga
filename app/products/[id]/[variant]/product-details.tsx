@@ -250,7 +250,7 @@ export default function ProductDetails({ product, variant }: {
           <span className="font-semibold text-[var(--accent)]">
             (&#8377;{(profit * quantity).toFixed(2)})
           </span>{" "}
-          goes to charity
+          goes to charity — because Soga gives back more than your landlord
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
