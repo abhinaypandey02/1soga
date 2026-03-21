@@ -1,0 +1,4806 @@
+[
+  {
+    "id": "soga-tee",
+    "name": "SOGA Tee",
+    "description": "",
+    "price": 449,
+    "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
+    "costPrice": 399,
+    "optionTypes": [
+      "Material",
+      "Color",
+      "Size"
+    ],
+    "variants": [
+      {
+        "sku": "31957597-UOsTMRnHs-OFw-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
+        "costPrice": 399,
+        "featured": true
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_1.jpg",
+        "costPrice": 399,
+        "featured": true
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_1.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_1.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_1.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_1.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_1.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_2.jpg",
+        "costPrice": 399,
+        "featured": true
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_2.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_2.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_2.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_2.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_2.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-OFw-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-OFw-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-OFw-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-OFw-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957597-UOsTMRnHs-OFw-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957597/images/Front_1_c_61.jpg",
+        "costPrice": 399
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_1.jpg",
+        "costPrice": 304.5,
+        "featured": true
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_1.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_1.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_1.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_1.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_1.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_2.jpg",
+        "costPrice": 304.5,
+        "featured": true
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_2.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_2.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_2.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_2.jpg",
+        "costPrice": 304.5
+      },
+      {
+        "sku": "31957600-UOSsMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957600/images/Front_1_c_2.jpg",
+        "costPrice": 304.5
+      }
+    ]
+  },
+  {
+    "id": "caps",
+    "name": "Caps",
+    "description": "",
+    "price": 349,
+    "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957590/images/Front_1_c_3.jpg",
+    "costPrice": 315,
+    "optionTypes": [
+      "Print",
+      "Color"
+    ],
+    "variants": [
+      {
+        "sku": "31957590-UBsCap-Nb-NA",
+        "options": [
+          {
+            "type": "Print",
+            "value": "SOGA"
+          },
+          {
+            "type": "Color",
+            "value": "Navy Blue"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957590/images/Front_1_c_3.jpg",
+        "costPrice": 315,
+        "featured": true
+      },
+      {
+        "sku": "31957590-UBsCap-Wh-NA",
+        "options": [
+          {
+            "type": "Print",
+            "value": "SOGA"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957590/images/Front_1_c_1.jpg",
+        "costPrice": 315,
+        "featured": true
+      },
+      {
+        "sku": "31957590-UBsCap-Bk-NA",
+        "options": [
+          {
+            "type": "Print",
+            "value": "SOGA"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957590/images/Front_1_c_2.jpg",
+        "costPrice": 315,
+        "featured": true
+      },
+      {
+        "sku": "31957478-UBsCap-Wh-NA",
+        "options": [
+          {
+            "type": "Print",
+            "value": "sogabaddie"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957478/images/Front_1_c_1.jpg",
+        "costPrice": 315,
+        "featured": true
+      },
+      {
+        "sku": "31957478-UBsCap-Bk-NA",
+        "options": [
+          {
+            "type": "Print",
+            "value": "sogabaddie"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957478/images/Front_1_c_2.jpg",
+        "costPrice": 315,
+        "featured": true
+      },
+      {
+        "sku": "31957470-UBsCap-Wh-NA",
+        "options": [
+          {
+            "type": "Print",
+            "value": "sogaboy"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957470/images/Front_1_c_1.jpg",
+        "costPrice": 315,
+        "featured": true
+      },
+      {
+        "sku": "31957470-UBsCap-Bk-NA",
+        "options": [
+          {
+            "type": "Print",
+            "value": "sogaboy"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957470/images/Front_1_c_2.jpg",
+        "costPrice": 315,
+        "featured": true
+      }
+    ]
+  },
+  {
+    "id": "sogaboy-tee",
+    "name": "sogaboy Tee",
+    "description": "",
+    "price": 349,
+    "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
+    "costPrice": 283.5,
+    "optionTypes": [
+      "Material",
+      "Color",
+      "Size"
+    ],
+    "variants": [
+      {
+        "sku": "31957430-UOsTMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
+        "costPrice": 378,
+        "featured": true
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_1.jpg",
+        "costPrice": 283.5,
+        "featured": true
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_2.jpg",
+        "costPrice": 283.5,
+        "featured": true
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957411-UOSsMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957411/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_2.jpg",
+        "costPrice": 378,
+        "featured": true
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-OFw-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_61.jpg",
+        "costPrice": 378,
+        "featured": true
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-OFw-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-OFw-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-OFw-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-OFw-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957430-UOsTMRnHs-OFw-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957430/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_1.jpg",
+        "costPrice": 325.5,
+        "featured": true
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Wh-3XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "3XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_1.jpg",
+        "costPrice": 346.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_2.jpg",
+        "costPrice": 325.5,
+        "featured": true
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Bk-3XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "3XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_2.jpg",
+        "costPrice": 346.5
+      },
+      {
+        "sku": "31957383-UCoSRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957383/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      }
+    ]
+  },
+  {
+    "id": "sogabaddie-baby-tee",
+    "name": "sogabaddie Baby Tee",
+    "description": "",
+    "price": 299,
+    "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
+    "costPrice": 252,
+    "optionTypes": [
+      "Text",
+      "Color",
+      "Size"
+    ],
+    "variants": [
+      {
+        "sku": "31957404-FBbyTrnHs-LBp-S",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
+        "costPrice": 252,
+        "featured": true
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Wh-S",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_1.jpg",
+        "costPrice": 252,
+        "featured": true
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Wh-M",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Wh-L",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Bk-S",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_2.jpg",
+        "costPrice": 252,
+        "featured": true
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Bk-M",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Bk-L",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-LBp-M",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-LBp-L",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-LBp-XL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-LBp-XXL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957404-FBbyTrnHs-LBp-XS",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957404/images/Front_1_c_45.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Wh-S",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_1.jpg",
+        "costPrice": 252,
+        "featured": true
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Wh-M",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Wh-L",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_1.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Bk-S",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_2.jpg",
+        "costPrice": 252,
+        "featured": true
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Bk-M",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Bk-L",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      },
+      {
+        "sku": "31957397-FBbyTrnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 299,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957397/images/Front_1_c_2.jpg",
+        "costPrice": 252
+      }
+    ]
+  },
+  {
+    "id": "mugs",
+    "name": "Mugs",
+    "description": "",
+    "price": 199,
+    "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957595/images/Front_1_c_990.jpg",
+    "costPrice": 157.5,
+    "optionTypes": [
+      "Style",
+      "Print"
+    ],
+    "variants": [
+      {
+        "sku": "31957595-UCCM-Wh-Red",
+        "options": [
+          {
+            "type": "Style",
+            "value": "Red"
+          },
+          {
+            "type": "Print",
+            "value": "SOGA"
+          }
+        ],
+        "price": 199,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957595/images/Front_1_c_990.jpg",
+        "costPrice": 157.5,
+        "featured": true
+      },
+      {
+        "sku": "31957602-UWCM-Wh-11 OZ",
+        "options": [
+          {
+            "type": "Style",
+            "value": "White"
+          },
+          {
+            "type": "Print",
+            "value": "SOGA"
+          }
+        ],
+        "price": 169,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957602/images/Front_1_c_26.jpg",
+        "costPrice": 120.75,
+        "featured": true
+      },
+      {
+        "sku": "31957496-UWCM-Wh-11 OZ",
+        "options": [
+          {
+            "type": "Style",
+            "value": "White"
+          },
+          {
+            "type": "Print",
+            "value": "sogaboy"
+          }
+        ],
+        "price": 149,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957496/images/Front_1_c_26.jpg",
+        "costPrice": 120.75,
+        "featured": true
+      },
+      {
+        "sku": "31957492-UWCM-Wh-11 OZ",
+        "options": [
+          {
+            "type": "Style",
+            "value": "White"
+          },
+          {
+            "type": "Print",
+            "value": "sogabaddie"
+          }
+        ],
+        "price": 149,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957492/images/Front_1_c_26.jpg",
+        "costPrice": 120.75,
+        "featured": true
+      }
+    ]
+  },
+  {
+    "id": "sogabaddie-tee",
+    "name": "sogabaddie Tee",
+    "description": "",
+    "price": 449,
+    "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+    "costPrice": 378,
+    "optionTypes": [
+      "Material",
+      "Text",
+      "Color",
+      "Size"
+    ],
+    "variants": [
+      {
+        "sku": "31957391-UCoSRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+        "costPrice": 325.5,
+        "featured": true
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_1.jpg",
+        "costPrice": 378,
+        "featured": true
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_2.jpg",
+        "costPrice": 378,
+        "featured": true
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-LBp-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_45.jpg",
+        "costPrice": 378,
+        "featured": true
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-LBp-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_45.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-LBp-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_45.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-LBp-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_45.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-LBp-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_45.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957441-UOsTMRnHs-LBp-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957441/images/Front_1_c_45.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-LBp-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_45.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-LBp-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_45.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-LBp-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_45.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-LBp-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_45.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-LBp-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_45.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957420-UOSsMRnHs-LBp-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957420/images/Front_1_c_45.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Wh-3XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "3XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_1.jpg",
+        "costPrice": 346.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Bk-3XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "3XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+        "costPrice": 346.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-LBp-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_45.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-LBp-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_45.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-LBp-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_45.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-LBp-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_45.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-LBp-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_45.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-LBp-3XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "3XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_45.jpg",
+        "costPrice": 346.5
+      },
+      {
+        "sku": "31957391-UCoSRnHs-LBp-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Pink"
+          },
+          {
+            "type": "Color",
+            "value": "Light Baby Pink"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957391/images/Front_1_c_45.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_1.jpg",
+        "costPrice": 283.5,
+        "featured": true
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_1.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_2.jpg",
+        "costPrice": 283.5,
+        "featured": true
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957422-UOSsMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thin)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 349,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957422/images/Front_1_c_2.jpg",
+        "costPrice": 283.5
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_1.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_2.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-OFw-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_61.jpg",
+        "costPrice": 378,
+        "featured": true
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-OFw-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-OFw-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-OFw-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-OFw-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957437-UOsTMRnHs-OFw-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Oversized (Thick)"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Off White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 449,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957437/images/Front_1_c_61.jpg",
+        "costPrice": 378
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Wh-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Wh-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Wh-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Wh-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Wh-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Wh-3XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "3XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_1.jpg",
+        "costPrice": 346.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Wh-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "White"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_1.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Bk-S",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "S"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Bk-M",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "M"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Bk-L",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "L"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Bk-XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Bk-XXL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XXL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Bk-3XL",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "3XL"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_2.jpg",
+        "costPrice": 346.5
+      },
+      {
+        "sku": "31957386-UCoSRnHs-Bk-XS",
+        "options": [
+          {
+            "type": "Material",
+            "value": "Regular"
+          },
+          {
+            "type": "Text",
+            "value": "Red"
+          },
+          {
+            "type": "Color",
+            "value": "Black"
+          },
+          {
+            "type": "Size",
+            "value": "XS"
+          }
+        ],
+        "price": 399,
+        "image": "https://qikink-assets.s3.ap-south-1.amazonaws.com/clients/566629/clientProducts/31957386/images/Front_1_c_2.jpg",
+        "costPrice": 325.5
+      }
+    ]
+  }
+]

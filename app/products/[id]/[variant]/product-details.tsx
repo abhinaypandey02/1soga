@@ -80,10 +80,10 @@ export default function ProductDetails({ product, variant }: {
   product: Product;
   variant?: string;
 }) {
-  const defaultSelections = useMemo(() => {
+  const selected = useMemo(() => {
     const selections: Record<string, string> = {};
     const initialVariant = variant
-      ? product.variants.find((v) => v.sku === variant)
+      ? product.variants.find((v) => v.sku === decodeURIComponent(variant))
       : undefined;
     const source = initialVariant ?? product.variants[0];
     for (const opt of source.options) {
@@ -91,10 +91,6 @@ export default function ProductDetails({ product, variant }: {
     }
     return selections;
   }, [product, variant]);
-
-  const [selected, setSelected] = useState<Record<string, string>>(
-    defaultSelections
-  );
 
   const matchedVariant = findVariant(product.variants, selected);
 
@@ -107,14 +103,6 @@ export default function ProductDetails({ product, variant }: {
     () => product.variants.filter((v) => v.featured && v.image),
     [product]
   );
-
-  const handleSelectVariant = (variant: Variant) => {
-    const newSelected: Record<string, string> = {};
-    for (const opt of variant.options) {
-      newSelected[opt.type] = opt.value;
-    }
-    setSelected((prev) => ({ ...prev, ...newSelected }));
-  };
 
   const [quantity, setQuantity] = useState(1);
   const [showCheckout, setShowCheckout] = useState(false);
@@ -147,20 +135,19 @@ export default function ProductDetails({ product, variant }: {
           />
         </div>
 
-        <div className="mt-3 flex gap-2">
+        <div className="mt-3 flex gap-2 flex-wrap">
           {featuredVariants.map((v) => {
             const isActive = matchedVariant?.sku === v.sku ||
               (v.image && displayImage === v.image);
+            const url = `/products/${product.id}/${(v?.sku)}`
+
             return (
-              <button
-                key={v.sku}
-                onClick={() => handleSelectVariant(v)}
-                className={`relative h-16 w-16 overflow-hidden border-2 transition-all duration-200 ${
+                <LinkWrapper className={`relative h-16 w-16 overflow-hidden border-2 transition-all duration-200 ${
                   isActive
                     ? "border-[var(--accent)]"
                     : "border-[var(--border)] hover:border-[var(--foreground)]"
-                }`}
-              >
+                }`} key={v.sku} href={matchedVariant?url:null} scroll={false}>
+
                 <Image
                   src={v.image!}
                   alt={v.options.map((o) => o.value).join(" ")}
@@ -168,7 +155,7 @@ export default function ProductDetails({ product, variant }: {
                   className="object-cover"
                   sizes="64px"
                 />
-              </button>
+                </LinkWrapper>
             );
           })}
         </div>
@@ -189,6 +176,7 @@ export default function ProductDetails({ product, variant }: {
 
         {product.optionTypes.map((type) => {
           const values = getOptionValues(product.variants, type);
+          if(values.length<2) return null;
           return (
             <div key={type} className="mt-6">
               <label className="mb-2 block font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
@@ -259,13 +247,13 @@ export default function ProductDetails({ product, variant }: {
           >
             Add to Cart
           </button>
-          <button
-            onClick={handleBuy}
-            disabled={!matchedVariant}
+        <button
+          onClick={handleBuy}
+          disabled={!matchedVariant}
             className="w-full border-2 border-[var(--foreground)] bg-[var(--foreground)] px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-50 sm:w-auto sm:py-3"
-          >
+        >
             Buy Now
-          </button>
+        </button>
         </div>
       </div>
 

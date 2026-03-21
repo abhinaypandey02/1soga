@@ -1,0 +1,313 @@
+{
+  "client_id": "566629",
+  "color_id": "2",
+  "product_id": "446",
+  "product_price": 252,
+  "client_product_type_id": 10,
+  "created_on": "2026-03-20 23:10:19",
+  "print_type_id": "17",
+  "client_product_id": 31957397,
+  "mockup_generator_id": "303",
+  "is_size_chart": false,
+  "size_chart_link": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png",
+  "is_plain": "0",
+  "is_back_has_desgin": false,
+  "is_front_has_design": true,
+  "is_other_placements_has_design": null,
+  "is_aop_product": null,
+  "product_title": "sogabaddie (baby tee red)",
+  "mockup_name": "Baby Tee | FT47",
+  "variants": [
+    {
+      "client_product_id": 31957397,
+      "size_id": "1",
+      "color_id": "1",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Wh-S",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624795,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nuZ",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "S",
+      "size_name": "S",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "2",
+      "color_id": "1",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Wh-M",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624796,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nua",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "M",
+      "size_name": "M",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "3",
+      "color_id": "1",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Wh-L",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624797,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nub",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "L",
+      "size_name": "L",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "4",
+      "color_id": "1",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Wh-XL",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624798,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nuU",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "XL",
+      "size_name": "XL",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "6",
+      "color_id": "1",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Wh-XXL",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624799,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nuV",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "XXL",
+      "size_name": "XXL",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "9",
+      "color_id": "1",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Wh-XS",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624800,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKc",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "XS",
+      "size_name": "XS",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "1",
+      "color_id": "2",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Bk-S",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624801,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKd",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "S",
+      "size_name": "S",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "2",
+      "color_id": "2",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Bk-M",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624802,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKe",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "M",
+      "size_name": "M",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "3",
+      "color_id": "2",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Bk-L",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624803,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKf",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "L",
+      "size_name": "L",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "4",
+      "color_id": "2",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Bk-XL",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624804,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKY",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "XL",
+      "size_name": "XL",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "6",
+      "color_id": "2",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Bk-XXL",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624805,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKZ",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "XXL",
+      "size_name": "XXL",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957397,
+      "size_id": "9",
+      "color_id": "2",
+      "product_id": "446",
+      "product_price": "299",
+      "client_id": "566629",
+      "product_sku": "FBbyTrnHs-Bk-XS",
+      "design_sku": "NewProject(9)",
+      "client_product_variant_id": 12624806,
+      "variant_sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKa",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "XS",
+      "size_name": "XS",
+      "updated_base_price": 252,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    }
+  ],
+  "tags": [
+    ""
+  ],
+  "designs": [
+    {
+      "client_product_id": 31957397,
+      "client_design_id": "4930254",
+      "client_design_width": "6.56",
+      "client_design_height": "1.05",
+      "client_design_placement": 1,
+      "print_cost": null,
+      "placement_mockup_url": null,
+      "design_url": "https://qikink-designs.s3.ap-south-1.amazonaws.com/erp2/assets/designs/566629/69bd7f9d3c965.png",
+      "design_code": "NewProject(9)"
+    }
+  ],
+  "default_placement": "Front",
+  "default_color": "2",
+  "default_color_name": "Black",
+  "default_size_name": "S",
+  "default_image": "Front_1_c_2.jpg",
+  "mockup_path": "clients/566629/clientProducts/31957397/images/",
+  "html_path": "clients/566629/clientProducts/31957397/html/productContent.html",
+  "options": [
+    "Color",
+    "Size"
+  ]
+}

@@ -1,0 +1,313 @@
+{
+  "client_id": "566629",
+  "color_id": "2",
+  "product_id": "295",
+  "product_price": 304.5,
+  "client_product_type_id": 10,
+  "created_on": "2026-03-21 01:04:34",
+  "print_type_id": "3",
+  "client_product_id": 31957600,
+  "mockup_generator_id": "28",
+  "is_size_chart": false,
+  "size_chart_link": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png",
+  "is_plain": "0",
+  "is_back_has_desgin": false,
+  "is_front_has_design": true,
+  "is_other_placements_has_design": null,
+  "is_aop_product": null,
+  "product_title": "soga (oversized thin)",
+  "mockup_name": "Unisex Oversized Standard T-Shirt | US22",
+  "variants": [
+    {
+      "client_product_id": 31957600,
+      "size_id": "1",
+      "color_id": "1",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Wh-S",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627232,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Ge",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "S",
+      "size_name": "S",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "2",
+      "color_id": "1",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Wh-M",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627233,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Gf",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "M",
+      "size_name": "M",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "3",
+      "color_id": "1",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Wh-L",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627234,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GY",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "L",
+      "size_name": "L",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "4",
+      "color_id": "1",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Wh-XL",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627235,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GZ",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "XL",
+      "size_name": "XL",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "6",
+      "color_id": "1",
+      "product_id": "296",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Wh-XXL",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627236,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Ga",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "XXL",
+      "size_name": "XXL",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "9",
+      "color_id": "1",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Wh-XS",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627237,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Gb",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "XS",
+      "size_name": "XS",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_1.jpg",
+        "2": "Front_1_c_1.jpg"
+      },
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "1",
+      "color_id": "2",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Bk-S",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627238,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GU",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "S",
+      "size_name": "S",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "2",
+      "color_id": "2",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Bk-M",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627239,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GV",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "M",
+      "size_name": "M",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "3",
+      "color_id": "2",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Bk-L",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627240,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83ac",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "L",
+      "size_name": "L",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "4",
+      "color_id": "2",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Bk-XL",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627241,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83ad",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "XL",
+      "size_name": "XL",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "6",
+      "color_id": "2",
+      "product_id": "296",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Bk-XXL",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627242,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83ae",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "XXL",
+      "size_name": "XXL",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957600,
+      "size_id": "9",
+      "color_id": "2",
+      "product_id": "295",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UOSsMRnHs-Bk-XS",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627243,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83af",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "XS",
+      "size_name": "XS",
+      "updated_base_price": 304.5,
+      "variant_images": {
+        "0": "Back_2_c_2.jpg",
+        "2": "Front_1_c_2.jpg"
+      },
+      "variant_image": "Front_1_c_2.jpg"
+    }
+  ],
+  "tags": [
+    ""
+  ],
+  "designs": [
+    {
+      "client_product_id": 31957600,
+      "client_design_id": "4930815",
+      "client_design_width": "2.90",
+      "client_design_height": "2.90",
+      "client_design_placement": 1,
+      "print_cost": null,
+      "placement_mockup_url": null,
+      "design_url": "https://qikink-designs.s3.ap-south-1.amazonaws.com/erp2/assets/designs/566629/69bd9dcc8a0c1.png",
+      "design_code": "NewProject(5)"
+    }
+  ],
+  "default_placement": "Front",
+  "default_color": "2",
+  "default_color_name": "Black",
+  "default_size_name": "S",
+  "default_image": "Front_1_c_2.jpg",
+  "mockup_path": "clients/566629/clientProducts/31957600/images/",
+  "html_path": "clients/566629/clientProducts/31957600/html/productContent.html",
+  "options": [
+    "Color",
+    "Size"
+  ]
+}

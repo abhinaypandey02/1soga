@@ -1,0 +1,70 @@
+{
+  "client_id": "566629",
+  "color_id": "1",
+  "product_id": "134",
+  "product_price": 157.5,
+  "client_product_type_id": 10,
+  "created_on": "2026-03-21 00:59:26",
+  "print_type_id": "5",
+  "client_product_id": 31957595,
+  "mockup_generator_id": "16",
+  "is_size_chart": false,
+  "size_chart_link": null,
+  "is_plain": "0",
+  "is_back_has_desgin": null,
+  "is_front_has_design": null,
+  "is_other_placements_has_design": null,
+  "is_aop_product": null,
+  "product_title": "soga (mug red)",
+  "mockup_name": "Color Coffee Mug",
+  "variants": [
+    {
+      "client_product_id": 31957595,
+      "size_id": "990",
+      "color_id": "1",
+      "product_id": "134",
+      "product_price": "199",
+      "client_id": "566629",
+      "product_sku": "UCCM-Wh-Red",
+      "design_sku": "NewProject(5)_69bd9f77db654",
+      "client_product_variant_id": 12627204,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMR4subTVqwnZ83KY",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "Red",
+      "size_name": "Red",
+      "updated_base_price": 157.5,
+      "variant_images": [
+        "Front_1_c_990.jpg"
+      ],
+      "variant_image": "Front_1_c_990.jpg"
+    }
+  ],
+  "tags": [
+    ""
+  ],
+  "designs": [
+    {
+      "client_product_id": 31957595,
+      "client_design_id": "4930829",
+      "client_design_width": "1.14",
+      "client_design_height": "1.14",
+      "client_design_placement": 1,
+      "print_cost": null,
+      "placement_mockup_url": null,
+      "design_url": "https://qikink-designs.s3.ap-south-1.amazonaws.com/erp2/assets/designs/566629/69bd9f77203fc.png",
+      "design_code": "NewProject(5)_69bd9f77db654"
+    }
+  ],
+  "default_placement": "Front",
+  "default_color": "1",
+  "default_color_name": "White",
+  "default_size_name": "Red",
+  "default_image": "default.jpg",
+  "mockup_path": "clients/566629/clientProducts/31957595/images/",
+  "html_path": "clients/566629/clientProducts/31957595/html/productContent.html",
+  "options": [
+    "Color",
+    "Size"
+  ]
+}

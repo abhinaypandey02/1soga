@@ -104,7 +104,7 @@ export default function Home() {
           </span>
           </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-4">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:grid-cols-3">
             {products.map((product, index) => (
               <Link
                 key={product.id}
@@ -139,11 +139,16 @@ export default function Home() {
                     {getPriceDisplay(product)}
                   </span>
                   </div>
-                  {product.variants.length > 1 && (
-                    <span className="mt-1.5 inline-block font-[family-name:var(--font-body)] text-[10px] uppercase tracking-wider text-[var(--muted)] sm:mt-2 sm:text-[11px]">
-                    {product.variants.length} options
-                  </span>
-                  )}
+                  {(() => {
+                    const unique = new Set(product.variants.map(v =>
+                      v.options.filter(o => o.type !== "Size").map(o => o.value).join("-")
+                    ));
+                    return unique.size > 1 && (
+                      <span className="mt-1.5 inline-block font-[family-name:var(--font-body)] text-[10px] uppercase tracking-wider text-[var(--muted)] sm:mt-2 sm:text-[11px]">
+                        {unique.size} options
+                      </span>
+                    );
+                  })()}
                 </div>
               </Link>
             ))}

@@ -1,0 +1,91 @@
+{
+  "client_id": "566629",
+  "color_id": "2",
+  "product_id": "312",
+  "product_price": 315,
+  "client_product_type_id": 10,
+  "created_on": "2026-03-20 23:46:37",
+  "print_type_id": "3",
+  "client_product_id": 31957478,
+  "mockup_generator_id": "86",
+  "is_size_chart": false,
+  "size_chart_link": null,
+  "is_plain": "0",
+  "is_back_has_desgin": null,
+  "is_front_has_design": true,
+  "is_other_placements_has_design": null,
+  "is_aop_product": null,
+  "product_title": "sogabaddie cap",
+  "mockup_name": "BaseBall Cap | BC33",
+  "variants": [
+    {
+      "client_product_id": 31957478,
+      "size_id": "17",
+      "color_id": "1",
+      "product_id": "312",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UBsCap-Wh-NA",
+      "design_sku": "NewProject(9)_69bd8ebbf3514",
+      "client_product_variant_id": 12626002,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMBAhubTVqwnY8XKe",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "Standard",
+      "size_name": "Standard",
+      "updated_base_price": 315,
+      "variant_images": [
+        "Front_1_c_1.jpg"
+      ],
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957478,
+      "size_id": "17",
+      "color_id": "2",
+      "product_id": "312",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UBsCap-Bk-NA",
+      "design_sku": "NewProject(9)_69bd8ebbf3514",
+      "client_product_variant_id": 12626003,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMBAhubTVqwnY8XKf",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "Standard",
+      "size_name": "Standard",
+      "updated_base_price": 315,
+      "variant_images": [
+        "Front_1_c_2.jpg"
+      ],
+      "variant_image": "Front_1_c_2.jpg"
+    }
+  ],
+  "tags": [
+    ""
+  ],
+  "designs": [
+    {
+      "client_product_id": 31957478,
+      "client_design_id": "4930506",
+      "client_design_width": "2.97",
+      "client_design_height": "0.47",
+      "client_design_placement": 1,
+      "print_cost": null,
+      "placement_mockup_url": null,
+      "design_url": "https://qikink-designs.s3.ap-south-1.amazonaws.com/erp2/assets/designs/566629/69bd8ebb8d48b.png",
+      "design_code": "NewProject(9)_69bd8ebbf3514"
+    }
+  ],
+  "default_placement": "Front",
+  "default_color": "2",
+  "default_color_name": "Black",
+  "default_size_name": "Standard",
+  "default_image": "Front_1_c_2.jpg",
+  "mockup_path": "clients/566629/clientProducts/31957478/images/",
+  "html_path": "clients/566629/clientProducts/31957478/html/productContent.html",
+  "options": [
+    "Color",
+    "Size"
+  ]
+}

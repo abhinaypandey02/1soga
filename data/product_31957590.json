@@ -1,0 +1,112 @@
+{
+  "client_id": "566629",
+  "color_id": "3",
+  "product_id": "312",
+  "product_price": 315,
+  "client_product_type_id": 10,
+  "created_on": "2026-03-21 00:56:28",
+  "print_type_id": "3",
+  "client_product_id": 31957590,
+  "mockup_generator_id": "86",
+  "is_size_chart": false,
+  "size_chart_link": null,
+  "is_plain": "0",
+  "is_back_has_desgin": null,
+  "is_front_has_design": true,
+  "is_other_placements_has_design": null,
+  "is_aop_product": null,
+  "product_title": "soga cap",
+  "mockup_name": "BaseBall Cap | BC33",
+  "variants": [
+    {
+      "client_product_id": 31957590,
+      "size_id": "17",
+      "color_id": "1",
+      "product_id": "312",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UBsCap-Wh-NA",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627133,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMR4pubTVqwnZ8HGf",
+      "option1": "White",
+      "color_name": "White",
+      "option2": "Standard",
+      "size_name": "Standard",
+      "updated_base_price": 315,
+      "variant_images": [
+        "Front_1_c_1.jpg"
+      ],
+      "variant_image": "Front_1_c_1.jpg"
+    },
+    {
+      "client_product_id": 31957590,
+      "size_id": "17",
+      "color_id": "2",
+      "product_id": "312",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UBsCap-Bk-NA",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627134,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMR4pubTVqwnZ8HGY",
+      "option1": "Black",
+      "color_name": "Black",
+      "option2": "Standard",
+      "size_name": "Standard",
+      "updated_base_price": 315,
+      "variant_images": [
+        "Front_1_c_2.jpg"
+      ],
+      "variant_image": "Front_1_c_2.jpg"
+    },
+    {
+      "client_product_id": 31957590,
+      "size_id": "17",
+      "color_id": "3",
+      "product_id": "312",
+      "product_price": "349",
+      "client_id": "566629",
+      "product_sku": "UBsCap-Nb-NA",
+      "design_sku": "NewProject(5)",
+      "client_product_variant_id": 12627135,
+      "variant_sku": "v-9h6m0SSOaVZV2sIIMR4pubTVqwnZ8HGZ",
+      "option1": "Navy Blue",
+      "color_name": "Navy Blue",
+      "option2": "Standard",
+      "size_name": "Standard",
+      "updated_base_price": 315,
+      "variant_images": [
+        "Front_1_c_3.jpg"
+      ],
+      "variant_image": "Front_1_c_3.jpg"
+    }
+  ],
+  "tags": [
+    ""
+  ],
+  "designs": [
+    {
+      "client_product_id": 31957590,
+      "client_design_id": "4930815",
+      "client_design_width": "0.84",
+      "client_design_height": "0.84",
+      "client_design_placement": 1,
+      "print_cost": null,
+      "placement_mockup_url": null,
+      "design_url": "https://qikink-designs.s3.ap-south-1.amazonaws.com/erp2/assets/designs/566629/69bd9dcc8a0c1.png",
+      "design_code": "NewProject(5)"
+    }
+  ],
+  "default_placement": "Front",
+  "default_color": "3",
+  "default_color_name": "Navy Blue",
+  "default_size_name": "Standard",
+  "default_image": "Front_1_c_3.jpg",
+  "mockup_path": "clients/566629/clientProducts/31957590/images/",
+  "html_path": "clients/566629/clientProducts/31957590/html/productContent.html",
+  "options": [
+    "Color",
+    "Size"
+  ]
+}
