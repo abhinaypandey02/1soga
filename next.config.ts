@@ -8,6 +8,10 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "picsum.photos",
       },
+      {
+        protocol: "https",
+        hostname: "qikink-assets.s3.ap-south-1.amazonaws.com",
+      },
     ],
   },
 };
