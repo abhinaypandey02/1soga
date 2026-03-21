@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import products from "@/data/products";
 import ProductDetails from "./product-details";
@@ -38,7 +39,7 @@ export default async function ProductPage({
   return (
     <>
       <ProductDetails product={product} variant={variant} />
-      <YouMayAlsoLike currentProductId={product.id} />
+      <Suspense><YouMayAlsoLike currentProductId={product.id} /></Suspense>
     </>
   );
 }
