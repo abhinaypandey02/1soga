@@ -108,7 +108,8 @@ export default function Home() {
               <Link
                 key={product.id}
                 href={`/products/${product.id}/${product.variants[0].sku}`}
-                className="product-card group border-2 border-[var(--border)] bg-[var(--surface)]"
+                className="product-card stagger-item group border-2 border-[var(--border)] bg-[var(--surface)]"
+                style={{ animationDelay: `${index * 80}ms` }}
               >
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden bg-neutral-100">
