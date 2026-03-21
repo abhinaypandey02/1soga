@@ -13,8 +13,6 @@ export default function Navbar() {
   const [showAuth, setShowAuth] = useState(false);
   const { totalItems } = useCart();
 
-  console.log("[Navbar] render, token =", !!token, "showAuth =", showAuth);
-
   return (
     <>
       <nav className="flex items-center justify-between border-b-2 border-[var(--foreground)] bg-[var(--surface)] px-4 py-3 sm:px-6 sm:py-4 md:px-12">
@@ -34,7 +32,7 @@ export default function Navbar() {
             </Link>
           ) : (
             <button
-              onClick={() => { console.log("[Navbar] login button clicked"); setShowAuth(true); }}
+              onClick={() => setShowAuth(true)}
               className="p-2 text-[var(--muted)] transition-all duration-200 hover:text-[var(--foreground)]"
             >
               <User size={18} weight="bold" />
