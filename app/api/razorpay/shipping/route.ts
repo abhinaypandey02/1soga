@@ -10,8 +10,8 @@ export const POST = async (req: NextRequest)=>{
       "shipping_methods": [
         {
           "id": "1",
-          "description": "BlueDart Shipping",
-          "name": "Delivery within a week",
+          "description": "Delivery handled via BlueDart",
+          "name": "BlueDart Shipping",
           "serviceable": true,
           "shipping_fee": DELIVERY_FEE*100,
           "cod": false,
