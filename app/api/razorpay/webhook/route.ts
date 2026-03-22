@@ -69,7 +69,7 @@ export async function POST(req: NextRequest) {
     const razorpayOrder = await razorpay.orders.fetch(orderId) as any;
     const customerDetails = razorpayOrder.customer_details || {};
     const shipping = customerDetails.shipping_address || {};
-    console.log("shipping", JSON.stringify(shipping,null,2))
+    console.log("shipping", JSON.stringify(payment,null,2))
     // Update user details from payment info if missing
     console.log("[Webhook] Fetching user details for userId:", order.userId);
     const [user] = await db
