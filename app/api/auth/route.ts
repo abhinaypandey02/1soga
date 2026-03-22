@@ -4,6 +4,7 @@ import {UserTable} from "@/app/api/(graphql)/user/db";
 import {eq} from "drizzle-orm";
 
 export const {GET,POST,DELETE,PUT} = setupEmailAuth({
+  allowedOrigins: ['1soga.com', 'onesoga.com'],
   createUser: async (data) => {
     const [user] = await db.insert(UserTable).values(data).returning();
     return user;
