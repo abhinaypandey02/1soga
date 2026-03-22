@@ -2,7 +2,8 @@ import { NextRequest, NextResponse } from "next/server"
 
 export const POST = async (req: NextRequest)=>{
     const data = await req.json()
-    return NextResponse.json({
+    console.log("data", JSON.stringify(data,null,2))
+    const response = {
         addresses:data.addresses.map((address:object)=>({
       ...address,
       "shipping_methods": [
@@ -17,5 +18,7 @@ export const POST = async (req: NextRequest)=>{
         },
       ]
 }))
-    })
+    }
+    console.log("response", JSON.stringify(response,null,2))
+    return NextResponse.json(response)
 }
