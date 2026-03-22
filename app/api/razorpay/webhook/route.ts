@@ -129,10 +129,10 @@ export async function POST(req: NextRequest) {
     console.log("[Webhook] All variant SKUs valid");
 
     // Build shipping address from Razorpay order details
-    const customerName = customerDetails.name || user?.name || payment.email?.split("@")[0] || "Customer";
-    const nameParts = customerName.trim().split(" ");
-    const firstName = nameParts[0] || "Customer";
-    const lastName = nameParts.slice(1).join(" ");
+    const customerName = customerDetails.name || "";
+    const nameParts = customerName.split(" ");
+    const firstName = nameParts[0] || "";
+    const lastName = nameParts.slice(1).join(" ") || "";
 
     const shippingAddress = {
       first_name: firstName,
