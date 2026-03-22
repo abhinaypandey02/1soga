@@ -60,7 +60,7 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
       price: priceInPaise,
       offer_price: priceInPaise,
       quantity: lineItem.quantity,
-      name: product.name,
+      name: `${product.name} — ${variant.options.map(o=>o.value).join(", ")}`,
       description: product.description,
       image_url: variant.image||product.image,
       product_url: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${product.id}/${variant.slug}`
