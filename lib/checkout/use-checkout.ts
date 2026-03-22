@@ -11,23 +11,27 @@ type LineItem = {
 export function useCheckout(onSuccess?: () => void) {
   const [createOrder, { loading }] = useAuthMutation(CREATE_ORDER);
 
-  const checkout = async (lineItems: LineItem[], totalAmount: number, description: string) => {
+  const checkout = async (lineItems: LineItem[], description: string) => {
     const response = await createOrder({ lineItems });
-    const orderId = response.data?.createOrder;
-    if (!orderId) throw new Error("Failed to create order");
+    const orderData = response.data?.createOrder;
+    if (!orderData) throw new Error("Failed to create order");
 
     const options = {
       key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-      amount: Math.round(totalAmount * 100),
+      amount: orderData.amount,
       currency: "INR",
       name: "1SOGA",
       description,
-      order_id: orderId,
+      order_id: orderData.orderId,
       one_click_checkout: true,
+      show_coupons:false,
       handler: () => {
         onSuccess?.();
       },
-      prefill: {},
+      prefill: {
+        email: orderData.user_email,
+        contact: orderData.user_phone,
+      },
       theme: { color: "#FF2D20" },
     };
 

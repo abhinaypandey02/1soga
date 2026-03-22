@@ -31,7 +31,6 @@ export default function CheckoutModal({ productName, skuId, amount, quantity, on
     try {
       await checkout(
         [{ skuId, quantity }],
-        total,
         productName
       );
     } catch (err) {

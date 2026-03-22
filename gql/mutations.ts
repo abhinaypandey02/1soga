@@ -2,7 +2,12 @@ import {gql} from "./__generated__";
 
 export const CREATE_ORDER = gql(`
     mutation CreateOrder($input: CheckoutInput!) {
-      createOrder(input: $input)
+      createOrder(input: $input) {
+        orderId
+        amount
+        user_email
+        user_phone
+      }
     }
 `)
 

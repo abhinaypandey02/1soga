@@ -1,10 +1,11 @@
 import products from "@/data/products";
 import {resolver} from "naystack/graphql";
-import {Field, InputType} from "type-graphql";
+import {Field, InputType, ObjectType} from "type-graphql";
 import {db} from "@/app/api/lib/db";
 import {OrderTable, LineItemTable} from "@/app/api/(graphql)/order/db";
+import {UserTable} from "@/app/api/(graphql)/user/db";
 import { razorpay } from "@/app/api/lib/razorpay";
-import { DELIVERY_FEE } from "@/lib/checkout/constants";
+import {eq} from "drizzle-orm";
 
 @InputType("LineItem")
 class LineItem{
@@ -20,6 +21,18 @@ class CheckoutInput{
   lineItems:LineItem[]
 }
 
+@ObjectType("CreateOrderResponse")
+class CreateOrderResponse {
+  @Field()
+  orderId: string;
+  @Field()
+  amount: number;
+  @Field()
+  user_email: string;
+  @Field({nullable: true})
+  user_phone?: string;
+}
+
 export default resolver(async (ctx, data:CheckoutInput)=>{
   if (!ctx.userId) {
     throw new Error("Unauthorized");
@@ -27,7 +40,7 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
 
   let totalAmountInPaise = 0;
   const resolvedItems: {skuId: string; price: number; costPrice: number; quantity: number}[] = [];
-  const razorpayLineItems: {sku: string; variant_id: string; price: number; offer_price: number; quantity: number; name: string}[] = [];
+  const razorpayLineItems: {sku: string; variant_id: string; price: number; offer_price: number; quantity: number; name: string;description:string; image_url:string; product_url:string}[] = [];
 
   for (const lineItem of data.lineItems) {
     const product = products.find((p) => p.variants.some((v) => v.sku === lineItem.skuId));
@@ -47,21 +60,25 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
       price: priceInPaise,
       offer_price: priceInPaise,
       quantity: lineItem.quantity,
-      name: product.name,
+      name: `${product.name} — ${variant.options.map(o=>o.value).join(", ")}`,
+      description: product.description,
+      image_url: variant.image||product.image,
+      product_url: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${product.id}/${variant.slug}`
     });
   }
-
-  totalAmountInPaise += DELIVERY_FEE * 100;
 
   const order = await razorpay.orders.create({
     amount: totalAmountInPaise,
     currency: "INR",
     receipt: `order_${Date.now()}`,
     line_items_total: totalAmountInPaise,
-    line_items: razorpayLineItems,
-  } as Parameters<typeof razorpay.orders.create>[0]);
+    
+    // @ts-expect-error -- documentation issue
+    line_items: razorpayLineItems
+  });
 
   const [newOrder] = await db.insert(OrderTable).values({
+  // @ts-expect-error -- documentation issue
     uid:order.id,
     userId:ctx.userId,
     amount:totalAmountInPaise
@@ -74,9 +91,20 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
     }))
   )
 
-  return order.id;
+  const [user] = await db
+    .select({ email: UserTable.email, phone: UserTable.phone })
+    .from(UserTable)
+    .where(eq(UserTable.id, ctx.userId!));
+
+  return {
+    // @ts-expect-error -- documentation issue
+    orderId: order.id,
+    amount: totalAmountInPaise,
+    user_email: user.email,
+    user_phone: user.phone,
+  };
 },{
   input:CheckoutInput,
-  output:String,
+  output:CreateOrderResponse,
   mutation:true
 })
