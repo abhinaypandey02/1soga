@@ -9,7 +9,6 @@ async function getAccessToken(): Promise<string> {
     return cachedToken.accessToken;
   }
 
-  console.log("[Qikink] Fetching new access token...");
   const response = await fetch(`${QIKINK_BASE_URL}/token`, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -20,13 +19,10 @@ async function getAccessToken(): Promise<string> {
   });
 
   if (!response.ok) {
-    const text = await response.text();
-    console.error("[Qikink] Token fetch failed:", text);
     throw new Error(`Qikink auth error: ${response.status}`);
   }
 
   const result = await response.json();
-  console.log("[Qikink] Access token obtained, expires_in:", result.expires_in, result.Accesstoken);
 
   cachedToken = {
     accessToken: result.Accesstoken,
@@ -92,24 +88,9 @@ export async function createQikinkOrder(
   lineItems: { skuId: string; quantity: number; price: number }[],
   shippingAddress: QikinkShippingAddress
 ) {
-  const headers = await getHeaders();
-  console.log("headers", headers)
-  console.log("body", JSON.stringify({
-      order_number: orderId,
-      qikink_shipping: "1",
-      gateway: "Prepaid",
-      total_order_value: String(amount / 100),
-      line_items: lineItems.map((item) => ({
-        search_from_my_products: 1,
-        sku: item.skuId,
-        quantity: String(item.quantity),
-        price: String(item.price / 100),
-      })),
-      shipping_address: shippingAddress,
-    }), null, 2)
   const response = await fetch(`${QIKINK_BASE_URL}/order/create`, {
     method: "POST",
-    headers,
+    headers: await getHeaders(),
     body: JSON.stringify({
       order_number: orderId,
       qikink_shipping: "1",
