@@ -59,7 +59,7 @@ export async function POST(req: NextRequest) {
     if (!order) {
       console.error("[Webhook] Order not found in database for uid:", orderId);
       await issueRefund(payment.id, payment.amount, `Order not found: ${orderId}`);
-      return NextResponse.json({ error: "Order not found" }, { status: 404 });
+      return NextResponse.json({ status: "refunded" });
     }
     console.log("[Webhook] Order marked as paid, internal id:", order.id, "userId:", order.userId);
 
