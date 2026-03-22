@@ -4,5 +4,5 @@ import UserResolvers from './user'
 
 export const {GET, POST} = await setupGraphQL({
   resolvers:[UserResolvers, OrderResolvers, OrderFields],
-  allowedOrigins: ['1soga.com', 'onesoga.com']
+  allowedOrigins: ['https://1soga.com', 'https://onesoga.com']
 })
