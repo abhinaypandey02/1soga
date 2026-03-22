@@ -97,7 +97,7 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
                       {product.id && (
                         <>
                           {" "}&middot;{" "}
-                          <Link href={`/products/${product.id}/${product.sku}`} className="normal-case tracking-normal text-[var(--accent)] hover:underline">
+                          <Link href={`/products/${product.id}/${product.slug}`} className="normal-case tracking-normal text-[var(--accent)] hover:underline">
                             View Product
                           </Link>
                         </>

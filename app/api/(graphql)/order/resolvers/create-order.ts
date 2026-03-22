@@ -52,7 +52,7 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
   const order = await razorpay.orders.create({
     amount: totalAmountInPaise,
     currency: "INR",
-    receipt: `order_${Date.now()}`
+    receipt: `order_${Date.now()}`,
   });
 
   const [newOrder] = await db.insert(OrderTable).values({

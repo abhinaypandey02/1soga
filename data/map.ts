@@ -1,5 +1,14 @@
 import {FetchAllProductsResponse, FetchProductResponse} from "./types";
-import {MergeConfigEntry, OptionType, Product} from "./types";
+import {MergeConfigEntry, OptionType, Product, Variant} from "./types";
+
+function generateSlug(options: {type: string; value: string}[]): string {
+  return options
+    .map(o => o.value)
+    .join("-")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+}
 
 type ProductListItem = FetchAllProductsResponse["data"][number];
 
@@ -19,7 +28,8 @@ export function mapToProduct(product: ProductListItem, details: FetchProductResp
       if (details.options.includes("Color")) options.push({ type: OptionType.Color, value: v.color_name });
       if (details.options.includes("Size")) options.push({ type: OptionType.Size, value: v.size_name });
       return {
-        sku:v.client_product_id+'-'+ v.product_sku,
+        sku: v.variant_sku,
+        slug: generateSlug(options),
         options,
         price: Number(v.product_price),
         image: `${imageBase}${v.variant_image}`,
@@ -94,6 +104,7 @@ export function applyMerges(products: Product[], mergeConfig: MergeConfigEntry[]
         return {
           ...v,
           options,
+          slug: generateSlug(options),
         };
       })
     );

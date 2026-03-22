@@ -6,6 +6,7 @@ import { UserTable } from "@/app/api/(graphql)/user/db";
 import { razorpay } from "@/app/api/lib/razorpay";
 import { createQikinkOrder } from "@/app/api/lib/qikink";
 import { eq } from "drizzle-orm";
+import products from "@/data/products";
 
 function verifySignature(body: string, signature: string): boolean {
   const expected = crypto
@@ -73,6 +74,27 @@ export async function POST(req: NextRequest) {
       .from(LineItemTable)
       .where(eq(LineItemTable.orderId, order.id));
 
+    // Validate all variant SKUs exist in products data
+    const invalidItems = lineItems.filter((item) => {
+      return !products.some((p) =>
+        p.variants.some((v) => v.sku === item.skuId)
+      );
+    });
+
+    if (invalidItems.length > 0) {
+      console.error("Invalid variant SKUs found:", invalidItems.map((i) => i.skuId));
+      try {
+        await razorpay.payments.refund(payment.id, {
+          amount: payment.amount,
+          notes: { reason: `Invalid variant SKU: ${invalidItems.map((i) => i.skuId).join(", ")}` },
+        });
+        console.log("Refund issued for payment:", payment.id);
+      } catch (refundErr) {
+        console.error("Failed to issue refund for:", payment.id, refundErr);
+      }
+      return NextResponse.json({ status: "refunded" });
+    }
+
     // Fetch shipping address from Razorpay order (populated by Magic Checkout)
     // eslint-disable-next-line
     const razorpayOrder = await razorpay.orders.fetch(orderId) as any;
@@ -100,6 +122,15 @@ export async function POST(req: NextRequest) {
       await createQikinkOrder(orderId, order.amount, lineItems, shippingAddress);
     } catch (err) {
       console.error("Failed to create Qikink order for:", orderId, err);
+      try {
+        await razorpay.payments.refund(payment.id, {
+          amount: payment.amount,
+          notes: { reason: "Qikink order creation failed" },
+        });
+        console.log("Refund issued for payment:", payment.id);
+      } catch (refundErr) {
+        console.error("Failed to issue refund for:", payment.id, refundErr);
+      }
     }
   }
 

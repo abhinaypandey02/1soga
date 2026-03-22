@@ -9,7 +9,7 @@ import { Metadata } from "next";
 export function generateStaticParams() {
   return products.flatMap((product) => (product.variants.map(p=>({
     id: product.id,
-    variant: p.sku,
+    variant: p.slug,
   }))));
 }
 

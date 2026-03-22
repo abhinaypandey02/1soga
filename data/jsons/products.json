@@ -13,7 +13,8 @@
     ],
     "variants": [
       {
-        "sku": "31957597-UOsTMRnHs-OFw-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83OU",
+        "slug": "oversized-thick-off-white-s",
         "options": [
           {
             "type": "Material",
@@ -35,7 +36,8 @@
         "featured": true
       },
       {
-        "sku": "31957597-UOsTMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Ka",
+        "slug": "oversized-thick-white-s",
         "options": [
           {
             "type": "Material",
@@ -57,7 +59,8 @@
         "featured": true
       },
       {
-        "sku": "31957597-UOsTMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Kb",
+        "slug": "oversized-thick-white-m",
         "options": [
           {
             "type": "Material",
@@ -78,7 +81,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83KU",
+        "slug": "oversized-thick-white-l",
         "options": [
           {
             "type": "Material",
@@ -99,7 +103,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83KV",
+        "slug": "oversized-thick-white-xl",
         "options": [
           {
             "type": "Material",
@@ -120,7 +125,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Oc",
+        "slug": "oversized-thick-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -141,7 +147,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Od",
+        "slug": "oversized-thick-white-xs",
         "options": [
           {
             "type": "Material",
@@ -162,7 +169,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Oe",
+        "slug": "oversized-thick-black-s",
         "options": [
           {
             "type": "Material",
@@ -184,7 +192,8 @@
         "featured": true
       },
       {
-        "sku": "31957597-UOsTMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Of",
+        "slug": "oversized-thick-black-m",
         "options": [
           {
             "type": "Material",
@@ -205,7 +214,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83OY",
+        "slug": "oversized-thick-black-l",
         "options": [
           {
             "type": "Material",
@@ -226,7 +236,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83OZ",
+        "slug": "oversized-thick-black-xl",
         "options": [
           {
             "type": "Material",
@@ -247,7 +258,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Oa",
+        "slug": "oversized-thick-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -268,7 +280,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Ob",
+        "slug": "oversized-thick-black-xs",
         "options": [
           {
             "type": "Material",
@@ -289,7 +302,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-OFw-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83OV",
+        "slug": "oversized-thick-off-white-m",
         "options": [
           {
             "type": "Material",
@@ -310,7 +324,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-OFw-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Cc",
+        "slug": "oversized-thick-off-white-l",
         "options": [
           {
             "type": "Material",
@@ -331,7 +346,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-OFw-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Cd",
+        "slug": "oversized-thick-off-white-xl",
         "options": [
           {
             "type": "Material",
@@ -352,7 +368,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-OFw-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Ce",
+        "slug": "oversized-thick-off-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -373,7 +390,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957597-UOsTMRnHs-OFw-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83Cf",
+        "slug": "oversized-thick-off-white-xs",
         "options": [
           {
             "type": "Material",
@@ -394,7 +412,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Ge",
+        "slug": "oversized-thin-white-s",
         "options": [
           {
             "type": "Material",
@@ -416,7 +435,8 @@
         "featured": true
       },
       {
-        "sku": "31957600-UOSsMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Gf",
+        "slug": "oversized-thin-white-m",
         "options": [
           {
             "type": "Material",
@@ -437,7 +457,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GY",
+        "slug": "oversized-thin-white-l",
         "options": [
           {
             "type": "Material",
@@ -458,7 +479,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GZ",
+        "slug": "oversized-thin-white-xl",
         "options": [
           {
             "type": "Material",
@@ -479,7 +501,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Ga",
+        "slug": "oversized-thin-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -500,7 +523,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83Gb",
+        "slug": "oversized-thin-white-xs",
         "options": [
           {
             "type": "Material",
@@ -521,7 +545,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GU",
+        "slug": "oversized-thin-black-s",
         "options": [
           {
             "type": "Material",
@@ -543,7 +568,8 @@
         "featured": true
       },
       {
-        "sku": "31957600-UOSsMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83GV",
+        "slug": "oversized-thin-black-m",
         "options": [
           {
             "type": "Material",
@@ -564,7 +590,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83ac",
+        "slug": "oversized-thin-black-l",
         "options": [
           {
             "type": "Material",
@@ -585,7 +612,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83ad",
+        "slug": "oversized-thin-black-xl",
         "options": [
           {
             "type": "Material",
@@ -606,7 +634,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83ae",
+        "slug": "oversized-thin-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -627,7 +656,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957600-UOSsMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcpubTVqwnZ83af",
+        "slug": "oversized-thin-black-xs",
         "options": [
           {
             "type": "Material",
@@ -662,7 +692,8 @@
     ],
     "variants": [
       {
-        "sku": "31957590-UBsCap-Nb-NA",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4pubTVqwnZ8HGZ",
+        "slug": "soga-navy-blue",
         "options": [
           {
             "type": "Print",
@@ -679,7 +710,8 @@
         "featured": true
       },
       {
-        "sku": "31957590-UBsCap-Wh-NA",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4pubTVqwnZ8HGf",
+        "slug": "soga-white",
         "options": [
           {
             "type": "Print",
@@ -696,7 +728,8 @@
         "featured": true
       },
       {
-        "sku": "31957590-UBsCap-Bk-NA",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4pubTVqwnZ8HGY",
+        "slug": "soga-black",
         "options": [
           {
             "type": "Print",
@@ -713,7 +746,8 @@
         "featured": true
       },
       {
-        "sku": "31957478-UBsCap-Wh-NA",
+        "sku": "v-9h6m0SSOaVZV2sIIMBAhubTVqwnY8XKe",
+        "slug": "sogabaddie-white",
         "options": [
           {
             "type": "Print",
@@ -730,7 +764,8 @@
         "featured": true
       },
       {
-        "sku": "31957478-UBsCap-Bk-NA",
+        "sku": "v-9h6m0SSOaVZV2sIIMBAhubTVqwnY8XKf",
+        "slug": "sogabaddie-black",
         "options": [
           {
             "type": "Print",
@@ -747,7 +782,8 @@
         "featured": true
       },
       {
-        "sku": "31957470-UBsCap-Wh-NA",
+        "sku": "v-9h6m0SSOaVZV2sIIMBApubTVqwnb-HOc",
+        "slug": "sogaboy-white",
         "options": [
           {
             "type": "Print",
@@ -764,7 +800,8 @@
         "featured": true
       },
       {
-        "sku": "31957470-UBsCap-Bk-NA",
+        "sku": "v-9h6m0SSOaVZV2sIIMBApubTVqwnb-HOd",
+        "slug": "sogaboy-black",
         "options": [
           {
             "type": "Print",
@@ -796,7 +833,8 @@
     ],
     "variants": [
       {
-        "sku": "31957430-UOsTMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nqa",
+        "slug": "oversized-thick-white-s",
         "options": [
           {
             "type": "Material",
@@ -818,7 +856,8 @@
         "featured": true
       },
       {
-        "sku": "31957411-UOSsMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8XGZ",
+        "slug": "oversized-thin-white-s",
         "options": [
           {
             "type": "Material",
@@ -840,7 +879,8 @@
         "featured": true
       },
       {
-        "sku": "31957411-UOSsMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8XGa",
+        "slug": "oversized-thin-white-m",
         "options": [
           {
             "type": "Material",
@@ -861,7 +901,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8XGb",
+        "slug": "oversized-thin-white-l",
         "options": [
           {
             "type": "Material",
@@ -882,7 +923,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8XGU",
+        "slug": "oversized-thin-white-xl",
         "options": [
           {
             "type": "Material",
@@ -903,7 +945,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8XGV",
+        "slug": "oversized-thin-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -924,7 +967,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8Xac",
+        "slug": "oversized-thin-white-xs",
         "options": [
           {
             "type": "Material",
@@ -945,7 +989,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8Xad",
+        "slug": "oversized-thin-black-s",
         "options": [
           {
             "type": "Material",
@@ -967,7 +1012,8 @@
         "featured": true
       },
       {
-        "sku": "31957411-UOSsMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8Xae",
+        "slug": "oversized-thin-black-m",
         "options": [
           {
             "type": "Material",
@@ -988,7 +1034,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8Xaf",
+        "slug": "oversized-thin-black-l",
         "options": [
           {
             "type": "Material",
@@ -1009,7 +1056,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8XaY",
+        "slug": "oversized-thin-black-xl",
         "options": [
           {
             "type": "Material",
@@ -1030,7 +1078,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8XaZ",
+        "slug": "oversized-thin-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -1051,7 +1100,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957411-UOSsMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBYoubTVqwnb8Xaa",
+        "slug": "oversized-thin-black-xs",
         "options": [
           {
             "type": "Material",
@@ -1072,7 +1122,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nqb",
+        "slug": "oversized-thick-white-m",
         "options": [
           {
             "type": "Material",
@@ -1093,7 +1144,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nqU",
+        "slug": "oversized-thick-white-l",
         "options": [
           {
             "type": "Material",
@@ -1114,7 +1166,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nqV",
+        "slug": "oversized-thick-white-xl",
         "options": [
           {
             "type": "Material",
@@ -1135,7 +1188,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nuc",
+        "slug": "oversized-thick-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -1156,7 +1210,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nud",
+        "slug": "oversized-thick-white-xs",
         "options": [
           {
             "type": "Material",
@@ -1177,7 +1232,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nue",
+        "slug": "oversized-thick-black-s",
         "options": [
           {
             "type": "Material",
@@ -1199,7 +1255,8 @@
         "featured": true
       },
       {
-        "sku": "31957430-UOsTMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nuf",
+        "slug": "oversized-thick-black-m",
         "options": [
           {
             "type": "Material",
@@ -1220,7 +1277,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nuY",
+        "slug": "oversized-thick-black-l",
         "options": [
           {
             "type": "Material",
@@ -1241,7 +1299,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nuZ",
+        "slug": "oversized-thick-black-xl",
         "options": [
           {
             "type": "Material",
@@ -1262,7 +1321,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nua",
+        "slug": "oversized-thick-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -1283,7 +1343,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nub",
+        "slug": "oversized-thick-black-xs",
         "options": [
           {
             "type": "Material",
@@ -1304,7 +1365,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-OFw-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nuU",
+        "slug": "oversized-thick-off-white-s",
         "options": [
           {
             "type": "Material",
@@ -1326,7 +1388,8 @@
         "featured": true
       },
       {
-        "sku": "31957430-UOsTMRnHs-OFw-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nuV",
+        "slug": "oversized-thick-off-white-m",
         "options": [
           {
             "type": "Material",
@@ -1347,7 +1410,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-OFw-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb9XKc",
+        "slug": "oversized-thick-off-white-l",
         "options": [
           {
             "type": "Material",
@@ -1368,7 +1432,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-OFw-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb9XKd",
+        "slug": "oversized-thick-off-white-xl",
         "options": [
           {
             "type": "Material",
@@ -1389,7 +1454,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-OFw-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb9XKe",
+        "slug": "oversized-thick-off-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -1410,7 +1476,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957430-UOsTMRnHs-OFw-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQpubTVqwnb9XKf",
+        "slug": "oversized-thick-off-white-xs",
         "options": [
           {
             "type": "Material",
@@ -1431,7 +1498,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XeY",
+        "slug": "regular-white-s",
         "options": [
           {
             "type": "Material",
@@ -1453,7 +1521,8 @@
         "featured": true
       },
       {
-        "sku": "31958588-UCoSRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XeZ",
+        "slug": "regular-white-m",
         "options": [
           {
             "type": "Material",
@@ -1474,7 +1543,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9Xea",
+        "slug": "regular-white-l",
         "options": [
           {
             "type": "Material",
@@ -1495,7 +1565,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9Xeb",
+        "slug": "regular-white-xl",
         "options": [
           {
             "type": "Material",
@@ -1516,7 +1587,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XeU",
+        "slug": "regular-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -1537,7 +1609,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XeV",
+        "slug": "regular-white-xs",
         "options": [
           {
             "type": "Material",
@@ -1558,7 +1631,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XSc",
+        "slug": "regular-black-s",
         "options": [
           {
             "type": "Material",
@@ -1580,7 +1654,8 @@
         "featured": true
       },
       {
-        "sku": "31958588-UCoSRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XSd",
+        "slug": "regular-black-m",
         "options": [
           {
             "type": "Material",
@@ -1601,7 +1676,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XSe",
+        "slug": "regular-black-l",
         "options": [
           {
             "type": "Material",
@@ -1622,7 +1698,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XSf",
+        "slug": "regular-black-xl",
         "options": [
           {
             "type": "Material",
@@ -1643,7 +1720,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XSY",
+        "slug": "regular-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -1664,7 +1742,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958588-UCoSRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIHMR8hubTVqw_d9XSZ",
+        "slug": "regular-black-xs",
         "options": [
           {
             "type": "Material",
@@ -1700,7 +1779,8 @@
     ],
     "variants": [
       {
-        "sku": "31957404-FBbyTrnHs-LBp-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCb",
+        "slug": "pink-light-baby-pink-s",
         "options": [
           {
             "type": "Text",
@@ -1722,7 +1802,8 @@
         "featured": true
       },
       {
-        "sku": "31957404-FBbyTrnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HOZ",
+        "slug": "pink-white-s",
         "options": [
           {
             "type": "Text",
@@ -1744,7 +1825,8 @@
         "featured": true
       },
       {
-        "sku": "31957404-FBbyTrnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HOa",
+        "slug": "pink-white-m",
         "options": [
           {
             "type": "Text",
@@ -1765,7 +1847,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HOb",
+        "slug": "pink-white-l",
         "options": [
           {
             "type": "Text",
@@ -1786,7 +1869,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HOU",
+        "slug": "pink-white-xl",
         "options": [
           {
             "type": "Text",
@@ -1807,7 +1891,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HOV",
+        "slug": "pink-white-xxl",
         "options": [
           {
             "type": "Text",
@@ -1828,7 +1913,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCc",
+        "slug": "pink-white-xs",
         "options": [
           {
             "type": "Text",
@@ -1849,7 +1935,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCd",
+        "slug": "pink-black-s",
         "options": [
           {
             "type": "Text",
@@ -1871,7 +1958,8 @@
         "featured": true
       },
       {
-        "sku": "31957404-FBbyTrnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCe",
+        "slug": "pink-black-m",
         "options": [
           {
             "type": "Text",
@@ -1892,7 +1980,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCf",
+        "slug": "pink-black-l",
         "options": [
           {
             "type": "Text",
@@ -1913,7 +2002,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCY",
+        "slug": "pink-black-xl",
         "options": [
           {
             "type": "Text",
@@ -1934,7 +2024,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCZ",
+        "slug": "pink-black-xxl",
         "options": [
           {
             "type": "Text",
@@ -1955,7 +2046,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCa",
+        "slug": "pink-black-xs",
         "options": [
           {
             "type": "Text",
@@ -1976,7 +2068,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-LBp-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCU",
+        "slug": "pink-light-baby-pink-m",
         "options": [
           {
             "type": "Text",
@@ -1997,7 +2090,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-LBp-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCV",
+        "slug": "pink-light-baby-pink-l",
         "options": [
           {
             "type": "Text",
@@ -2018,7 +2112,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-LBp-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HGc",
+        "slug": "pink-light-baby-pink-xl",
         "options": [
           {
             "type": "Text",
@@ -2039,7 +2134,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-LBp-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HGd",
+        "slug": "pink-light-baby-pink-xxl",
         "options": [
           {
             "type": "Text",
@@ -2060,7 +2156,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957404-FBbyTrnHs-LBp-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBctubTVqwna-HGe",
+        "slug": "pink-light-baby-pink-xs",
         "options": [
           {
             "type": "Text",
@@ -2081,7 +2178,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nuZ",
+        "slug": "red-white-s",
         "options": [
           {
             "type": "Text",
@@ -2103,7 +2201,8 @@
         "featured": true
       },
       {
-        "sku": "31957397-FBbyTrnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nua",
+        "slug": "red-white-m",
         "options": [
           {
             "type": "Text",
@@ -2124,7 +2223,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nub",
+        "slug": "red-white-l",
         "options": [
           {
             "type": "Text",
@@ -2145,7 +2245,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nuU",
+        "slug": "red-white-xl",
         "options": [
           {
             "type": "Text",
@@ -2166,7 +2267,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna9nuV",
+        "slug": "red-white-xxl",
         "options": [
           {
             "type": "Text",
@@ -2187,7 +2289,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKc",
+        "slug": "red-white-xs",
         "options": [
           {
             "type": "Text",
@@ -2208,7 +2311,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKd",
+        "slug": "red-black-s",
         "options": [
           {
             "type": "Text",
@@ -2230,7 +2334,8 @@
         "featured": true
       },
       {
-        "sku": "31957397-FBbyTrnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKe",
+        "slug": "red-black-m",
         "options": [
           {
             "type": "Text",
@@ -2251,7 +2356,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKf",
+        "slug": "red-black-l",
         "options": [
           {
             "type": "Text",
@@ -2272,7 +2378,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKY",
+        "slug": "red-black-xl",
         "options": [
           {
             "type": "Text",
@@ -2293,7 +2400,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKZ",
+        "slug": "red-black-xxl",
         "options": [
           {
             "type": "Text",
@@ -2314,7 +2422,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-303/1753850915sizechart.png"
       },
       {
-        "sku": "31957397-FBbyTrnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIINx4uubTVqwna-XKa",
+        "slug": "red-black-xs",
         "options": [
           {
             "type": "Text",
@@ -2349,7 +2458,8 @@
     ],
     "variants": [
       {
-        "sku": "31957595-UCCM-Wh-Red",
+        "sku": "v-9h6m0SSOaVZV2sIIMR4subTVqwnZ83KY",
+        "slug": "red-soga",
         "options": [
           {
             "type": "Style",
@@ -2366,7 +2476,8 @@
         "featured": true
       },
       {
-        "sku": "31957602-UWCM-Wh-11 OZ",
+        "sku": "v-9h6m0SSOaVZV2sIIMhcrubTVqwnZ83ed",
+        "slug": "white-soga",
         "options": [
           {
             "type": "Style",
@@ -2383,7 +2494,8 @@
         "featured": true
       },
       {
-        "sku": "31957496-UWCM-Wh-11 OZ",
+        "sku": "v-9h6m0SSOaVZV2sIIMB4vubTVqwnY83Kd",
+        "slug": "white-sogaboy",
         "options": [
           {
             "type": "Style",
@@ -2400,7 +2512,8 @@
         "featured": true
       },
       {
-        "sku": "31957492-UWCM-Wh-11 OZ",
+        "sku": "v-9h6m0SSOaVZV2sIIMB4rubTVqwnY8HWY",
+        "slug": "white-sogabaddie",
         "options": [
           {
             "type": "Style",
@@ -2433,7 +2546,8 @@
     ],
     "variants": [
       {
-        "sku": "31958571-UCoSRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCe",
+        "slug": "regular-pink-black-s",
         "options": [
           {
             "type": "Material",
@@ -2459,7 +2573,8 @@
         "featured": true
       },
       {
-        "sku": "31957441-UOsTMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HKa",
+        "slug": "oversized-thick-pink-white-s",
         "options": [
           {
             "type": "Material",
@@ -2485,7 +2600,8 @@
         "featured": true
       },
       {
-        "sku": "31957441-UOsTMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HKb",
+        "slug": "oversized-thick-pink-white-m",
         "options": [
           {
             "type": "Material",
@@ -2510,7 +2626,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HKU",
+        "slug": "oversized-thick-pink-white-l",
         "options": [
           {
             "type": "Material",
@@ -2535,7 +2652,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HKV",
+        "slug": "oversized-thick-pink-white-xl",
         "options": [
           {
             "type": "Material",
@@ -2560,7 +2678,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOc",
+        "slug": "oversized-thick-pink-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -2585,7 +2704,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOd",
+        "slug": "oversized-thick-pink-white-xs",
         "options": [
           {
             "type": "Material",
@@ -2610,7 +2730,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOe",
+        "slug": "oversized-thick-pink-black-s",
         "options": [
           {
             "type": "Material",
@@ -2636,7 +2757,8 @@
         "featured": true
       },
       {
-        "sku": "31957441-UOsTMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOf",
+        "slug": "oversized-thick-pink-black-m",
         "options": [
           {
             "type": "Material",
@@ -2661,7 +2783,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOY",
+        "slug": "oversized-thick-pink-black-l",
         "options": [
           {
             "type": "Material",
@@ -2686,7 +2809,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOZ",
+        "slug": "oversized-thick-pink-black-xl",
         "options": [
           {
             "type": "Material",
@@ -2711,7 +2835,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOa",
+        "slug": "oversized-thick-pink-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -2736,7 +2861,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOb",
+        "slug": "oversized-thick-pink-black-xs",
         "options": [
           {
             "type": "Material",
@@ -2761,7 +2887,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-LBp-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOU",
+        "slug": "oversized-thick-pink-light-baby-pink-s",
         "options": [
           {
             "type": "Material",
@@ -2787,7 +2914,8 @@
         "featured": true
       },
       {
-        "sku": "31957441-UOsTMRnHs-LBp-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HOV",
+        "slug": "oversized-thick-pink-light-baby-pink-m",
         "options": [
           {
             "type": "Material",
@@ -2812,7 +2940,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-LBp-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HCc",
+        "slug": "oversized-thick-pink-light-baby-pink-l",
         "options": [
           {
             "type": "Material",
@@ -2837,7 +2966,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-LBp-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HCd",
+        "slug": "oversized-thick-pink-light-baby-pink-xl",
         "options": [
           {
             "type": "Material",
@@ -2862,7 +2992,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-LBp-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HCe",
+        "slug": "oversized-thick-pink-light-baby-pink-xxl",
         "options": [
           {
             "type": "Material",
@@ -2887,7 +3018,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957441-UOsTMRnHs-LBp-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBMoubTVqwnb9HCf",
+        "slug": "oversized-thick-pink-light-baby-pink-xs",
         "options": [
           {
             "type": "Material",
@@ -2912,7 +3044,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8HqZ",
+        "slug": "oversized-thin-pink-white-s",
         "options": [
           {
             "type": "Material",
@@ -2937,7 +3070,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Hqa",
+        "slug": "oversized-thin-pink-white-m",
         "options": [
           {
             "type": "Material",
@@ -2962,7 +3096,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Hqb",
+        "slug": "oversized-thin-pink-white-l",
         "options": [
           {
             "type": "Material",
@@ -2987,7 +3122,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8HqU",
+        "slug": "oversized-thin-pink-white-xl",
         "options": [
           {
             "type": "Material",
@@ -3012,7 +3148,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8HqV",
+        "slug": "oversized-thin-pink-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -3037,7 +3174,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Huc",
+        "slug": "oversized-thin-pink-white-xs",
         "options": [
           {
             "type": "Material",
@@ -3062,7 +3200,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Hud",
+        "slug": "oversized-thin-pink-black-s",
         "options": [
           {
             "type": "Material",
@@ -3087,7 +3226,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Hue",
+        "slug": "oversized-thin-pink-black-m",
         "options": [
           {
             "type": "Material",
@@ -3112,7 +3252,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Huf",
+        "slug": "oversized-thin-pink-black-l",
         "options": [
           {
             "type": "Material",
@@ -3137,7 +3278,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8HuY",
+        "slug": "oversized-thin-pink-black-xl",
         "options": [
           {
             "type": "Material",
@@ -3162,7 +3304,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8HuZ",
+        "slug": "oversized-thin-pink-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -3187,7 +3330,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Hua",
+        "slug": "oversized-thin-pink-black-xs",
         "options": [
           {
             "type": "Material",
@@ -3212,7 +3356,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-LBp-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8Hub",
+        "slug": "oversized-thin-pink-light-baby-pink-s",
         "options": [
           {
             "type": "Material",
@@ -3237,7 +3382,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-LBp-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8HuU",
+        "slug": "oversized-thin-pink-light-baby-pink-m",
         "options": [
           {
             "type": "Material",
@@ -3262,7 +3408,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-LBp-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb8HuV",
+        "slug": "oversized-thin-pink-light-baby-pink-l",
         "options": [
           {
             "type": "Material",
@@ -3287,7 +3434,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-LBp-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb83Kc",
+        "slug": "oversized-thin-pink-light-baby-pink-xl",
         "options": [
           {
             "type": "Material",
@@ -3312,7 +3460,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-LBp-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb83Kd",
+        "slug": "oversized-thin-pink-light-baby-pink-xxl",
         "options": [
           {
             "type": "Material",
@@ -3337,7 +3486,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957420-UOSsMRnHs-LBp-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUpubTVqwnb83Ke",
+        "slug": "oversized-thin-pink-light-baby-pink-xs",
         "options": [
           {
             "type": "Material",
@@ -3362,7 +3512,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nOa",
+        "slug": "regular-pink-white-s",
         "options": [
           {
             "type": "Material",
@@ -3387,7 +3538,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nOb",
+        "slug": "regular-pink-white-m",
         "options": [
           {
             "type": "Material",
@@ -3412,7 +3564,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nOU",
+        "slug": "regular-pink-white-l",
         "options": [
           {
             "type": "Material",
@@ -3437,7 +3590,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nOV",
+        "slug": "regular-pink-white-xl",
         "options": [
           {
             "type": "Material",
@@ -3462,7 +3616,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCc",
+        "slug": "regular-pink-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -3487,7 +3642,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCd",
+        "slug": "regular-pink-white-xs",
         "options": [
           {
             "type": "Material",
@@ -3512,7 +3668,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCf",
+        "slug": "regular-pink-black-m",
         "options": [
           {
             "type": "Material",
@@ -3537,7 +3694,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCY",
+        "slug": "regular-pink-black-l",
         "options": [
           {
             "type": "Material",
@@ -3562,7 +3720,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCZ",
+        "slug": "regular-pink-black-xl",
         "options": [
           {
             "type": "Material",
@@ -3587,7 +3746,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCa",
+        "slug": "regular-pink-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -3612,7 +3772,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCb",
+        "slug": "regular-pink-black-xs",
         "options": [
           {
             "type": "Material",
@@ -3637,7 +3798,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-LBp-S",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCU",
+        "slug": "regular-pink-light-baby-pink-s",
         "options": [
           {
             "type": "Material",
@@ -3662,7 +3824,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-LBp-M",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCV",
+        "slug": "regular-pink-light-baby-pink-m",
         "options": [
           {
             "type": "Material",
@@ -3687,7 +3850,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-LBp-L",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nGc",
+        "slug": "regular-pink-light-baby-pink-l",
         "options": [
           {
             "type": "Material",
@@ -3712,7 +3876,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-LBp-XL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nGd",
+        "slug": "regular-pink-light-baby-pink-xl",
         "options": [
           {
             "type": "Material",
@@ -3737,7 +3902,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-LBp-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nGe",
+        "slug": "regular-pink-light-baby-pink-xxl",
         "options": [
           {
             "type": "Material",
@@ -3762,7 +3928,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958571-UCoSRnHs-LBp-XS",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nGf",
+        "slug": "regular-pink-light-baby-pink-xs",
         "options": [
           {
             "type": "Material",
@@ -3787,7 +3954,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Od",
+        "slug": "oversized-thin-red-white-s",
         "options": [
           {
             "type": "Material",
@@ -3813,7 +3981,8 @@
         "featured": true
       },
       {
-        "sku": "31957422-UOSsMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Oe",
+        "slug": "oversized-thin-red-white-m",
         "options": [
           {
             "type": "Material",
@@ -3838,7 +4007,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Of",
+        "slug": "oversized-thin-red-white-l",
         "options": [
           {
             "type": "Material",
@@ -3863,7 +4033,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83OY",
+        "slug": "oversized-thin-red-white-xl",
         "options": [
           {
             "type": "Material",
@@ -3888,7 +4059,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83OZ",
+        "slug": "oversized-thin-red-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -3913,7 +4085,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Oa",
+        "slug": "oversized-thin-red-white-xs",
         "options": [
           {
             "type": "Material",
@@ -3938,7 +4111,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Ob",
+        "slug": "oversized-thin-red-black-s",
         "options": [
           {
             "type": "Material",
@@ -3964,7 +4138,8 @@
         "featured": true
       },
       {
-        "sku": "31957422-UOSsMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83OU",
+        "slug": "oversized-thin-red-black-m",
         "options": [
           {
             "type": "Material",
@@ -3989,7 +4164,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83OV",
+        "slug": "oversized-thin-red-black-l",
         "options": [
           {
             "type": "Material",
@@ -4014,7 +4190,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Cc",
+        "slug": "oversized-thin-red-black-xl",
         "options": [
           {
             "type": "Material",
@@ -4039,7 +4216,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Cd",
+        "slug": "oversized-thin-red-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -4064,7 +4242,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957422-UOSsMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBUrubTVqwnb83Ce",
+        "slug": "oversized-thin-red-black-xs",
         "options": [
           {
             "type": "Material",
@@ -4089,7 +4268,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-28/1754893560sizechart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XaY",
+        "slug": "oversized-thick-red-white-s",
         "options": [
           {
             "type": "Material",
@@ -4114,7 +4294,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XaZ",
+        "slug": "oversized-thick-red-white-m",
         "options": [
           {
             "type": "Material",
@@ -4139,7 +4320,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xaa",
+        "slug": "oversized-thick-red-white-l",
         "options": [
           {
             "type": "Material",
@@ -4164,7 +4346,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xab",
+        "slug": "oversized-thick-red-white-xl",
         "options": [
           {
             "type": "Material",
@@ -4189,7 +4372,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XaU",
+        "slug": "oversized-thick-red-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -4214,7 +4398,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XaV",
+        "slug": "oversized-thick-red-white-xs",
         "options": [
           {
             "type": "Material",
@@ -4239,7 +4424,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xec",
+        "slug": "oversized-thick-red-black-s",
         "options": [
           {
             "type": "Material",
@@ -4264,7 +4450,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xed",
+        "slug": "oversized-thick-red-black-m",
         "options": [
           {
             "type": "Material",
@@ -4289,7 +4476,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xee",
+        "slug": "oversized-thick-red-black-l",
         "options": [
           {
             "type": "Material",
@@ -4314,7 +4502,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xef",
+        "slug": "oversized-thick-red-black-xl",
         "options": [
           {
             "type": "Material",
@@ -4339,7 +4528,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XeY",
+        "slug": "oversized-thick-red-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -4364,7 +4554,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XeZ",
+        "slug": "oversized-thick-red-black-xs",
         "options": [
           {
             "type": "Material",
@@ -4389,7 +4580,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-OFw-S",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xea",
+        "slug": "oversized-thick-red-off-white-s",
         "options": [
           {
             "type": "Material",
@@ -4415,7 +4607,8 @@
         "featured": true
       },
       {
-        "sku": "31957437-UOsTMRnHs-OFw-M",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9Xeb",
+        "slug": "oversized-thick-red-off-white-m",
         "options": [
           {
             "type": "Material",
@@ -4440,7 +4633,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-OFw-L",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XeU",
+        "slug": "oversized-thick-red-off-white-l",
         "options": [
           {
             "type": "Material",
@@ -4465,7 +4659,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-OFw-XL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XeV",
+        "slug": "oversized-thick-red-off-white-xl",
         "options": [
           {
             "type": "Material",
@@ -4490,7 +4685,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-OFw-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XSc",
+        "slug": "oversized-thick-red-off-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -4515,7 +4711,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31957437-UOsTMRnHs-OFw-XS",
+        "sku": "v-9h6m0SSOaVZV2sIIMBQuubTVqwnb9XSd",
+        "slug": "oversized-thick-red-off-white-xs",
         "options": [
           {
             "type": "Material",
@@ -4540,7 +4737,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-44/1744976688TerryteeSizeChart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Wh-S",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nWU",
+        "slug": "regular-red-white-s",
         "options": [
           {
             "type": "Material",
@@ -4565,7 +4763,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Wh-M",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nWV",
+        "slug": "regular-red-white-m",
         "options": [
           {
             "type": "Material",
@@ -4590,7 +4789,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Wh-L",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqc",
+        "slug": "regular-red-white-l",
         "options": [
           {
             "type": "Material",
@@ -4615,7 +4815,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Wh-XL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqd",
+        "slug": "regular-red-white-xl",
         "options": [
           {
             "type": "Material",
@@ -4640,7 +4841,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Wh-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqe",
+        "slug": "regular-red-white-xxl",
         "options": [
           {
             "type": "Material",
@@ -4665,7 +4867,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Wh-XS",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqf",
+        "slug": "regular-red-white-xs",
         "options": [
           {
             "type": "Material",
@@ -4690,7 +4893,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Bk-S",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqY",
+        "slug": "regular-red-black-s",
         "options": [
           {
             "type": "Material",
@@ -4715,7 +4919,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Bk-M",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqZ",
+        "slug": "regular-red-black-m",
         "options": [
           {
             "type": "Material",
@@ -4740,7 +4945,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Bk-L",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqa",
+        "slug": "regular-red-black-l",
         "options": [
           {
             "type": "Material",
@@ -4765,7 +4971,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Bk-XL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqb",
+        "slug": "regular-red-black-xl",
         "options": [
           {
             "type": "Material",
@@ -4790,7 +4997,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Bk-XXL",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqU",
+        "slug": "regular-red-black-xxl",
         "options": [
           {
             "type": "Material",
@@ -4815,7 +5023,8 @@
         "sizeChartLink": "https://products.qikink.com/assets/admin/uploads/mockup-281/1749899606sizechart.png"
       },
       {
-        "sku": "31958575-UCoSRnHs-Bk-XS",
+        "sku": "v-9h6m0SSOaVZV2sIHMRAsubTVqw_d8nqV",
+        "slug": "regular-red-black-xs",
         "options": [
           {
             "type": "Material",

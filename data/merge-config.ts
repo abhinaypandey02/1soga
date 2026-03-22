@@ -9,7 +9,7 @@ export const mergeConfig: MergeConfigEntry[] = [
       { variants: { Material:"Oversized (Thick)" }, product_id: "31957597" },
       { variants: { Material:"Oversized (Thin)" }, product_id: "31957600" },
     ],
-    featuredSKU:"31957597-UOsTMRnHs-OFw-S",
+    featuredSKU:"v-9h6m0SSOaVZV2sIIMR4uubTVqwnZ83OU",
   },
 
   {
@@ -21,7 +21,7 @@ export const mergeConfig: MergeConfigEntry[] = [
       { variants: { Print:"sogabaddie" }, product_id: "31957478" },
       { variants: { Print:"sogaboy" }, product_id: "31957470" },
     ],
-    featuredSKU:"31957590-UBsCap-Nb-NA"
+    featuredSKU:"v-9h6m0SSOaVZV2sIIMR4pubTVqwnZ8HGZ"
   },
   {
     id:"sogaboy-tee",
@@ -32,7 +32,7 @@ export const mergeConfig: MergeConfigEntry[] = [
       { variants: { Material:"Oversized (Thick)" }, product_id: "31957430" },
       { variants: { Material:"Regular" }, product_id: "31958588" },
     ],
-    featuredSKU:"31957430-UOsTMRnHs-Wh-S"
+    featuredSKU:"v-9h6m0SSOaVZV2sIIMBQpubTVqwnb8nqa"
   },
 
   {
@@ -43,7 +43,7 @@ export const mergeConfig: MergeConfigEntry[] = [
       { variants: { Text:"Pink" }, product_id: "31957404" },
       { variants: { Text:"Red" }, product_id: "31957397" },
     ],
-    featuredSKU:"31957404-FBbyTrnHs-LBp-S"
+    featuredSKU:"v-9h6m0SSOaVZV2sIIMBctubTVqwna-HCb"
   },
 
   {
@@ -56,7 +56,7 @@ export const mergeConfig: MergeConfigEntry[] = [
       { variants: { Style: "White", Print:"sogaboy" }, product_id: "31957496" },
       { variants: { Style: "White", Print:"sogabaddie" }, product_id: "31957492" },
     ],
-    featuredSKU:"31957595-UCCM-Wh-Red"
+    featuredSKU:"v-9h6m0SSOaVZV2sIIMR4subTVqwnZ83KY"
   },
   {
     id:"sogabaddie-tee",
@@ -70,7 +70,7 @@ export const mergeConfig: MergeConfigEntry[] = [
       { variants: { Material:"Oversized (Thick)", Text:"Red" }, product_id: "31957437" },
       { variants: { Material:"Regular", Text:"Red" }, product_id: "31958575" },
     ],
-    featuredSKU:"31958571-UCoSRnHs-Bk-S",
+    featuredSKU:"v-9h6m0SSOaVZV2sIHMRAoubTVqw_d8nCe",
     ignoredFeaturedFields:["Size","Material"]
   },
 
