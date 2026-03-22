@@ -117,6 +117,7 @@ export type VariantOption = {
 
 export type Variant = {
   sku: string;
+  slug: string;
   options: VariantOption[];
   price?: number;
   image?: string;

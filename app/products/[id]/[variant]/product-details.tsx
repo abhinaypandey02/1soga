@@ -84,7 +84,7 @@ export default function ProductDetails({ product, variant }: {
   const selected = useMemo(() => {
     const selections: Record<string, string> = {};
     const initialVariant = variant
-      ? product.variants.find((v) => v.sku === decodeURIComponent(variant))
+      ? product.variants.find((v) => v.slug === decodeURIComponent(variant))
       : undefined;
     const source = initialVariant ?? product.variants[0];
     for (const opt of source.options) {
@@ -140,16 +140,16 @@ export default function ProductDetails({ product, variant }: {
 
         <div className="mt-3 flex gap-2 flex-wrap">
           {featuredVariants.map((v) => {
-            const isActive = matchedVariant?.sku === v.sku ||
+            const isActive = matchedVariant?.slug === v.slug ||
               (v.image && displayImage === v.image);
-            const url = `/products/${product.id}/${(v?.sku)}`
+            const url = `/products/${product.id}/${v.slug}`
 
             return (
                 <LinkWrapper className={`relative h-16 w-16 overflow-hidden border-2 transition-all duration-200 ${
                   isActive
                     ? "border-[var(--accent)]"
                     : "border-[var(--border)] hover:border-[var(--foreground)]"
-                }`} key={v.sku} href={matchedVariant?url:null} scroll={false}>
+                }`} key={v.slug} href={matchedVariant?url:null} scroll={false}>
 
                 <Image
                   src={v.image!}
@@ -205,10 +205,10 @@ export default function ProductDetails({ product, variant }: {
                     type,
                     value
                   );
-                  const variantId = findVariant(product.variants, {...selected, [type]:value})?.sku
-                  const url = `/products/${product.id}/${variantId}`
+                  const variantSlug = findVariant(product.variants, {...selected, [type]:value})?.slug
+                  const url = `/products/${product.id}/${variantSlug}`
                   return (
-                    <LinkWrapper key={value} href={variantId?url:null} scroll={false}>
+                    <LinkWrapper key={value} href={variantSlug?url:null} scroll={false}>
                       <OptionButton
                         disabled={!available}
                         selected={isSelected}

@@ -41,7 +41,7 @@ export default function YouMayAlsoLike({ currentProductId }: { currentProductId:
         {suggestions.map((product) => (
           <Link
             key={product.id}
-            href={`/products/${product.id}/${product.variants[0].sku}`}
+            href={`/products/${product.id}/${product.variants[0].slug}`}
             className="product-card group border-2 border-[var(--border)] bg-[var(--surface)]"
           >
             <div className="relative aspect-square overflow-hidden bg-neutral-100">
