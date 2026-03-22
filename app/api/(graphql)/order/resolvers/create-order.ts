@@ -4,7 +4,6 @@ import {Field, InputType} from "type-graphql";
 import {db} from "@/app/api/lib/db";
 import {OrderTable, LineItemTable} from "@/app/api/(graphql)/order/db";
 import { razorpay } from "@/app/api/lib/razorpay";
-import { DELIVERY_FEE } from "@/lib/checkout/constants";
 
 @InputType("LineItem")
 class LineItem{
@@ -50,8 +49,6 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
       name: product.name,
     });
   }
-
-  totalAmountInPaise += DELIVERY_FEE * 100;
 
   const order = await razorpay.orders.create({
     amount: totalAmountInPaise,
