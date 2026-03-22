@@ -113,7 +113,7 @@ export async function POST(req: NextRequest) {
       first_name: firstName,
       last_name: lastName,
       address1: shipping.line1 || "",
-      address2: shipping.line2 || "",
+      address2: shipping.line2 ? `${shipping.line2}${shipping.landmark ? ` (${shipping.landmark})` : ""}` : "",
       phone: shipping.contact || "",
       email: customerDetails.email || payment.email || "",
       city: shipping.city || "",
