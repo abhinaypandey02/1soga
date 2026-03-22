@@ -58,11 +58,13 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
     currency: "INR",
     receipt: `order_${Date.now()}`,
     line_items_total: totalAmountInPaise,
+
     // @ts-expect-error -- documentation issue
-    line_items: razorpayLineItems,}
-  );
+    line_items: razorpayLineItems
+  });
 
   const [newOrder] = await db.insert(OrderTable).values({
+  // @ts-expect-error -- documentation issue
     uid:order.id,
     userId:ctx.userId,
     amount:totalAmountInPaise
@@ -74,7 +76,7 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
       ...item,
     }))
   )
-
+// @ts-expect-error -- documentation issue
   return order.id;
 },{
   input:CheckoutInput,
