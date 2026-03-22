@@ -1,9 +1,11 @@
 import products from "@/data/products";
 import {resolver} from "naystack/graphql";
-import {Field, InputType} from "type-graphql";
+import {Field, InputType, ObjectType} from "type-graphql";
 import {db} from "@/app/api/lib/db";
 import {OrderTable, LineItemTable} from "@/app/api/(graphql)/order/db";
+import {UserTable} from "@/app/api/(graphql)/user/db";
 import { razorpay } from "@/app/api/lib/razorpay";
+import {eq} from "drizzle-orm";
 
 @InputType("LineItem")
 class LineItem{
@@ -17,6 +19,18 @@ class LineItem{
 class CheckoutInput{
   @Field(()=>[LineItem])
   lineItems:LineItem[]
+}
+
+@ObjectType("CreateOrderResponse")
+class CreateOrderResponse {
+  @Field()
+  orderId: string;
+  @Field()
+  amount: number;
+  @Field()
+  user_email: string;
+  @Field({nullable: true})
+  user_phone?: string;
 }
 
 export default resolver(async (ctx, data:CheckoutInput)=>{
@@ -73,10 +87,21 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
       ...item,
     }))
   )
-// @ts-expect-error -- documentation issue
-  return order.id;
+
+  const [user] = await db
+    .select({ email: UserTable.email, phone: UserTable.phone })
+    .from(UserTable)
+    .where(eq(UserTable.id, ctx.userId!));
+
+  return {
+    // @ts-expect-error -- documentation issue
+    orderId: order.id,
+    amount: totalAmountInPaise,
+    user_email: user.email,
+    user_phone: user.phone,
+  };
 },{
   input:CheckoutInput,
-  output:String,
+  output:CreateOrderResponse,
   mutation:true
 })

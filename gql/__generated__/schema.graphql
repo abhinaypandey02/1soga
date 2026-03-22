@@ -242,8 +242,15 @@ input LineItem {
   skuId: String!
 }
 
+type CreateOrderResponse {
+  amount: Float!
+  orderId: String!
+  user_email: String!
+  user_phone: String
+}
+
 type Mutation {
-  createOrder(input: CheckoutInput!): String!
+  createOrder(input: CheckoutInput!): CreateOrderResponse!
   updateCurrentUser(input: UpdateUserInput!): User!
 }
 

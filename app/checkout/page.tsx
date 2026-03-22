@@ -50,7 +50,6 @@ export default function CheckoutPage() {
     try {
       await checkout(
         items.map((i) => ({ skuId: i.skuId, quantity: i.quantity })),
-        total,
         `${lineItems.length} item(s)`
       );
     } catch (err) {
