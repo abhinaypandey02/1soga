@@ -4,6 +4,8 @@ export const POST = async (req: NextRequest)=>{
     const data = await req.json()
     console.log("data", JSON.stringify(data,null,2))
     const response = {
+        order_id: data.order_id,
+        razorpay_order_id: data.razorpay_order_id,
         addresses:data.addresses.map((address:object)=>({
       ...address,
       "serviceable": true,
