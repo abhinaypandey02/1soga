@@ -49,17 +49,10 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
 
   totalAmountInPaise += DELIVERY_FEE * 100;
 
-  const notes: Record<string, string> = {};
-  resolvedItems.forEach((item, i) => {
-    notes[`sku_${i}`] = item.skuId;
-    notes[`qty_${i}`] = String(item.quantity);
-  });
-
   const order = await razorpay.orders.create({
     amount: totalAmountInPaise,
     currency: "INR",
     receipt: `order_${Date.now()}`,
-    notes,
   });
 
   const [newOrder] = await db.insert(OrderTable).values({
