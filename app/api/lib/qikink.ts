@@ -2,11 +2,46 @@ import {OrderDB} from "@/app/api/(graphql)/order/db";
 
 const QIKINK_BASE_URL = "https://sandbox.qikink.com/api";
 
-function getHeaders() {
+let cachedToken: { accessToken: string; expiresAt: number } | null = null;
+
+async function getAccessToken(): Promise<string> {
+  if (cachedToken && Date.now() < cachedToken.expiresAt) {
+    return cachedToken.accessToken;
+  }
+
+  console.log("[Qikink] Fetching new access token...");
+  const response = await fetch(`${QIKINK_BASE_URL}/token`, {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      ClientId: process.env.QIKINK_CLIENT_ID!,
+      client_secret: process.env.QIKINK_CLIENT_SECRET!,
+    }),
+  });
+
+  if (!response.ok) {
+    const text = await response.text();
+    console.error("[Qikink] Token fetch failed:", text);
+    throw new Error(`Qikink auth error: ${response.status}`);
+  }
+
+  const result = await response.json();
+  console.log("[Qikink] Access token obtained, expires_in:", result.expires_in);
+
+  cachedToken = {
+    accessToken: result.Accesstoken,
+    expiresAt: Date.now() + (result.expires_in - 60) * 1000,
+  };
+
+  return cachedToken.accessToken;
+}
+
+async function getHeaders() {
+  const accessToken = await getAccessToken();
   return {
     "Content-Type": "application/json",
     ClientId: process.env.QIKINK_CLIENT_ID!,
-    Accesstoken: process.env.QIKINK_ACCESS_TOKEN!,
+    Accesstoken: accessToken,
   };
 }
 
@@ -59,7 +94,7 @@ export async function createQikinkOrder(
 ) {
   const response = await fetch(`${QIKINK_BASE_URL}/order/create`, {
     method: "POST",
-    headers: getHeaders(),
+    headers: await getHeaders(),
     body: JSON.stringify({
       order_number: orderId,
       qikink_shipping: "1",
@@ -89,7 +124,7 @@ export async function createQikinkOrder(
 export async function getQikinkOrder(orderId: string): Promise<QikinkOrderResponse | null> {
   const response = await fetch(`${QIKINK_BASE_URL}/order?id=${encodeURIComponent(orderId)}`, {
     method: "GET",
-    headers: getHeaders(),
+    headers: await getHeaders(),
   });
 
   if (!response.ok) {
