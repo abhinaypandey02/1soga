@@ -23,7 +23,6 @@ export type CheckoutInput = {
 };
 
 export type LineItem = {
-  productId: Scalars['String']['input'];
   quantity?: InputMaybe<Scalars['Float']['input']>;
   skuId: Scalars['String']['input'];
 };

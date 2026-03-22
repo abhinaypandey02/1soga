@@ -4,7 +4,6 @@ import { useAuthMutation } from "naystack/graphql/client";
 import { CREATE_ORDER } from "@/gql/mutations";
 
 type LineItem = {
-  productId: string;
   skuId: string;
   quantity: number;
 };

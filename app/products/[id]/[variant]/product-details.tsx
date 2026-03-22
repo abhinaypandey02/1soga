@@ -119,7 +119,7 @@ export default function ProductDetails({ product, variant }: {
 
   const handleAddToCart = () => {
     if (!matchedVariant) return;
-    addToCart({ productId: product.id, skuId: matchedVariant.sku, quantity });
+    addToCart({ skuId: matchedVariant.sku, quantity });
     setShowCartAdded(true);
   };
 
@@ -273,7 +273,6 @@ export default function ProductDetails({ product, variant }: {
 
       {showCheckout && matchedVariant && (
         <CheckoutModal
-          productId={product.id}
           productName={product.name}
           skuId={matchedVariant.sku}
           amount={displayPrice}

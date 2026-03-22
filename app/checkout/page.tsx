@@ -11,11 +11,10 @@ import products from "@/data/products";
 import AuthModal from "@/app/components/auth-modal";
 import { Trash } from "@phosphor-icons/react";
 
-function getProductInfo(productId: string, skuId: string) {
-  const product = products.find((p) => p.id === productId);
+function getProductInfo(skuId: string) {
+  const product = products.find((p) => p.variants.some((v) => v.sku === skuId));
   if (!product) return null;
-  const variant = product.variants.find((v) => v.sku === skuId);
-  if (!variant) return null;
+  const variant = product.variants.find((v) => v.sku === skuId)!;
   const price = variant.price ?? product.price;
   const image = variant.image ?? product.image;
   const optionLabel = variant.options.map((o) => o.value).join(" / ");
@@ -33,7 +32,7 @@ export default function CheckoutPage() {
   });
 
   const lineItems = items.map((item) => {
-    const info = getProductInfo(item.productId, item.skuId);
+    const info = getProductInfo(item.skuId);
     return { ...item, info };
   }).filter((item) => item.info);
 
@@ -50,7 +49,7 @@ export default function CheckoutPage() {
     }
     try {
       await checkout(
-        items.map((i) => ({ productId: i.productId, skuId: i.skuId, quantity: i.quantity })),
+        items.map((i) => ({ skuId: i.skuId, quantity: i.quantity })),
         total,
         `${lineItems.length} item(s)`
       );

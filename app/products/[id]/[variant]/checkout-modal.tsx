@@ -8,7 +8,6 @@ import { DELIVERY_FEE } from "@/lib/checkout/constants";
 import { useCheckout } from "@/lib/checkout/use-checkout";
 
 type CheckoutModalProps = {
-  productId: string;
   productName: string;
   skuId: string;
   amount: number;
@@ -16,7 +15,7 @@ type CheckoutModalProps = {
   onClose: () => void;
 };
 
-export default function CheckoutModal({ productId, productName, skuId, amount, quantity, onClose }: CheckoutModalProps) {
+export default function CheckoutModal({ productName, skuId, amount, quantity, onClose }: CheckoutModalProps) {
   const token = useToken();
   const [showAuth, setShowAuth] = useState(!token);
 
@@ -31,7 +30,7 @@ export default function CheckoutModal({ productId, productName, skuId, amount, q
   const handleCheckout = async () => {
     try {
       await checkout(
-        [{ productId, skuId, quantity }],
+        [{ skuId, quantity }],
         total,
         productName
       );
