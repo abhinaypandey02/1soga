@@ -25,6 +25,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3 sm:gap-4">
           {token ? (
             <Link
+              prefetch={false}
               href="/account"
               className="p-2 text-[var(--muted)] transition-all duration-200 hover:text-[var(--foreground)]"
             >
@@ -39,6 +40,7 @@ export default function Navbar() {
             </button>
           )}
           <Link
+          prefetch={false}
             href="/checkout"
             className="border-2 border-[var(--foreground)] bg-[var(--foreground)] px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)]"
           >
