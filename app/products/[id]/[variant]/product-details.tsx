@@ -273,9 +273,7 @@ export default function ProductDetails({ product, variant }: {
 
       {showCheckout && matchedVariant && (
         <CheckoutModal
-          productName={product.name}
           skuId={matchedVariant.sku}
-          amount={displayPrice}
           quantity={quantity}
           onClose={() => setShowCheckout(false)}
         />

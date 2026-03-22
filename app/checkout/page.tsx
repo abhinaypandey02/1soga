@@ -3,12 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { useToken } from "naystack/auth/client";
 import { useCart } from "@/lib/cart/cart-context";
-import { useCheckout } from "@/lib/checkout/use-checkout";
 import { DELIVERY_FEE } from "@/lib/checkout/constants";
 import products from "@/data/products";
-import AuthModal from "@/app/components/auth-modal";
+import CheckoutFlowModal from "@/app/components/checkout-flow-modal";
 import { Trash } from "@phosphor-icons/react";
 
 function getProductInfo(skuId: string) {
@@ -22,14 +20,8 @@ function getProductInfo(skuId: string) {
 }
 
 export default function CheckoutPage() {
-  const token = useToken();
-  const { items, updateQuantity, removeFromCart, clearCart } = useCart();
-  const [showAuth, setShowAuth] = useState(false);
-
-  const { checkout, loading } = useCheckout(() => {
-    clearCart();
-    alert("Payment successful!");
-  });
+  const { items, updateQuantity, removeFromCart } = useCart();
+  const [showCheckout, setShowCheckout] = useState(false);
 
   const lineItems = items.map((item) => {
     const info = getProductInfo(item.skuId);
@@ -41,22 +33,6 @@ export default function CheckoutPage() {
     0
   );
   const total = subtotal + (lineItems.length > 0 ? DELIVERY_FEE : 0);
-
-  const handleCheckout = async () => {
-    if (!token) {
-      setShowAuth(true);
-      return;
-    }
-    try {
-      await checkout(
-        items.map((i) => ({ skuId: i.skuId, quantity: i.quantity })),
-        `${lineItems.length} item(s)`
-      );
-    } catch (err) {
-      console.error("Checkout error:", err);
-      alert("Something went wrong. Please try again.");
-    }
-  };
 
   if (lineItems.length === 0) {
     return (
@@ -162,18 +138,18 @@ export default function CheckoutPage() {
       </div>
 
       <button
-        onClick={handleCheckout}
-        disabled={loading}
-        className="mt-6 w-full border-2 border-foreground bg-foreground px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)] disabled:cursor-not-allowed disabled:opacity-50"
+        onClick={() => setShowCheckout(true)}
+        className="mt-6 w-full border-2 border-foreground bg-foreground px-6 py-3.5 font-[family-name:var(--font-body)] text-sm font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)]"
       >
-        {loading ? "PROCESSING..." : "PAY NOW"}
+        PAY NOW
       </button>
 
-      <AuthModal
-        open={showAuth}
-        onClose={() => setShowAuth(false)}
-        onAuth={() => setShowAuth(false)}
-      />
+      {showCheckout && (
+        <CheckoutFlowModal
+          lineItems={items.map((i) => ({ skuId: i.skuId, quantity: i.quantity }))}
+          onClose={() => setShowCheckout(false)}
+        />
+      )}
     </div>
   );
 }

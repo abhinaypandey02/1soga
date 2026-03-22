@@ -4,7 +4,8 @@ import {Field, InputType, ObjectType} from "type-graphql";
 import {db} from "@/app/api/lib/db";
 import {OrderTable, LineItemTable} from "@/app/api/(graphql)/order/db";
 import {UserTable} from "@/app/api/(graphql)/user/db";
-import { razorpay } from "@/app/api/lib/razorpay";
+import {ShippingAddressTable} from "@/app/api/(graphql)/shipping-address/db";
+import {dodo} from "@/app/api/lib/dodopayments";
 import {eq} from "drizzle-orm";
 
 @InputType("LineItem")
@@ -15,22 +16,38 @@ class LineItem{
   quantity:number
 }
 
+@InputType("ShippingInput")
+class ShippingInput{
+  @Field()
+  name:string
+  @Field()
+  email:string
+  @Field()
+  phone:string
+  @Field()
+  addressLine1:string
+  @Field({nullable:true})
+  addressLine2?:string
+  @Field()
+  city:string
+  @Field()
+  state:string
+  @Field()
+  pincode:string
+}
+
 @InputType("CheckoutInput")
 class CheckoutInput{
   @Field(()=>[LineItem])
   lineItems:LineItem[]
+  @Field()
+  shipping:ShippingInput
 }
 
 @ObjectType("CreateOrderResponse")
 class CreateOrderResponse {
   @Field()
-  orderId: string;
-  @Field()
-  amount: number;
-  @Field()
-  user_email: string;
-  @Field({nullable: true})
-  user_phone?: string;
+  checkoutUrl: string;
 }
 
 export default resolver(async (ctx, data:CheckoutInput)=>{
@@ -38,9 +55,11 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
     throw new Error("Unauthorized");
   }
 
+  const { shipping } = data;
+
   let totalAmountInPaise = 0;
   const resolvedItems: {skuId: string; price: number; costPrice: number; quantity: number}[] = [];
-  const razorpayLineItems: {sku: string; variant_id: string; price: number; offer_price: number; quantity: number; name: string;description:string; image_url:string; product_url:string}[] = [];
+  const dodoCart: {product_id: string; quantity: number}[] = [];
 
   for (const lineItem of data.lineItems) {
     const product = products.find((p) => p.variants.some((v) => v.sku === lineItem.skuId));
@@ -50,58 +69,109 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
 
     const variant = product.variants.find((v) => v.sku === lineItem.skuId)!;
 
+    if (!variant.dodoProductId) {
+      throw new Error(`DodoPayments product ID not configured for SKU: ${lineItem.skuId}`);
+    }
+
     const priceInPaise = Math.round((variant.price ?? product.price) * 100);
     const costPriceInPaise = Math.round((variant.costPrice ?? product.costPrice) * 100);
     totalAmountInPaise += priceInPaise * lineItem.quantity;
     resolvedItems.push({skuId: lineItem.skuId, price: priceInPaise, costPrice: costPriceInPaise, quantity: lineItem.quantity});
-    razorpayLineItems.push({
-      sku: lineItem.skuId,
-      variant_id: lineItem.skuId,
-      price: priceInPaise,
-      offer_price: priceInPaise,
+    dodoCart.push({
+      product_id: variant.dodoProductId,
       quantity: lineItem.quantity,
-      name: `${product.name} — ${variant.options.map(o=>o.value).join(", ")}`,
-      description: product.description,
-      image_url: variant.image||product.image,
-      product_url: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${product.id}/${variant.slug}`
     });
   }
 
-  const order = await razorpay.orders.create({
-    amount: totalAmountInPaise,
-    currency: "INR",
-    receipt: `order_${Date.now()}`,
-    line_items_total: totalAmountInPaise,
-    
-    // @ts-expect-error -- documentation issue
-    line_items: razorpayLineItems
-  });
+  // Create shipping address snapshot for the order
+  const [orderShipping] = await db.insert(ShippingAddressTable).values({
+    name: shipping.name,
+    email: shipping.email,
+    phone: shipping.phone,
+    addressLine1: shipping.addressLine1,
+    addressLine2: shipping.addressLine2,
+    city: shipping.city,
+    state: shipping.state,
+    pincode: shipping.pincode,
+  }).returning({ id: ShippingAddressTable.id });
 
+  // Update user's saved shipping address (upsert)
+  const [user] = await db
+    .select({ shippingAddressId: UserTable.shippingAddressId })
+    .from(UserTable)
+    .where(eq(UserTable.id, ctx.userId!));
+
+  if (user?.shippingAddressId) {
+    await db.update(ShippingAddressTable).set({
+      name: shipping.name,
+      email: shipping.email,
+      phone: shipping.phone,
+      addressLine1: shipping.addressLine1,
+      addressLine2: shipping.addressLine2,
+      city: shipping.city,
+      state: shipping.state,
+      pincode: shipping.pincode,
+    }).where(eq(ShippingAddressTable.id, user.shippingAddressId));
+  } else {
+    const [userShipping] = await db.insert(ShippingAddressTable).values({
+      name: shipping.name,
+      email: shipping.email,
+      phone: shipping.phone,
+      addressLine1: shipping.addressLine1,
+      addressLine2: shipping.addressLine2,
+      city: shipping.city,
+      state: shipping.state,
+      pincode: shipping.pincode,
+    }).returning({ id: ShippingAddressTable.id });
+    await db.update(UserTable).set({ shippingAddressId: userShipping.id }).where(eq(UserTable.id, ctx.userId!));
+  }
+
+  // Create internal order
   const [newOrder] = await db.insert(OrderTable).values({
-  // @ts-expect-error -- documentation issue
-    uid:order.id,
-    userId:ctx.userId,
-    amount:totalAmountInPaise
-  }).returning({id:OrderTable.id})
+    uid: `pending_${Date.now()}`,
+    userId: ctx.userId,
+    amount: totalAmountInPaise,
+    shippingAddressId: orderShipping.id,
+  }).returning({ id: OrderTable.id });
 
   await db.insert(LineItemTable).values(
     resolvedItems.map((item) => ({
       orderId: newOrder.id,
       ...item,
     }))
-  )
+  );
 
-  const [user] = await db
-    .select({ email: UserTable.email, phone: UserTable.phone })
-    .from(UserTable)
-    .where(eq(UserTable.id, ctx.userId!));
+  // Create DodoPayments checkout session
+  const checkoutSession = await dodo.checkoutSessions.create({
+    product_cart: dodoCart,
+    customer: {
+      email: shipping.email,
+      name: shipping.name,
+    },
+    billing_address: {
+      city: shipping.city,
+      country: "IN",
+      state: shipping.state,
+      street: [shipping.addressLine1, shipping.addressLine2].filter(Boolean).join(", "),
+      zipcode: shipping.pincode,
+    },
+    return_url: `${process.env.NEXT_PUBLIC_BASE_URL}/orders`,
+    metadata: {
+      order_id: String(newOrder.id),
+    },
+  });
+
+  if (!checkoutSession.checkout_url) {
+    throw new Error("Failed to create checkout session");
+  }
+
+  // Update order uid with DodoPayments session ID
+  await db.update(OrderTable).set({
+    uid: checkoutSession.session_id,
+  }).where(eq(OrderTable.id, newOrder.id));
 
   return {
-    // @ts-expect-error -- documentation issue
-    orderId: order.id,
-    amount: totalAmountInPaise,
-    user_email: user.email,
-    user_phone: user.phone,
+    checkoutUrl: checkoutSession.checkout_url,
   };
 },{
   input:CheckoutInput,

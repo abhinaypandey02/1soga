@@ -124,6 +124,7 @@ export type Variant = {
   costPrice?: number;
   featured?: boolean;
   sizeChartLink?: string;
+  dodoProductId?: string;
 };
 
 export type Product = {

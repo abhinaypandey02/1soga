@@ -8,40 +8,28 @@ type LineItem = {
   quantity: number;
 };
 
-export function useCheckout(onSuccess?: () => void) {
+export type ShippingDetails = {
+  name: string;
+  email: string;
+  phone: string;
+  addressLine1: string;
+  addressLine2?: string;
+  city: string;
+  state: string;
+  pincode: string;
+};
+
+export function useCheckout() {
   const [createOrder, { loading }] = useAuthMutation(CREATE_ORDER);
 
-  const checkout = async (lineItems: LineItem[], description: string) => {
-    const response = await createOrder({ lineItems });
-    const orderData = response.data?.createOrder;
-    if (!orderData) throw new Error("Failed to create order");
-
-    const options = {
-      key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
-      amount: orderData.amount,
-      currency: "INR",
-      name: "1SOGA",
-      description,
-      order_id: orderData.orderId,
-      one_click_checkout: true,
-      show_coupons:false,
-      handler: () => {
-        onSuccess?.();
-      },
-      prefill: {
-        email: orderData.user_email,
-        contact: orderData.user_phone,
-      },
-      theme: { color: "#FF2D20" },
-    };
-
-    // eslint-disable-next-line
-    const rzp = new (window as any).Razorpay(options);
-    rzp.on("payment.failed", (res: { error: string }) => {
-      console.error("Payment failed:", res.error);
-      alert("Payment failed. Please try again.");
+  const checkout = async (lineItems: LineItem[], shipping: ShippingDetails) => {
+    const response = await createOrder({
+      lineItems,
+      shipping,
     });
-    rzp.open();
+    const checkoutUrl = response.data?.createOrder?.checkoutUrl;
+    if (!checkoutUrl) throw new Error("Failed to create checkout session");
+    return checkoutUrl;
   };
 
   return { checkout, loading };

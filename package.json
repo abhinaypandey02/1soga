@@ -15,11 +15,11 @@
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
     "class-validator": "^0.15.1",
+    "dodopayments": "^2.23.2",
     "drizzle-orm": "^0.45.1",
     "naystack": "^1.7.7",
     "next": "16.1.6",
     "postgres": "^3.4.8",
-    "razorpay": "^2.9.6",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "type-graphql": "2.0.0-rc.3"

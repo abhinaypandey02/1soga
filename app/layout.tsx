@@ -1,6 +1,5 @@
 import { Bebas_Neue } from "next/font/google";
 import localFont from "next/font/local";
-import Script from "next/script";
 import "./globals.css";
 import Image from "next/image";
 import Link from "next/link";
@@ -60,7 +59,6 @@ export default function RootLayout({
         </CartProvider>
         </ApolloWrapperNext>
       </AuthWrapper>
-        <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="lazyOnload" />
       </body>
     </html>
   );
