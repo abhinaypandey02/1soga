@@ -17,30 +17,40 @@ function verifySignature(body: string, signature: string): boolean {
 }
 
 export async function POST(req: NextRequest) {
+  console.log("[Webhook] Received Razorpay webhook request");
+
   const body = await req.text();
   const signature = req.headers.get("x-razorpay-signature");
 
+  console.log("[Webhook] Verifying signature...");
   if (!signature || !verifySignature(body, signature)) {
+    console.error("[Webhook] Signature verification failed");
     return NextResponse.json({ error: "Invalid signature" }, { status: 400 });
   }
+  console.log("[Webhook] Signature verified successfully");
 
   const event = JSON.parse(body);
+  console.log("[Webhook] Event type:", event.event);
 
   if (event.event === "payment.captured") {
     const payment = event.payload.payment.entity;
     const orderId: string = payment.order_id;
+    console.log("[Webhook] Processing payment.captured for order:", orderId, "payment:", payment.id, "amount:", payment.amount);
 
-
-    const [order] =await db
+    console.log("[Webhook] Marking order as paid...");
+    const [order] = await db
       .update(OrderTable)
       .set({ paid: true, updatedAt: new Date() })
       .where(eq(OrderTable.uid, orderId)).returning();
 
     if (!order) {
+      console.error("[Webhook] Order not found in database for uid:", orderId);
       return NextResponse.json({ error: "Order not found" }, { status: 404 });
     }
+    console.log("[Webhook] Order marked as paid, internal id:", order.id, "userId:", order.userId);
 
     // Update user details from payment info if missing
+    console.log("[Webhook] Fetching user details for userId:", order.userId);
     const [user] = await db
       .select()
       .from(UserTable)
@@ -61,20 +71,29 @@ export async function POST(req: NextRequest) {
 
       if (Object.keys(updates).length > 0) {
         updates.updatedAt = new Date();
+        console.log("[Webhook] Updating user details:", Object.keys(updates).filter(k => k !== "updatedAt").join(", "));
         await db
           .update(UserTable)
           .set(updates)
           .where(eq(UserTable.id, order.userId));
+        console.log("[Webhook] User details updated");
+      } else {
+        console.log("[Webhook] No user details to update");
       }
+    } else {
+      console.warn("[Webhook] User not found for userId:", order.userId);
     }
 
     // Create Qikink fulfillment order
+    console.log("[Webhook] Fetching line items for order:", order.id);
     const lineItems = await db
       .select()
       .from(LineItemTable)
       .where(eq(LineItemTable.orderId, order.id));
+    console.log("[Webhook] Found", lineItems.length, "line items:", lineItems.map(i => ({ sku: i.skuId, qty: i.quantity })));
 
     // Validate all variant SKUs exist in products data
+    console.log("[Webhook] Validating variant SKUs...");
     const invalidItems = lineItems.filter((item) => {
       return !products.some((p) =>
         p.variants.some((v) => v.sku === item.skuId)
@@ -82,20 +101,23 @@ export async function POST(req: NextRequest) {
     });
 
     if (invalidItems.length > 0) {
-      console.error("Invalid variant SKUs found:", invalidItems.map((i) => i.skuId));
+      console.error("[Webhook] Invalid variant SKUs found:", invalidItems.map((i) => i.skuId));
       try {
+        console.log("[Webhook] Issuing refund for invalid SKUs, payment:", payment.id);
         await razorpay.payments.refund(payment.id, {
           amount: payment.amount,
           notes: { reason: `Invalid variant SKU: ${invalidItems.map((i) => i.skuId).join(", ")}` },
         });
-        console.log("Refund issued for payment:", payment.id);
+        console.log("[Webhook] Refund issued successfully for payment:", payment.id);
       } catch (refundErr) {
-        console.error("Failed to issue refund for:", payment.id, refundErr);
+        console.error("[Webhook] Failed to issue refund for:", payment.id, refundErr);
       }
       return NextResponse.json({ status: "refunded" });
     }
+    console.log("[Webhook] All variant SKUs valid");
 
     // Fetch shipping address from Razorpay order (populated by Magic Checkout)
+    console.log("[Webhook] Fetching Razorpay order details for shipping address...");
     // eslint-disable-next-line
     const razorpayOrder = await razorpay.orders.fetch(orderId) as any;
     const customerDetails = razorpayOrder.customer_details || {};
@@ -117,22 +139,27 @@ export async function POST(req: NextRequest) {
       province: shipping.state || "",
       country_code: shipping.country || "IN",
     };
+    console.log("[Webhook] Shipping address:", JSON.stringify({ city: shippingAddress.city, province: shippingAddress.province, zip: shippingAddress.zip, country: shippingAddress.country_code }));
 
     try {
+      console.log("[Webhook] Creating Qikink fulfillment order...");
       await createQikinkOrder(orderId, order.amount, lineItems, shippingAddress);
+      console.log("[Webhook] Qikink order created successfully for:", orderId);
     } catch (err) {
-      console.error("Failed to create Qikink order for:", orderId, err);
+      console.error("[Webhook] Failed to create Qikink order for:", orderId, err);
       try {
+        console.log("[Webhook] Issuing refund due to Qikink failure, payment:", payment.id);
         await razorpay.payments.refund(payment.id, {
           amount: payment.amount,
           notes: { reason: "Qikink order creation failed" },
         });
-        console.log("Refund issued for payment:", payment.id);
+        console.log("[Webhook] Refund issued successfully for payment:", payment.id);
       } catch (refundErr) {
-        console.error("Failed to issue refund for:", payment.id, refundErr);
+        console.error("[Webhook] Failed to issue refund for:", payment.id, refundErr);
       }
     }
   }
 
+  console.log("[Webhook] Request processing complete");
   return NextResponse.json({ status: "ok" });
 }
