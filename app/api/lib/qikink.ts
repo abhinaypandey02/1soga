@@ -94,7 +94,7 @@ export async function createQikinkOrder(
 ) {
   const headers = await getHeaders();
   console.log("headers", headers)
-  console.log("body": JSON.stringify({
+  console.log("body", JSON.stringify({
       order_number: orderId,
       qikink_shipping: "1",
       gateway: "Prepaid",
