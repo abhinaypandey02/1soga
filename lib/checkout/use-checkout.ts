@@ -21,7 +21,7 @@ export function useCheckout(onSuccess?: () => void) {
       key: process.env.NEXT_PUBLIC_RAZORPAY_KEY_ID,
       amount: Math.round(totalAmount * 100),
       currency: "INR",
-      name: "One Soga",
+      name: "1SOGA",
       description,
       order_id: orderId,
       one_click_checkout: true,

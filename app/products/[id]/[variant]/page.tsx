@@ -18,10 +18,12 @@ export async function generateMetadata({
 }: {
   params: Promise<{ id: string; variant?: string }>;
 }): Promise<Metadata> {
-  const { id } = await params;
+  const { id, variant } = await params;
   const product = products.find((p) => p.id === id);
   if (!product) return getSEO();
-  return getSEO(product.name, product.description);
+  const v = product.variants.find(v=>v.slug === variant);
+  if (!v) return getSEO();
+  return getSEO(`${product.name} (${v.options.map(o=>o.value).join(", ")})`, product.description, v.image);
 }
 
 export default async function ProductPage({

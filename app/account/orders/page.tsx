@@ -5,7 +5,7 @@ import {FieldResponseType, Injector, QueryResponseType} from "naystack/graphql";
 import {formatPrice, findProductBySku, formatDate} from "./utils";
 import { getSEO } from "@/lib/seo";
 
-export const metadata = getSEO("My Orders", "Track your ONE SOGA orders. Every purchase is a declaration that Soga raised you right.");
+export const metadata = getSEO("My Orders", "Track your 1SOGA orders. Every purchase is a declaration that Soga raised you right.");
 
 export default async function OrdersPage() {
   return <Injector fetch={async ()=>{
