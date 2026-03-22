@@ -115,7 +115,7 @@ export async function POST(req: NextRequest) {
       last_name: lastName,
       address1: shipping.line1 || "",
       address2: shipping.line2 || "",
-      phone: payment.contact || "",
+      phone: payment.contact || shipping.contact || "",
       email: customerDetails.email || payment.email || "",
       city: shipping.city || "",
       zip: shipping.zipcode || "",
