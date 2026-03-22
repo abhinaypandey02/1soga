@@ -18,7 +18,7 @@ importers:
         specifier: ^0.45.1
         version: 0.45.1(postgres@3.4.8)
       naystack:
-        specifier: ^1.7.6
+        specifier: ^1.7.7
         version: 1.7.7(@aws-sdk/credential-provider-web-identity@3.972.22)(@types/react@19.2.14)(class-validator@0.15.1)(graphql-scalars@1.25.0(graphql@16.13.1))(graphql-ws@6.0.7(graphql@16.13.1)(ws@8.19.0))(graphql@16.13.1)(next@16.1.6(@babel/core@7.29.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(postgres@3.4.8)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next:
         specifier: 16.1.6
