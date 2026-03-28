@@ -16,7 +16,7 @@ export default field(async (order: OrderDB) => {
     return "Processing";
   }
 
-  return qikinkOrder.status;
+  return qikinkOrder.status || "Processing";
 }, {
   output: String
 })
