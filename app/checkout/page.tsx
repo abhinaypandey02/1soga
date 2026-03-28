@@ -15,9 +15,10 @@ function getProductInfo(skuId: string) {
   if (!product) return null;
   const variant = product.variants.find((v) => v.sku === skuId)!;
   const price = variant.price ?? product.price;
+  const costPrice = variant.costPrice ?? product.costPrice;
   const image = variant.image ?? product.image;
   const optionLabel = variant.options.map((o) => o.value).join(" / ");
-  return { name: product.name, price, image, optionLabel };
+  return { name: product.name, price, costPrice, image, optionLabel };
 }
 
 export default function CheckoutPage() {
@@ -37,6 +38,10 @@ export default function CheckoutPage() {
 
   const total = lineItems.reduce(
     (sum, item) => sum + (item.info!.price * item.quantity),
+    0
+  );
+  const totalCharity = lineItems.reduce(
+    (sum, item) => sum + ((item.info!.price - item.info!.costPrice) * item.quantity),
     0
   );
 
@@ -150,6 +155,24 @@ export default function CheckoutPage() {
           </span>
         </div>
       </div>
+
+      {totalCharity > 0 && (
+        <div className="mt-4 border-2 border-[var(--accent)] bg-[var(--accent)]/5 p-4 sm:p-5">
+          <div className="flex items-center gap-3">
+            <div className="h-[3px] w-6 bg-[var(--accent)]" />
+            <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold uppercase tracking-[0.3em] text-[var(--accent)] sm:text-xs">
+              Movement Impact
+            </span>
+          </div>
+          <p className="mt-2 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
+            This order contributes{" "}
+            <span className="font-bold text-[var(--accent)]">
+              &#8377;{totalCharity.toFixed(2)}
+            </span>{" "}
+            to charity.
+          </p>
+        </div>
+      )}
 
       <button
         onClick={handleCheckout}
