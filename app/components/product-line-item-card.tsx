@@ -10,7 +10,6 @@ type ProductLineItemCardProps = {
   quantity: number;
   optionLabel?: string;
   totalPrice: string;
-  charityText?: string;
   href?: string;
   controls?: ReactNode;
 };
@@ -21,7 +20,6 @@ export default function ProductLineItemCard({
   quantity,
   optionLabel,
   totalPrice,
-  charityText,
   href,
   controls,
 }: ProductLineItemCardProps) {
@@ -60,11 +58,6 @@ export default function ProductLineItemCard({
             <p className="font-[family-name:var(--font-display)] text-lg text-[var(--foreground)]">
               {totalPrice}
             </p>
-            {charityText && (
-              <p className="font-[family-name:var(--font-body)] text-xs text-[var(--accent)]">
-                {charityText}
-              </p>
-            )}
           </div>
         </div>
       </div>
