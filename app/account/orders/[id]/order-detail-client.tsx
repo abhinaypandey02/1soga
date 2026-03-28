@@ -30,27 +30,47 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <div>
             {loading ? (
-              <div className="h-8 w-32 animate-pulse rounded bg-[var(--border)]" />
+              <>
+                <div className="mb-2 h-4 w-20 animate-pulse rounded bg-[var(--border)]" />
+                <div className="h-8 w-32 animate-pulse rounded bg-[var(--border)]" />
+              </>
             ) : (
-              <p className="font-[family-name:var(--font-display)] text-2xl tracking-tight text-[var(--foreground)] sm:text-3xl">
-                {totalItems} item{totalItems > 1 ? "s" : ""}
-              </p>
+              <>
+                <p className="font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-[var(--muted)]">
+                  Order #{order?.id}
+                </p>
+                <p className="font-[family-name:var(--font-display)] text-2xl tracking-tight text-[var(--foreground)] sm:text-3xl">
+                  {totalItems} item{totalItems > 1 ? "s" : ""}
+                </p>
+              </>
             )}
           </div>
-          {loading||!order ? (
-            <div className="h-7 w-20 animate-pulse rounded bg-[var(--border)]" />
+          {loading || !order ? (
+            <div className="h-10 w-40 animate-pulse rounded bg-[var(--border)]" />
           ) : (
-            <span
-              className={`inline-block self-start border-2 px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] ${
-                order.status === "Refunded"
-                  ? "border-red-500 text-red-500"
-                  : order.status === "Processing"
-                    ? "border-[var(--muted)] text-[var(--muted)]"
-                    : "border-[var(--accent)] bg-[var(--accent)] text-white"
-              }`}
-            >
-              {order.status}
-            </span>
+            <div className="flex flex-wrap items-center justify-end gap-2">
+              <span
+                className={`inline-block self-start border-2 px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] ${
+                  order.status === "Refunded"
+                    ? "border-red-500 text-red-500"
+                    : order.status === "Processing"
+                      ? "border-[var(--muted)] text-[var(--muted)]"
+                      : "border-[var(--accent)] bg-[var(--accent)] text-white"
+                }`}
+              >
+                {order.status}
+              </span>
+              {order.trackingLink && (
+                <a
+                  href={order.trackingLink}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="inline-flex items-center border-2 border-[var(--foreground)] bg-[var(--foreground)] px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)]"
+                >
+                  Track Order
+                </a>
+              )}
+            </div>
           )}
         </div>
       </div>
