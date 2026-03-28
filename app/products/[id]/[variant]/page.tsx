@@ -38,8 +38,33 @@ export default async function ProductPage({
     notFound();
   }
 
+  const selectedVariant = product.variants.find((v) => v.slug === variant);
+  const price = selectedVariant?.price ?? product.price;
+  const image = selectedVariant?.image ?? product.image;
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: `${product.name}${selectedVariant ? ` — ${selectedVariant.options.map((o) => o.value).join(", ")}` : ""}`,
+    description: product.description,
+    image,
+    url: `${baseUrl}/products/${product.id}/${selectedVariant?.slug ?? ""}`,
+    offers: {
+      "@type": "Offer",
+      price: price.toFixed(2),
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      url: `${baseUrl}/products/${product.id}/${selectedVariant?.slug ?? ""}`,
+    },
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ProductDetails product={product} variant={variant} />
       <Suspense><YouMayAlsoLike currentProductId={product.id} /></Suspense>
     </>
