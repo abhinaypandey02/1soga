@@ -16,9 +16,9 @@ function getProductInfo(skuId: string) {
   const product = products.find((p) => p.variants.some((v) => v.sku === skuId));
   if (!product) return null;
   const variant = product.variants.find((v) => v.sku === skuId)!;
-  const price = variant.price ?? product.price;
-  const costPrice = variant.costPrice ?? product.costPrice;
-  const image = variant.image ?? product.image;
+  const price = variant.price;
+  const costPrice = variant.costPrice;
+  const image = variant.image;
   const optionLabel = variant.options.map((o) => o.value).join(" / ");
   return { name: product.name, price, costPrice, image, optionLabel };
 }

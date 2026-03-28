@@ -119,9 +119,9 @@ export type Variant = {
   sku: string;
   slug: string;
   options: VariantOption[];
-  price?: number;
-  image?: string;
-  costPrice?: number;
+  price: number;
+  image: string;
+  costPrice: number;
   featured?: boolean;
   sizeChartLink?: string;
 };
@@ -130,11 +130,8 @@ export type Product = {
   id: string;
   name: string;
   description: string;
-  price: number;
-  image: string;
   optionTypes: OptionType[];
   variants: Variant[];
-  costPrice: number;
 };
 
 export type MergeConfigEntry = {

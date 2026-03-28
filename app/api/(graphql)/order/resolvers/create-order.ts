@@ -52,8 +52,8 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
 
     const variant = product.variants.find((v) => v.sku === lineItem.skuId)!;
 
-    const priceInPaise = Math.round((variant.price ?? product.price) * 100);
-    const costPriceInPaise = Math.round((variant.costPrice ?? product.costPrice) * 100);
+    const priceInPaise = Math.round(variant.price * 100);
+    const costPriceInPaise = Math.round(variant.costPrice * 100);
     totalAmountInPaise += priceInPaise * lineItem.quantity;
     resolvedItems.push({skuId: lineItem.skuId, price: priceInPaise, costPrice: costPriceInPaise, quantity: lineItem.quantity});
     razorpayLineItems.push({
@@ -64,7 +64,7 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
       quantity: lineItem.quantity,
       name: `${product.name} — ${variant.options.map(o=>o.value).join(", ")}`,
       description: product.description,
-      image_url: variant.image||product.image,
+      image_url: variant.image,
       product_url: `${process.env.NEXT_PUBLIC_BASE_URL}/products/${product.id}/${variant.slug}`
     });
   }

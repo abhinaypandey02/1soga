@@ -20,9 +20,6 @@ export function mapToProduct(product: ProductListItem, details: FetchProductResp
     id: String(details.client_product_id),
     name: product.client_product_title,
     description: "",
-    price: Number(product.price_range.split(" - ")[0]) + DELIVERY_FEE,
-    image: `${imageBase}${details.variants[0]?.variant_image ?? details.default_image}`,
-    costPrice: details.product_price + DELIVERY_FEE,
     optionTypes: details.options.map(o => o as OptionType),
     variants: details.variants.map(v => {
       const options: {type: OptionType; value: string}[] = [];
@@ -136,9 +133,6 @@ export function applyMerges(products: Product[], mergeConfig: MergeConfigEntry[]
       id: merge.id,
       name: merge.title,
       description: merge.description ?? "",
-      price: first.price,
-      image: mergedVariants[0].image!,
-      costPrice: first.costPrice,
       optionTypes: allOptionTypes,
       variants: mergedVariants,
     });

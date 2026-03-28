@@ -1,10 +1,12 @@
 import { Suspense } from "react";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import products from "@/data/products";
 import ProductDetails from "./product-details";
 import YouMayAlsoLike from "@/app/components/you-may-also-like";
 import { getSEO } from "@/lib/seo";
 import { Metadata } from "next";
+import { getProductJsonLd } from "./utils";
 
 export function generateStaticParams() {
   return products.flatMap((product) => (product.variants.map(p=>({
@@ -38,8 +40,19 @@ export default async function ProductPage({
     notFound();
   }
 
+  const selectedVariant = product.variants.find((v) => v.slug === variant);
+  if (!selectedVariant) {
+    notFound();
+  }
+  const jsonLd = getProductJsonLd(product, selectedVariant);
+
   return (
     <>
+      <Script
+        id="product-jsonld"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <ProductDetails product={product} variant={variant} />
       <Suspense><YouMayAlsoLike currentProductId={product.id} /></Suspense>
     </>

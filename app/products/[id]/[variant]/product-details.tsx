@@ -97,9 +97,9 @@ export default function ProductDetails({ product, variant }: {
 
   const matchedVariant = findVariant(product.variants, selected);
 
-  const displayPrice = matchedVariant?.price ?? product.price;
-  const displayImage = matchedVariant?.image ?? product.image;
-  const costPrice = matchedVariant?.costPrice ?? product.costPrice;
+  const displayPrice = matchedVariant?.price ?? product.variants[0].price;
+  const displayImage = matchedVariant?.image ?? product.variants[0].image;
+  const costPrice = matchedVariant?.costPrice ?? product.variants[0].costPrice;
   const sizeChartLink = matchedVariant?.sizeChartLink;
   const profit = getCharity(displayPrice, costPrice);
 

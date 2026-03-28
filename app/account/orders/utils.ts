@@ -11,7 +11,7 @@ export function findProductBySku(sku: string) {
       return {
         id: product.id,
         name: product.name,
-        image: variant.image || product.image,
+        image: variant.image,
         sku,
         slug: variant.slug,
         optionLabel: variant.options.map((option) => option.value).join(" / "),

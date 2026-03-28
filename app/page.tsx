@@ -9,10 +9,7 @@ import DeclareCTA from "./components/declare-cta";
 // export const metadata = getSEO();
 
 function getPriceDisplay(product: Product): string {
-  const prices = product.variants
-    .map((v) => v.price ?? product.price)
-    .filter((p) => p !== undefined);
-  if (prices.length === 0) return `₹${product.price.toFixed(2)}`;
+  const prices = product.variants.map((v) => v.price);
   const min = Math.min(...prices);
   const max = Math.max(...prices);
   if (min === max) return `₹${min.toFixed(2)}`;
@@ -115,7 +112,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden bg-neutral-100">
                   <Image
-                    src={product.image}
+                    src={product.variants[0].image}
                     alt={product.name}
                     fill
                     className="product-image object-cover"
