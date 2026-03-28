@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import products from "@/data/products";
 import ProductDetails from "./product-details";
@@ -41,7 +42,7 @@ export default async function ProductPage({
   const selectedVariant = product.variants.find((v) => v.slug === variant);
   const price = selectedVariant?.price ?? product.price;
   const image = selectedVariant?.image ?? product.image;
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || "";
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL!;
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -61,7 +62,8 @@ export default async function ProductPage({
 
   return (
     <>
-      <script
+      <Script
+        id="product-jsonld"
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />

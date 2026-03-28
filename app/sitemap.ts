@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import products from "@/data/products";
 
-const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || "";
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL!;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const productPages = products.flatMap((product) =>
