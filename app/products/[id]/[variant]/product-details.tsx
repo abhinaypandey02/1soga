@@ -8,7 +8,7 @@ import CartAddedModal from "@/app/components/cart-added-modal";
 import Modal from "@/app/components/modal";
 import Link from "next/link";
 import LinkWrapper from "@/components/link-wrapper";
-import { GATEWAY_FEE_PERCENT } from "@/lib/checkout/constants";
+import { getCharity } from "@/lib/checkout/constants";
 import { useCart } from "@/lib/cart/cart-context";
 import CharityCallout from "@/app/components/charity-callout";
 
@@ -101,7 +101,7 @@ export default function ProductDetails({ product, variant }: {
   const displayImage = matchedVariant?.image ?? product.image;
   const costPrice = matchedVariant?.costPrice ?? product.costPrice;
   const sizeChartLink = matchedVariant?.sizeChartLink;
-  const profit = displayPrice - costPrice - (GATEWAY_FEE_PERCENT / 100) * displayPrice;
+  const profit = getCharity(displayPrice, costPrice);
 
   const featuredVariants = useMemo(
     () => product.variants.filter((v) => v.featured && v.image),
