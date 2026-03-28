@@ -15,7 +15,7 @@ export const OrderTable = pgTable("orders", {
   uid: text("uid").notNull(),
   userId: integer("user_id").notNull().references(() => UserTable.id),
   amount: real("amount").notNull(),
-  paid: boolean("paid").notNull().default(false),
+  paid: boolean("paid"),
   createdAt: timestamp("created_at").notNull().defaultNow(),
   updatedAt: timestamp("updated_at").notNull().defaultNow().$onUpdate(() => new Date()),
 });

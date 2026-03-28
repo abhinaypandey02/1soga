@@ -52,6 +52,10 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ status: "refunded" });
     }
 
+    const markRefunded = async () => {
+      await db.update(OrderTable).set({ paid: false, updatedAt: new Date() }).where(eq(OrderTable.id, order.id));
+    };
+
     // Fetch Razorpay order details (populated by Magic Checkout)
     // eslint-disable-next-line
     const razorpayOrder = await razorpay.orders.fetch(orderId) as any;
@@ -97,6 +101,7 @@ export async function POST(req: NextRequest) {
 
     if (invalidItems.length > 0) {
       await issueRefund(payment.id, payment.amount, `Invalid variant SKU: ${invalidItems.map((i) => i.skuId).join(", ")}`);
+      await markRefunded();
       return NextResponse.json({ status: "refunded" });
     }
 
@@ -123,6 +128,7 @@ export async function POST(req: NextRequest) {
     } catch (err) {
       console.error((err as Error).message)
       await issueRefund(payment.id, payment.amount, "Qikink order creation failed");
+      await markRefunded();
     }
   }
 

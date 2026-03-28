@@ -22,8 +22,8 @@ export class OrderGQL {
   uid: string;
   @Field()
   amount: number;
-  @Field()
-  paid: boolean;
+  @Field(() => Boolean, { nullable: true })
+  paid: boolean | null;
   @Field(() => [OrderLineItemGQL])
   lineItems: OrderLineItemGQL[];
   @Field()

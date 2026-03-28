@@ -75,9 +75,11 @@ function OrdersPageClient({data:orders,loading}:{
                 </span>
                 <span
                   className={`inline-block border-2 px-3 py-1 font-[family-name:var(--font-body)] text-[10px] font-bold uppercase tracking-[0.15em] sm:text-xs ${
-                    order.status !== "Pending"
-                      ? "border-[var(--accent)] bg-[var(--accent)] text-white"
-                      : "border-[var(--muted)] text-[var(--muted)]"
+                    order.status === "Refunded"
+                      ? "border-red-500 text-red-500"
+                      : order.status === "Processing"
+                        ? "border-[var(--muted)] text-[var(--muted)]"
+                        : "border-[var(--accent)] bg-[var(--accent)] text-white"
                   }`}
                 >
                   {order.status}

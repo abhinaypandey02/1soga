@@ -41,9 +41,11 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
           ) : (
             <span
               className={`inline-block self-start border-2 px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] ${
-                order.status !== "Pending"
-                  ? "border-[var(--accent)] bg-[var(--accent)] text-white"
-                  : "border-[var(--muted)] text-[var(--muted)]"
+                order.status === "Refunded"
+                  ? "border-red-500 text-red-500"
+                  : order.status === "Processing"
+                    ? "border-[var(--muted)] text-[var(--muted)]"
+                    : "border-[var(--accent)] bg-[var(--accent)] text-white"
               }`}
             >
               {order.status}

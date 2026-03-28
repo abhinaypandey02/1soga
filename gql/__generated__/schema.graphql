@@ -259,7 +259,7 @@ type Order {
   createdAt: DateTimeISO!
   id: Float!
   lineItems: [OrderLineItem!]!
-  paid: Boolean!
+  paid: Boolean
   status: String!
   uid: String!
 }
