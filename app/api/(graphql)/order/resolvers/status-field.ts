@@ -11,7 +11,7 @@ export default field(async (order: OrderDB) => {
     return "Refunded";
   }
 
-  const qikinkOrder = await getQikinkOrder(order.uid);
+  const qikinkOrder = await getQikinkOrder(String(order.id));
   if (!qikinkOrder) {
     return "Processing";
   }

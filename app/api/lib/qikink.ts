@@ -1,6 +1,7 @@
 import {OrderDB} from "@/app/api/(graphql)/order/db";
 
 const QIKINK_BASE_URL = "https://api.qikink.com/api";
+const QIKINK_USER_ID = "566629";
 
 let cachedToken: { accessToken: string; expiresAt: number } | null = null;
 
@@ -118,7 +119,8 @@ export async function createQikinkOrder(
 }
 
 export async function getQikinkOrder(orderId: string): Promise<QikinkOrderResponse | null> {
-  const response = await fetch(`${QIKINK_BASE_URL}/order?id=${encodeURIComponent(orderId)}`, {
+  const qikinkOrderId = `${QIKINK_USER_ID}_${orderId}`;
+  const response = await fetch(`${QIKINK_BASE_URL}/order?id=${encodeURIComponent(qikinkOrderId)}`, {
     method: "GET",
     headers: await getHeaders(),
   });
