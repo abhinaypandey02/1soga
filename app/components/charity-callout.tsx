@@ -17,7 +17,7 @@ export default function CharityCallout({ amount, past }: CharityCalloutProps) {
       <p className="mt-2 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
         This order {past ? "contributed" : "will contribute"}{" "}
         <span className="font-bold text-[var(--accent)]">
-          &#8377;{Math.floor(amount)}
+          &#8377;{amount.toFixed(2)}
         </span>{" "}
         to charity.
       </p>

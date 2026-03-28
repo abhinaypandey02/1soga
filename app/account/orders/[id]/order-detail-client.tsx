@@ -104,7 +104,7 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
                 quantity={li.quantity}
                 optionLabel={product.optionLabel}
                 totalPrice={formatPrice(li.price * li.quantity)}
-                charityText={charity > 0 ? `₹${Math.floor(charity / 100)} to charity` : undefined}
+                charityText={charity > 0 ? `${formatPrice(charity)} to charity` : undefined}
                 href={href}
               />
             );
