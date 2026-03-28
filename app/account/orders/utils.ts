@@ -1,7 +1,7 @@
 import products from "@/data/products";
 
-export function formatPrice(amount: number): string {
-  return `₹${amount.toFixed(2)}`;
+export function formatPrice(amountInPaise: number): string {
+  return `₹${(amountInPaise / 100).toFixed(2)}`;
 }
 
 export function findProductBySku(sku: string) {
