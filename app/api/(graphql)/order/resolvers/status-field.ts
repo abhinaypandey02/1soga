@@ -23,8 +23,9 @@ export default field(async (order: OrderDB) => {
   if (!qikinkOrder) {
     return OrderStatus.Processing;
   }
+  if(qikinkOrder.status === "On Hold") return OrderStatus.Processing;
 
-  if(!qikinkOrder.shipping?.awb) return OrderStatus.Placed;
+  if(!qikinkOrder.shipping?.awb) return OrderStatus.Confirmed;
 
   if(qikinkOrder.shipping.tracking_link && !order.trackingLink){
     await db.update(OrderTable).set({
