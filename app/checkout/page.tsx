@@ -6,7 +6,6 @@ import Link from "next/link";
 import { useToken } from "naystack/auth/client";
 import { useCart } from "@/lib/cart/cart-context";
 import { useCheckout } from "@/lib/checkout/use-checkout";
-import { DELIVERY_FEE } from "@/lib/checkout/constants";
 import products from "@/data/products";
 import AuthModal from "@/app/components/auth-modal";
 import { Trash } from "@phosphor-icons/react";
@@ -36,11 +35,10 @@ export default function CheckoutPage() {
     return { ...item, info };
   }).filter((item) => item.info);
 
-  const subtotal = lineItems.reduce(
+  const total = lineItems.reduce(
     (sum, item) => sum + (item.info!.price * item.quantity),
     0
   );
-  const total = subtotal + (lineItems.length > 0 ? DELIVERY_FEE : 0);
 
   const handleCheckout = async () => {
     if (!token) {
@@ -143,15 +141,7 @@ export default function CheckoutPage() {
       </div>
 
       <div className="mt-8 border-2 border-[var(--border)] bg-[var(--surface)] p-6">
-        <div className="mb-2 flex justify-between font-[family-name:var(--font-body)] text-[var(--muted)]">
-          <span>Subtotal</span>
-          <span>&#8377;{subtotal.toFixed(2)}</span>
-        </div>
-        <div className="mb-4 flex justify-between font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
-          <span>Shipping</span>
-          <span>&#8377;{DELIVERY_FEE.toFixed(2)}</span>
-        </div>
-        <div className="flex justify-between border-t-2 border-[var(--border)] pt-4">
+        <div className="flex justify-between">
           <span className="font-[family-name:var(--font-display)] text-2xl uppercase tracking-wide">
             Total
           </span>

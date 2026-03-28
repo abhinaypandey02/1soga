@@ -1,5 +1,6 @@
 import {FetchAllProductsResponse, FetchProductResponse} from "./types";
 import {MergeConfigEntry, OptionType, Product, Variant} from "./types";
+import {DELIVERY_FEE} from "@/lib/checkout/constants";
 
 function generateSlug(options: {type: string; value: string}[]): string {
   return options
@@ -19,7 +20,7 @@ export function mapToProduct(product: ProductListItem, details: FetchProductResp
     id: String(details.client_product_id),
     name: product.client_product_title,
     description: "",
-    price: Number(product.price_range.split(" - ")[0]),
+    price: Number(product.price_range.split(" - ")[0]) + DELIVERY_FEE,
     image: `${imageBase}${details.variants[0]?.variant_image ?? details.default_image}`,
     costPrice: details.product_price,
     optionTypes: details.options.map(o => o as OptionType),
@@ -31,7 +32,7 @@ export function mapToProduct(product: ProductListItem, details: FetchProductResp
         sku: v.variant_sku,
         slug: generateSlug(options),
         options,
-        price: Number(v.product_price),
+        price: Number(v.product_price) + DELIVERY_FEE,
         image: `${imageBase}${v.variant_image}`,
         costPrice: v.updated_base_price,
         sizeChartLink: details.size_chart_link ?? undefined,
