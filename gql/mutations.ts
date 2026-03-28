@@ -3,6 +3,7 @@ import {gql} from "./__generated__";
 export const CREATE_ORDER = gql(`
     mutation CreateOrder($input: CheckoutInput!) {
       createOrder(input: $input) {
+        id
         orderId
         amount
         user_email

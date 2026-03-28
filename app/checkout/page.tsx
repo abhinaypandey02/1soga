@@ -29,7 +29,6 @@ export default function CheckoutPage() {
 
   const { checkout, loading } = useCheckout(() => {
     clearCart();
-    alert("Payment successful!");
   });
 
   const lineItems = items.map((item) => {

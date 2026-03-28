@@ -24,6 +24,8 @@ class CheckoutInput{
 @ObjectType("CreateOrderResponse")
 class CreateOrderResponse {
   @Field()
+  id: number;
+  @Field()
   orderId: string;
   @Field()
   amount: number;
@@ -97,6 +99,7 @@ export default resolver(async (ctx, data:CheckoutInput)=>{
     .where(eq(UserTable.id, ctx.userId!));
 
   return {
+    id: newOrder.id,
     // @ts-expect-error -- documentation issue
     orderId: order.id,
     amount: totalAmountInPaise,

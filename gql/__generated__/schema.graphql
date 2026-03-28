@@ -244,6 +244,7 @@ input LineItem {
 
 type CreateOrderResponse {
   amount: Float!
+  id: Float!
   orderId: String!
   user_email: String!
   user_phone: String

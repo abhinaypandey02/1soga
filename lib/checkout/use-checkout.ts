@@ -1,5 +1,6 @@
 "use client";
 
+import { useRouter } from "next/navigation";
 import { useAuthMutation } from "naystack/graphql/client";
 import { CREATE_ORDER } from "@/gql/mutations";
 
@@ -9,6 +10,7 @@ type LineItem = {
 };
 
 export function useCheckout(onSuccess?: () => void) {
+  const router = useRouter();
   const [createOrder, { loading }] = useAuthMutation(CREATE_ORDER);
 
   const checkout = async (lineItems: LineItem[], description: string) => {
@@ -27,6 +29,7 @@ export function useCheckout(onSuccess?: () => void) {
       show_coupons:false,
       handler: () => {
         onSuccess?.();
+        router.push(`/account/orders/${orderData.id}`);
       },
       prefill: {
         email: orderData.user_email,

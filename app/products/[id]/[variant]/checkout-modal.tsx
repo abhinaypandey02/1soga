@@ -23,10 +23,7 @@ export default function CheckoutModal({ productName, skuId, amount, costPrice, q
   const total = amount * quantity;
   const totalCharity = (amount - costPrice) * quantity;
 
-  const { checkout, loading } = useCheckout(() => {
-    alert("Payment successful!");
-    onClose();
-  });
+  const { checkout, loading } = useCheckout(onClose);
 
   const handleCheckout = async () => {
     try {
