@@ -23,6 +23,7 @@ export const GET_ORDER = gql(`
         id
         amount
         status
+        trackingLink
         lineItems {
           id
           skuId

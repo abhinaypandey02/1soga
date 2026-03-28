@@ -26,6 +26,8 @@ export class OrderGQL {
   paid: boolean | null;
   @Field(() => [OrderLineItemGQL])
   lineItems: OrderLineItemGQL[];
+  @Field(() => String, { nullable: true })
+  trackingLink: string | null;
   @Field()
   createdAt: Date;
 }

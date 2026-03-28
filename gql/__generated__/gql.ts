@@ -17,13 +17,13 @@ type Documents = {
     "\n    mutation CreateOrder($input: CheckoutInput!) {\n      createOrder(input: $input) {\n        id\n        orderId\n        amount\n        user_email\n        user_phone\n      }\n    }\n": typeof types.CreateOrderDocument,
     "\n    mutation UpdateUser($input: UpdateUserInput!) {\n      updateCurrentUser(input: $input) {\n        name\n        phone\n        email\n      }\n    }\n": typeof types.UpdateUserDocument,
     "\n    query GetOrders {\n      getOrders {\n        id\n        amount\n        status\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n": typeof types.GetOrdersDocument,
-    "\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n": typeof types.GetOrderDocument,
+    "\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        trackingLink\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n": typeof types.GetOrderDocument,
 };
 const documents: Documents = {
     "\n    mutation CreateOrder($input: CheckoutInput!) {\n      createOrder(input: $input) {\n        id\n        orderId\n        amount\n        user_email\n        user_phone\n      }\n    }\n": types.CreateOrderDocument,
     "\n    mutation UpdateUser($input: UpdateUserInput!) {\n      updateCurrentUser(input: $input) {\n        name\n        phone\n        email\n      }\n    }\n": types.UpdateUserDocument,
     "\n    query GetOrders {\n      getOrders {\n        id\n        amount\n        status\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n": types.GetOrdersDocument,
-    "\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n": types.GetOrderDocument,
+    "\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        trackingLink\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n": types.GetOrderDocument,
 };
 
 /**
@@ -55,7 +55,7 @@ export function gql(source: "\n    query GetOrders {\n      getOrders {\n       
 /**
  * The gql function is used to parse GraphQL queries into a document that can be used by GraphQL clients.
  */
-export function gql(source: "\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n"): (typeof documents)["\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n"];
+export function gql(source: "\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        trackingLink\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n"): (typeof documents)["\n    query GetOrder($input: Float!) {\n      getOrder(input: $input) {\n        id\n        amount\n        status\n        trackingLink\n        lineItems {\n          id\n          skuId\n          price\n          costPrice\n          quantity\n        }\n      }\n    }\n"];
 
 export function gql(source: string) {
   return (documents as any)[source] ?? {};

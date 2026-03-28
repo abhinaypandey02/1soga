@@ -263,6 +263,7 @@ type Order {
   paid: Boolean
   razorpayId: String!
   status: String!
+  trackingLink: String
 }
 
 type OrderLineItem {
