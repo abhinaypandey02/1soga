@@ -28,8 +28,8 @@ export function useCheckout(onSuccess?: () => void) {
       one_click_checkout: true,
       show_coupons:false,
       handler: () => {
-        onSuccess?.();
         router.push(`/account/orders/${orderData.id}`);
+        onSuccess?.();
       },
       prefill: {
         email: orderData.user_email,
