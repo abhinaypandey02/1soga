@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server"
-import { DELIVERY_FEE } from "@/lib/checkout/constants";
 
 export const POST = async (req: NextRequest)=>{
     const data = await req.json()
@@ -13,7 +12,7 @@ export const POST = async (req: NextRequest)=>{
           "description": "Delivery handled via BlueDart",
           "name": "BlueDart Shipping",
           "serviceable": true,
-          "shipping_fee": DELIVERY_FEE*100,
+          "shipping_fee": 0,
           "cod": false,
           "cod_fee": 0
         },
