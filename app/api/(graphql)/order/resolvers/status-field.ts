@@ -6,11 +6,16 @@ import { eq } from "drizzle-orm";
 
 
 export default field(async (order: OrderDB) => {
-  if (order.paid === null ||!order.qikinkId) {
-    return "Pending";
+  if (order.paid === null) {
+    return "Payment Pending";
   }
 
   if (order.paid === false) return "Refunded";
+
+
+  if (!order.qikinkId) {
+    return "Processing";
+  }
 
   const qikinkOrder = await getQikinkOrder(order.qikinkId);
 
