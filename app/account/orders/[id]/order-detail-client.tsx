@@ -130,7 +130,7 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
 
       {!loading && (
         <div className="mt-4">
-          <CharityCallout amount={totalCharity / 100} past />
+          <CharityCallout amount={Math.floor(totalCharity / 100)} past />
         </div>
       )}
     </div>
