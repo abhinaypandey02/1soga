@@ -9,7 +9,6 @@ import { AuthWrapper } from "naystack/auth";
 import { ApolloWrapperNext } from "naystack/graphql/client";
 import { getSEO } from "@/lib/seo";
 import { CartProvider } from "@/lib/cart/cart-context";
-import { ProgressLoader } from "nextjs-progressloader";
 
 const bebasNeue = Bebas_Neue({
   weight: "400",
@@ -40,7 +39,6 @@ export default function RootLayout({
       <AuthWrapper>
         <ApolloWrapperNext>
         <CartProvider>
-        <ProgressLoader color="#000000" showSpinner={false} />
         <div className="min-h-screen bg-[var(--background)] flex flex-col">
           <Navbar />
 

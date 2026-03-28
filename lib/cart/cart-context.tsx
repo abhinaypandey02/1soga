@@ -1,7 +1,8 @@
 "use client";
 
-import { createContext, useCallback, useContext, useEffect, useState } from "react";
+import { createContext, Suspense, useCallback, useContext, useEffect, useState } from "react";
 import { CartItem } from "./types";
+import { ProgressLoader } from "nextjs-progressloader";
 
 const STORAGE_KEY = "soga-cart";
 
@@ -77,6 +78,9 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   return (
     <CartContext value={{ items, addToCart, removeFromCart, updateQuantity, clearCart, totalItems }}>
+      <Suspense>
+        <ProgressLoader color="#000000" showSpinner={false} />
+      </Suspense>
       {children}
     </CartContext>
   );
