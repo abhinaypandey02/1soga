@@ -30,36 +30,34 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
           {loading ? (
             <div className="h-5 w-40 animate-pulse rounded bg-[var(--border)]" />
           ) : (
-            <h1 className="font-[family-name:var(--font-display)] text-lg tracking-tight text-[var(--foreground)] sm:text-xl">
-              Order #{order?.id}
-              <span className="ml-2 font-[family-name:var(--font-body)] text-xs font-normal text-[var(--muted)]">
-                {order && formatDate(order.createdAt)}
+            <>
+              <h1 className="font-[family-name:var(--font-display)] text-xl tracking-tight text-[var(--foreground)] sm:text-2xl">
+                Order #{order?.id}
+                <span className="ml-2 font-[family-name:var(--font-body)] text-xs font-normal text-[var(--muted)]">
+                  {order && formatDate(order.createdAt)}
+                </span>
+              </h1>
+              <span
+                className={`inline-block border-2 px-3 py-1 font-[family-name:var(--font-body)] text-[10px] font-bold uppercase tracking-[0.15em] ${
+                  statusColors?.border ?? ""
+                } ${statusColors?.text ?? ""} ${statusColors?.bg ?? ""}`}
+              >
+                {order.status}
               </span>
-            </h1>
+            </>
           )}
         </div>
         {loading ? (
           <div className="h-7 w-28 animate-pulse rounded bg-[var(--border)]" />
-        ) : order && (
-          <div className="flex items-center gap-3">
-            <span
-              className={`inline-block border-2 px-3 py-1 font-[family-name:var(--font-body)] text-[10px] font-bold uppercase tracking-[0.15em] ${
-                statusColors?.border ?? ""
-              } ${statusColors?.text ?? ""} ${statusColors?.bg ?? ""}`}
-            >
-              {order.status}
-            </span>
-            {order.trackingLink && (
-              <a
-                href={order.trackingLink}
-                target="_blank"
-                rel="noreferrer noopener"
-                className="inline-flex items-center border-2 border-[var(--foreground)] bg-[var(--foreground)] px-3 py-1 font-[family-name:var(--font-body)] text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)]"
-              >
-                Track Order
-              </a>
-            )}
-          </div>
+        ) : order?.trackingLink && (
+          <a
+            href={order.trackingLink}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center border-2 border-[var(--foreground)] bg-[var(--foreground)] px-3 py-1 font-[family-name:var(--font-body)] text-[10px] font-bold uppercase tracking-[0.15em] text-white transition-all duration-200 hover:border-[var(--accent)] hover:bg-[var(--accent)]"
+          >
+            Track Order
+          </a>
         )}
       </div>
 
