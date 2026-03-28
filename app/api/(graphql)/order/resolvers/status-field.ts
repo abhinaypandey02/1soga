@@ -13,6 +13,7 @@ export default field(async (order: OrderDB) => {
 
   if (order.paid === false) return OrderStatus.Refunded;
 
+  if (order.closed) return OrderStatus.Delivered;
 
   if (!order.qikinkId) {
     return OrderStatus.Processing;
@@ -34,6 +35,8 @@ export default field(async (order: OrderDB) => {
   }
 
   if(qikinkOrder.status !== "Delivered") return OrderStatus.Shipped;
+
+  await db.update(OrderTable).set({ closed: true }).where(eq(OrderTable.id, order.id));
 
   return OrderStatus.Delivered;
 }, {
