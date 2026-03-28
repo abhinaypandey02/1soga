@@ -59,8 +59,8 @@ export type Order = {
   id: Scalars['Float']['output'];
   lineItems: Array<OrderLineItem>;
   paid?: Maybe<Scalars['Boolean']['output']>;
-  status: Scalars['String']['output'];
   razorpayId: Scalars['String']['output'];
+  status: Scalars['String']['output'];
 };
 
 export type OrderLineItem = {

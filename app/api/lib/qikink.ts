@@ -58,7 +58,7 @@ export type QikinkShippingAddress = {
 };
 
 export type QikinkOrderResponse = {
-  order_id: number;
+  order_id: string;
   number: string;
   created_on: string;
   live_date: string;
@@ -115,7 +115,7 @@ export async function createQikinkOrder(
     throw new Error(`Qikink API error: ${response.status}`);
   }
 
-  const result = (await response.json()) as {order_id: number};
+  const result = (await response.json()) as {order_id: string};
   await db.update(OrderTable).set({
       qikinkId: result.order_id
     }).where(eq(OrderTable.id, orderId))
@@ -123,7 +123,7 @@ export async function createQikinkOrder(
   return result;
 }
 
-export async function getQikinkOrder(orderId: number): Promise<QikinkOrderResponse | null> {
+export async function getQikinkOrder(orderId: string): Promise<QikinkOrderResponse | null> {
   const response = await fetch(`${QIKINK_BASE_URL}/order?id=${encodeURIComponent(orderId)}`, {
     method: "GET",
     headers: await getHeaders(),
