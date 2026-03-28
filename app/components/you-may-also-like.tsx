@@ -60,14 +60,12 @@ export default function YouMayAlsoLike({ currentProductId }: { currentProductId:
             </div>
 
             <div className="border-t-2 border-[var(--border)] p-3 transition-colors group-hover:border-[var(--accent)] sm:p-4">
-              <div className="flex items-start justify-between gap-2">
-                <h3 className="font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-wide text-[var(--foreground)] sm:text-sm">
-                  {product.name}
-                </h3>
-                <span className="shrink-0 font-[family-name:var(--font-display)] text-lg text-[var(--accent)] sm:text-xl">
-                  {getPriceDisplay(product)}
-                </span>
-              </div>
+              <h3 className="font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-wide text-[var(--foreground)] sm:text-sm">
+                {product.name}
+              </h3>
+              <span className="mt-1 block font-[family-name:var(--font-display)] text-lg text-[var(--accent)] sm:text-xl">
+                {getPriceDisplay(product)}
+              </span>
             </div>
           </Link>
         ))}
