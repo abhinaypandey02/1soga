@@ -13,7 +13,7 @@ import { OrderStatus, ORDER_STATUS_COLORS } from "@/lib/order-status";
 type OrderData = QueryResponseType<typeof getOrder> & { status: FieldResponseType<typeof statusField> };
 
 export default function OrderDetailClient({ data: order, loading }: { data?: OrderData; loading: boolean }) {
-  const totalCharity = order?.lineItems?.reduce((sum, li) => sum + getCharity(li.price, li.costPrice) * li.quantity, 0) ?? 0;
+  const totalCharity = order?.lineItems?.reduce((sum, li) => sum + getCharity(li.price/100, li.costPrice/100) * li.quantity, 0) ?? 0;
   const statusColors = ORDER_STATUS_COLORS[order?.status as OrderStatus];
 
   return (
@@ -115,7 +115,7 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
 
       {!loading && (
         <div className="mt-4">
-          <CharityCallout amount={totalCharity / 100} past />
+          <CharityCallout amount={totalCharity} past />
         </div>
       )}
     </div>
