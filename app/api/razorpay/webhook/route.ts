@@ -5,7 +5,7 @@ import { OrderTable, LineItemTable } from "@/app/api/(graphql)/order/db";
 import { UserTable } from "@/app/api/(graphql)/user/db";
 import { razorpay } from "@/app/api/lib/razorpay";
 import { createQikinkOrder } from "@/app/api/lib/qikink";
-import { eq, and, isNull } from "drizzle-orm";
+import { eq, and, sql } from "drizzle-orm";
 import products from "@/data/products";
 
 async function issueRefund(paymentId: string, amount: number, reason: string) {
@@ -45,7 +45,7 @@ export async function POST(req: NextRequest) {
     const [order] = await db
       .update(OrderTable)
       .set({ paid: true, updatedAt: new Date() })
-      .where(and(eq(OrderTable.uid, orderId), isNull(OrderTable.paid))).returning();
+      .where(and(eq(OrderTable.uid, orderId), sql`${OrderTable.paid} IS NOT TRUE`)).returning();
 
     if (!order) {
       return NextResponse.json({ status: "ignored" });
@@ -137,7 +137,7 @@ export async function POST(req: NextRequest) {
     await db
       .update(OrderTable)
       .set({ paid: false, updatedAt: new Date() })
-      .where(and(eq(OrderTable.uid, orderId), isNull(OrderTable.paid)));
+      .where(and(eq(OrderTable.uid, orderId), sql`${OrderTable.paid} IS NOT TRUE`));
   }
 
   if (event.event === "payment.dispute.lost") {
