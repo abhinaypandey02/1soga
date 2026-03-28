@@ -1,6 +1,6 @@
 import {OrderDB} from "@/app/api/(graphql)/order/db";
 
-const QIKINK_BASE_URL = "https://sandbox.qikink.com/api";
+const QIKINK_BASE_URL = "https://api.qikink.com/api";
 
 let cachedToken: { accessToken: string; expiresAt: number } | null = null;
 

@@ -121,6 +121,7 @@ export async function POST(req: NextRequest) {
     try {
       await createQikinkOrder(String(order.id), order.amount, lineItems, shippingAddress);
     } catch (err) {
+      console.error(err.message)
       await issueRefund(payment.id, payment.amount, "Qikink order creation failed");
     }
   }
