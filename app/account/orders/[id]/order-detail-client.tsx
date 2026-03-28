@@ -81,7 +81,6 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
         ) : (
           order.lineItems.map((li) => {
             const product = findProductBySku(li.skuId);
-            const charity = getCharity(li.price, li.costPrice) * li.quantity;
             const href = product.id ? `/products/${product.id}/${product.slug}` : undefined;
             return (
               <ProductLineItemCard
@@ -91,7 +90,6 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
                 quantity={li.quantity}
                 optionLabel={product.optionLabel}
                 totalPrice={formatPrice(li.price * li.quantity)}
-                charityText={charity > 0 ? `${formatPrice(charity)} to charity` : undefined}
                 href={href}
               />
             );
