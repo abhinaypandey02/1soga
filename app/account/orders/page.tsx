@@ -4,6 +4,7 @@ import statusField from "@/app/api/(graphql)/order/resolvers/status-field";
 import {FieldResponseType, Injector, QueryResponseType} from "naystack/graphql";
 import {formatPrice, findProductBySku, formatDate} from "./utils";
 import { getSEO } from "@/lib/seo";
+import { OrderStatus, ORDER_STATUS_COLORS } from "@/lib/order-status";
 
 export const metadata = getSEO("My Orders", "Track your 1SOGA orders. Every purchase is a declaration that Soga raised you right.");
 
@@ -75,11 +76,9 @@ function OrdersPageClient({data:orders,loading}:{
                 </span>
                 <span
                   className={`inline-block border-2 px-3 py-1 font-[family-name:var(--font-body)] text-[10px] font-bold uppercase tracking-[0.15em] sm:text-xs ${
-                    order.status === "Refunded"
-                      ? "border-red-500 text-red-500"
-                      : order.status === "Processing"
-                        ? "border-[var(--muted)] text-[var(--muted)]"
-                        : "border-[var(--accent)] bg-[var(--accent)] text-white"
+                    ORDER_STATUS_COLORS[order.status as OrderStatus]?.border ?? ""
+                  } ${ORDER_STATUS_COLORS[order.status as OrderStatus]?.text ?? ""} ${
+                    ORDER_STATUS_COLORS[order.status as OrderStatus]?.bg ?? ""
                   }`}
                 >
                   {order.status}

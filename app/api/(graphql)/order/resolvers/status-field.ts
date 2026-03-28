@@ -3,27 +3,28 @@ import {OrderDB, OrderTable} from "@/app/api/(graphql)/order/db";
 import { getQikinkOrder} from "@/app/api/lib/qikink";
 import { db } from "@/app/api/lib/db";
 import { eq } from "drizzle-orm";
+import { OrderStatus } from "@/lib/order-status";
 
 
 export default field(async (order: OrderDB) => {
   if (order.paid === null) {
-    return "Payment Pending";
+    return OrderStatus.PaymentPending;
   }
 
-  if (order.paid === false) return "Refunded";
+  if (order.paid === false) return OrderStatus.Refunded;
 
 
   if (!order.qikinkId) {
-    return "Processing";
+    return OrderStatus.Processing;
   }
 
   const qikinkOrder = await getQikinkOrder(order.qikinkId);
 
   if (!qikinkOrder) {
-    return "Processing";
+    return OrderStatus.Processing;
   }
 
-  if(!qikinkOrder.shipping?.awb) return "Placed";
+  if(!qikinkOrder.shipping?.awb) return OrderStatus.Placed;
 
   if(qikinkOrder.shipping.tracking_link && !order.trackingLink){
     await db.update(OrderTable).set({
@@ -31,9 +32,9 @@ export default field(async (order: OrderDB) => {
     }).where(eq(OrderTable.id, order.id))
   }
 
-  if(qikinkOrder.status !== "Delivered") return "Shipped";
+  if(qikinkOrder.status !== "Delivered") return OrderStatus.Shipped;
 
-  return qikinkOrder.status || "Placed";
+  return OrderStatus.Delivered;
 }, {
   output: String
 })

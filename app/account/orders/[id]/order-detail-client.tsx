@@ -8,6 +8,7 @@ import {formatPrice, findProductBySku} from "../utils";
 import CharityCallout from "@/app/components/charity-callout";
 import ProductLineItemCard from "@/app/components/product-line-item-card";
 import { getCharity } from "@/lib/checkout/constants";
+import { OrderStatus, ORDER_STATUS_COLORS } from "@/lib/order-status";
 
 type OrderData = QueryResponseType<typeof getOrder> & { status: FieldResponseType<typeof statusField> };
 
@@ -52,11 +53,9 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
             <div className="flex flex-wrap items-center justify-end gap-2">
               <span
                 className={`inline-block self-start border-2 px-4 py-1.5 font-[family-name:var(--font-body)] text-xs font-bold uppercase tracking-[0.15em] ${
-                  order.status === "Refunded"
-                    ? "border-red-500 text-red-500"
-                    : order.status === "Processing"
-                      ? "border-[var(--muted)] text-[var(--muted)]"
-                      : "border-[var(--accent)] bg-[var(--accent)] text-white"
+                  ORDER_STATUS_COLORS[order.status as OrderStatus]?.border ?? ""
+                } ${ORDER_STATUS_COLORS[order.status as OrderStatus]?.text ?? ""} ${
+                  ORDER_STATUS_COLORS[order.status as OrderStatus]?.bg ?? ""
                 }`}
               >
                 {order.status}
