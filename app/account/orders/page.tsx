@@ -66,7 +66,7 @@ function OrdersPageClient({data:orders,loading}:{
                   {summary}
                 </p>
                 <p className="font-[family-name:var(--font-body)] text-xs text-[var(--muted)]">
-                  {formatDate(order.createdAt)} &middot; ID #{order.id}
+                  {formatDate(order.createdAt)} &middot; Order #{order.id}
                 </p>
               </div>
               <div className="flex items-center gap-4">
