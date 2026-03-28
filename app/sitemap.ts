@@ -24,12 +24,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.3,
     },
     {
-      url: `${BASE_URL}/terms-conditions`,
+      url: `${BASE_URL}/terms`,
       changeFrequency: "yearly" as const,
       priority: 0.3,
     },
     {
-      url: `${BASE_URL}/privacy-policy`,
+      url: `${BASE_URL}/privacy`,
       changeFrequency: "yearly" as const,
       priority: 0.3,
     },
