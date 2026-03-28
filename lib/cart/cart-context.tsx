@@ -35,19 +35,11 @@ function saveCart(items: CartItem[]) {
 }
 
 export function CartProvider({ children }: { children: React.ReactNode }) {
-  const [items, setItems] = useState<CartItem[]>([]);
-  const [hydrated, setHydrated] = useState(false);
+  const [items, setItems] = useState<CartItem[]>(() => loadCart());
 
   useEffect(() => {
-    setItems(loadCart());
-    setHydrated(true);
-  }, []);
-
-  useEffect(() => {
-    if (hydrated) {
-      saveCart(items);
-    }
-  }, [items, hydrated]);
+    saveCart(items);
+  }, [items]);
 
   const addToCart = useCallback((item: CartItem) => {
     setItems((prev) => {

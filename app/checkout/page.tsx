@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { useToken } from "naystack/auth/client";
 import { useCart } from "@/lib/cart/cart-context";
@@ -9,6 +8,7 @@ import { useCheckout } from "@/lib/checkout/use-checkout";
 import products from "@/data/products";
 import AuthModal from "@/app/components/auth-modal";
 import CharityCallout from "@/app/components/charity-callout";
+import ProductLineItemCard from "@/app/components/product-line-item-card";
 import { Trash } from "@phosphor-icons/react";
 
 function getProductInfo(skuId: string) {
@@ -88,60 +88,39 @@ export default function CheckoutPage() {
 
       <div className="space-y-4">
         {lineItems.map((item) => (
-          <div
+          <ProductLineItemCard
             key={item.skuId}
-            className="flex gap-4 border-2 border-[var(--border)] bg-[var(--surface)] p-4"
-          >
-            <div className="relative h-20 w-20 flex-shrink-0 overflow-hidden border-2 border-[var(--border)]">
-              <Image
-                src={item.info!.image}
-                alt={item.info!.name}
-                fill
-                className="object-cover"
-                sizes="80px"
-              />
-            </div>
-            <div className="flex flex-1 flex-col justify-between">
-              <div>
-                <h3 className="font-[family-name:var(--font-display)] text-lg uppercase tracking-wide">
-                  {item.info!.name}
-                </h3>
-                {item.info!.optionLabel && (
-                  <p className="font-[family-name:var(--font-body)] text-xs text-[var(--muted)]">
-                    {item.info!.optionLabel}
-                  </p>
-                )}
-              </div>
-              <div className="mt-2 flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <button
-                    onClick={() => updateQuantity(item.skuId, item.quantity - 1)}
-                    className="border-2 border-[var(--border)] px-2 py-0.5 text-sm font-medium transition-all hover:border-[var(--foreground)]"
-                  >
-                    -
-                  </button>
-                  <span className="min-w-[24px] text-center font-[family-name:var(--font-body)] text-sm font-bold">
-                    {item.quantity}
-                  </span>
-                  <button
-                    onClick={() => updateQuantity(item.skuId, item.quantity + 1)}
-                    className="border-2 border-[var(--border)] px-2 py-0.5 text-sm font-medium transition-all hover:border-[var(--foreground)]"
-                  >
-                    +
-                  </button>
-                  <button
-                    onClick={() => removeFromCart(item.skuId)}
-                    className="ml-2 text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
-                  >
-                    <Trash size={18} />
-                  </button>
-                </div>
-                <span className="font-[family-name:var(--font-display)] text-lg text-[var(--accent)]">
-                  &#8377;{(item.info!.price * item.quantity).toFixed(2)}
+            name={item.info!.name}
+            image={item.info!.image}
+            quantity={item.quantity}
+            optionLabel={item.info!.optionLabel}
+            totalPrice={`₹${(item.info!.price * item.quantity).toFixed(2)}`}
+            controls={(
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={() => updateQuantity(item.skuId, item.quantity - 1)}
+                  className="border-2 border-[var(--border)] px-2 py-0.5 text-sm font-medium transition-all hover:border-[var(--foreground)]"
+                >
+                  -
+                </button>
+                <span className="min-w-[24px] text-center font-[family-name:var(--font-body)] text-sm font-bold">
+                  {item.quantity}
                 </span>
+                <button
+                  onClick={() => updateQuantity(item.skuId, item.quantity + 1)}
+                  className="border-2 border-[var(--border)] px-2 py-0.5 text-sm font-medium transition-all hover:border-[var(--foreground)]"
+                >
+                  +
+                </button>
+                <button
+                  onClick={() => removeFromCart(item.skuId)}
+                  className="ml-2 text-[var(--muted)] transition-colors hover:text-[var(--accent)]"
+                >
+                  <Trash size={18} />
+                </button>
               </div>
-            </div>
-          </div>
+            )}
+          />
         ))}
       </div>
 

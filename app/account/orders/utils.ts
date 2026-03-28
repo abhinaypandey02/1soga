@@ -14,10 +14,11 @@ export function findProductBySku(sku: string) {
         image: variant.image || product.image,
         sku,
         slug: variant.slug,
+        optionLabel: variant.options.map((option) => option.value).join(" / "),
       };
     }
   }
-  return { id: null, name: "Unknown Product", image: "", sku, slug: "" };
+  return { id: null, name: "Unknown Product", image: "", sku, slug: "", optionLabel: "" };
 }
 
 export function formatDate(date: Date): string {
