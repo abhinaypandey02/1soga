@@ -9,6 +9,7 @@ import Modal from "@/app/components/modal";
 import Link from "next/link";
 import LinkWrapper from "@/components/link-wrapper";
 import { useCart } from "@/lib/cart/cart-context";
+import CharityCallout from "@/app/components/charity-callout";
 
 function getOptionValues(variants: Variant[], type: string): string[] {
   const seen = new Set<string>();
@@ -245,13 +246,9 @@ export default function ProductDetails({ product, variant }: {
           </div>
         </div>
 
-        <p className="mt-8 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
-          100% of the profit{" "}
-          <span className="font-semibold text-[var(--accent)]">
-            (&#8377;{(profit * quantity).toFixed(2)})
-          </span>{" "}
-          goes to charity
-        </p>
+        <div className="mt-8">
+          <CharityCallout amount={profit * quantity} />
+        </div>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <button
@@ -276,6 +273,7 @@ export default function ProductDetails({ product, variant }: {
           productName={product.name}
           skuId={matchedVariant.sku}
           amount={displayPrice}
+          costPrice={costPrice}
           quantity={quantity}
           onClose={() => setShowCheckout(false)}
         />

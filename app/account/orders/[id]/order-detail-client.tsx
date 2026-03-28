@@ -6,6 +6,7 @@ import {QueryResponseType, FieldResponseType} from "naystack/graphql";
 import type getOrder from "@/app/api/(graphql)/order/resolvers/get-order";
 import type statusField from "@/app/api/(graphql)/order/resolvers/status-field";
 import {formatPrice, findProductBySku} from "../utils";
+import CharityCallout from "@/app/components/charity-callout";
 
 type OrderData = QueryResponseType<typeof getOrder> & { status: FieldResponseType<typeof statusField> };
 
@@ -139,22 +140,9 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
         </div>
       </div>
 
-      {/* Charity Callout */}
-      {!loading && totalCharity > 0 && (
-        <div className="mt-4 border-2 border-[var(--accent)] bg-[var(--accent)]/5 p-4 sm:p-5">
-          <div className="flex items-center gap-3">
-            <div className="h-[3px] w-6 bg-[var(--accent)]" />
-            <span className="font-[family-name:var(--font-body)] text-[10px] font-semibold uppercase tracking-[0.3em] text-[var(--accent)] sm:text-xs">
-              Movement Impact
-            </span>
-          </div>
-          <p className="mt-2 font-[family-name:var(--font-body)] text-sm text-[var(--muted)]">
-            This order contributed{" "}
-            <span className="font-bold text-[var(--accent)]">
-              {formatPrice(totalCharity)}
-            </span>{" "}
-            to charity.
-          </p>
+      {!loading && (
+        <div className="mt-4">
+          <CharityCallout amount={totalCharity / 100} past />
         </div>
       )}
     </div>

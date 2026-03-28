@@ -5,20 +5,23 @@ import { useToken } from "naystack/auth/client";
 import Modal from "../../../components/modal";
 import AuthModal from "../../../components/auth-modal";
 import { useCheckout } from "@/lib/checkout/use-checkout";
+import CharityCallout from "@/app/components/charity-callout";
 
 type CheckoutModalProps = {
   productName: string;
   skuId: string;
   amount: number;
+  costPrice: number;
   quantity: number;
   onClose: () => void;
 };
 
-export default function CheckoutModal({ productName, skuId, amount, quantity, onClose }: CheckoutModalProps) {
+export default function CheckoutModal({ productName, skuId, amount, costPrice, quantity, onClose }: CheckoutModalProps) {
   const token = useToken();
   const [showAuth, setShowAuth] = useState(!token);
 
   const total = amount * quantity;
+  const totalCharity = (amount - costPrice) * quantity;
 
   const { checkout, loading } = useCheckout(() => {
     alert("Payment successful!");
@@ -64,9 +67,12 @@ export default function CheckoutModal({ productName, skuId, amount, quantity, on
       <p className="mb-1 font-[family-name:var(--font-body)] text-[var(--muted)]">
         {productName} &times; {quantity}
       </p>
-      <p className="mb-6 font-[family-name:var(--font-display)] text-2xl text-[var(--accent)]">
+      <p className="mb-4 font-[family-name:var(--font-display)] text-2xl text-[var(--accent)]">
         &#8377;{total.toFixed(2)}
       </p>
+      <div className="mb-6">
+        <CharityCallout amount={totalCharity} />
+      </div>
       <button
         onClick={handleCheckout}
         disabled={loading}

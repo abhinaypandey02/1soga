@@ -8,6 +8,7 @@ import { useCart } from "@/lib/cart/cart-context";
 import { useCheckout } from "@/lib/checkout/use-checkout";
 import products from "@/data/products";
 import AuthModal from "@/app/components/auth-modal";
+import CharityCallout from "@/app/components/charity-callout";
 import { Trash } from "@phosphor-icons/react";
 
 function getProductInfo(skuId: string) {
@@ -15,9 +16,10 @@ function getProductInfo(skuId: string) {
   if (!product) return null;
   const variant = product.variants.find((v) => v.sku === skuId)!;
   const price = variant.price ?? product.price;
+  const costPrice = variant.costPrice ?? product.costPrice;
   const image = variant.image ?? product.image;
   const optionLabel = variant.options.map((o) => o.value).join(" / ");
-  return { name: product.name, price, image, optionLabel };
+  return { name: product.name, price, costPrice, image, optionLabel };
 }
 
 export default function CheckoutPage() {
@@ -37,6 +39,10 @@ export default function CheckoutPage() {
 
   const total = lineItems.reduce(
     (sum, item) => sum + (item.info!.price * item.quantity),
+    0
+  );
+  const totalCharity = lineItems.reduce(
+    (sum, item) => sum + ((item.info!.price - item.info!.costPrice) * item.quantity),
     0
   );
 
@@ -149,6 +155,10 @@ export default function CheckoutPage() {
             &#8377;{total.toFixed(2)}
           </span>
         </div>
+      </div>
+
+      <div className="mt-4">
+        <CharityCallout amount={totalCharity} />
       </div>
 
       <button
