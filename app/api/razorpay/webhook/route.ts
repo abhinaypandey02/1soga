@@ -5,10 +5,10 @@ import { OrderTable, LineItemTable } from "@/app/api/(graphql)/order/db";
 import { UserTable } from "@/app/api/(graphql)/user/db";
 import { razorpay } from "@/app/api/lib/razorpay";
 import { createQikinkOrder } from "@/app/api/lib/qikink";
-import { eq, and, or, isNull } from "drizzle-orm";
+import { eq } from "drizzle-orm";
 import products from "@/data/products";
 
-async function issueRefund(paymentId: string, amount: number, reason: string) {
+async function issueRefund(paymentId: string, amount: number, reason: string, orderId?: number) {
   try {
     console.log("[Webhook] Issuing refund for payment:", paymentId, "reason:", reason);
     await razorpay.payments.refund(paymentId, {
@@ -18,6 +18,9 @@ async function issueRefund(paymentId: string, amount: number, reason: string) {
     console.log("[Webhook] Refund issued successfully for payment:", paymentId);
   } catch (refundErr) {
     console.error("[Webhook] Failed to issue refund for:", paymentId, refundErr);
+  }
+  if (orderId) {
+    await db.update(OrderTable).set({ paid: false, updatedAt: new Date() }).where(eq(OrderTable.id, orderId));
   }
 }
 
@@ -44,18 +47,22 @@ export async function POST(req: NextRequest) {
     const payment = event.payload.payment.entity;
     const razorpayOrder = event.payload.order.entity;
     const orderId: string = razorpayOrder.id;
+
     const [order] = await db
-      .update(OrderTable)
-      .set({ paid: true, updatedAt: new Date() })
-      .where(and(eq(OrderTable.uid, orderId), or(isNull(OrderTable.paid), eq(OrderTable.paid, false)))).returning();
+      .select()
+      .from(OrderTable)
+      .where(eq(OrderTable.uid, orderId));
 
     if (!order) {
+      await issueRefund(payment.id, payment.amount, `Order not found: ${orderId}`);
+      return NextResponse.json({ status: "refunded" });
+    }
+
+    if (order.paid === true) {
       return NextResponse.json({ status: "ignored" });
     }
 
-    const markRefunded = async () => {
-      await db.update(OrderTable).set({ paid: false, updatedAt: new Date() }).where(eq(OrderTable.id, order.id));
-    };
+    await db.update(OrderTable).set({ paid: true, updatedAt: new Date() }).where(eq(OrderTable.id, order.id));
 
     const customerDetails = razorpayOrder.customer_details || {};
     const shipping = customerDetails.shipping_address || {};
@@ -99,8 +106,7 @@ export async function POST(req: NextRequest) {
     });
 
     if (invalidItems.length > 0) {
-      await issueRefund(payment.id, payment.amount, `Invalid variant SKU: ${invalidItems.map((i) => i.skuId).join(", ")}`);
-      await markRefunded();
+      await issueRefund(payment.id, payment.amount, `Invalid variant SKU: ${invalidItems.map((i) => i.skuId).join(", ")}`, order.id);
       return NextResponse.json({ status: "refunded" });
     }
 
@@ -126,8 +132,7 @@ export async function POST(req: NextRequest) {
       await createQikinkOrder(String(order.id), order.amount, lineItems, shippingAddress);
     } catch (err) {
       console.error((err as Error).message)
-      await issueRefund(payment.id, payment.amount, "Qikink order creation failed");
-      await markRefunded();
+      await issueRefund(payment.id, payment.amount, "Qikink order creation failed", order.id);
     }
   }
 
