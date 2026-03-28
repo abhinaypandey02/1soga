@@ -30,7 +30,7 @@ export default function OrderDetailClient({ data: order, loading }: { data?: Ord
           {loading ? (
             <div className="h-5 w-40 animate-pulse rounded bg-[var(--border)]" />
           ) : (
-            <h1 className="font-[family-name:var(--font-display)] text-lg tracking-tight text-[var(--foreground)] sm:text-xl">
+            <h1 className="font-[family-name:var(--font-display)] text-xl tracking-tight text-[var(--foreground)] sm:text-2xl">
               Order #{order?.id}
               <span className="ml-2 font-[family-name:var(--font-body)] text-xs font-normal text-[var(--muted)]">
                 {order && formatDate(order.createdAt)}
