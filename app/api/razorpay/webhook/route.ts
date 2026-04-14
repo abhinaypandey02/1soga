@@ -15,10 +15,13 @@ async function markRefunded(orderUid: string) {
 async function issueRefund(payment: { id: string; amount: number; fee: number; tax: number }, reason: string, orderUid?: string) {
   try {
     console.log("[Webhook] Issuing refund for payment:", payment.id, "reason:", reason);
+    console.log(payment.amount, payment.fee, payment.tax)
+
     await razorpay.payments.refund(payment.id, {
-      amount: payment.amount - payment.fee - payment.tax,
+      amount: payment.amount - payment.fee,
       notes: { reason },
     });
+
     console.log("[Webhook] Refund issued successfully for payment:", payment.id);
   } catch (refundErr) {
     console.error("[Webhook] Failed to issue refund for:", payment.id, refundErr);
