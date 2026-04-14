@@ -120,11 +120,24 @@ export async function POST(req: NextRequest) {
     const firstName = nameParts[0] || "";
     const lastName = nameParts.slice(1).join(" ") || "";
 
+    const fullLine1 = shipping.line1 || "";
+    const extraLine2 = shipping.line2 ? `${shipping.line2}${shipping.landmark ? ` (${shipping.landmark})` : ""}` : "";
+    let address1 = fullLine1;
+    let address2 = extraLine2;
+    if (address1.length > 90) {
+      // Split at last space before 90 chars, overflow goes to address2
+      const cutIdx = address1.lastIndexOf(" ", 90);
+      const splitAt = cutIdx > 0 ? cutIdx : 90;
+      const overflow = address1.slice(splitAt).trim();
+      address1 = address1.slice(0, splitAt).trim();
+      address2 = overflow + (address2 ? `, ${address2}` : "");
+    }
+
     const shippingAddress = {
       first_name: firstName,
       last_name: lastName,
-      address1: shipping.line1 || "",
-      address2: shipping.line2 ? `${shipping.line2}${shipping.landmark ? ` (${shipping.landmark})` : ""}` : "",
+      address1,
+      address2,
       phone: shipping.contact || "",
       email: customerDetails.email || payment.email || "",
       city: shipping.city || "",
