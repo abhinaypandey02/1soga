@@ -15,7 +15,6 @@ async function markRefunded(orderUid: string) {
 async function issueRefund(payment: { id: string; amount: number; fee: number; tax: number }, reason: string, orderUid?: string) {
   try {
     console.log("[Webhook] Issuing refund for payment:", payment.id, "reason:", reason);
-    console.log(payment.amount, payment.fee, payment.tax)
 
     await razorpay.payments.refund(payment.id, {
       amount: payment.amount - payment.fee,
@@ -52,6 +51,8 @@ export async function POST(req: NextRequest) {
 
   if (event.event === "order.paid") {
     const payment = event.payload.payment.entity;
+    console.log("payment", payment.amount, payment.fee, payment.tax);
+
     const razorpayOrder = event.payload.order.entity;
     const orderId: string = razorpayOrder.id;
 
