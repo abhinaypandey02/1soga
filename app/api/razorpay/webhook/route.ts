@@ -12,16 +12,16 @@ async function markRefunded(orderUid: string) {
   await db.update(OrderTable).set({ paid: false, updatedAt: new Date() }).where(eq(OrderTable.razorpayId, orderUid));
 }
 
-async function issueRefund(paymentId: string, amount: number, reason: string, orderUid?: string) {
+async function issueRefund(payment: { id: string; amount: number; fee: number; tax: number }, reason: string, orderUid?: string) {
   try {
-    console.log("[Webhook] Issuing refund for payment:", paymentId, "reason:", reason);
-    await razorpay.payments.refund(paymentId, {
-      amount,
+    console.log("[Webhook] Issuing refund for payment:", payment.id, "reason:", reason);
+    await razorpay.payments.refund(payment.id, {
+      amount: payment.amount - payment.fee - payment.tax,
       notes: { reason },
     });
-    console.log("[Webhook] Refund issued successfully for payment:", paymentId);
+    console.log("[Webhook] Refund issued successfully for payment:", payment.id);
   } catch (refundErr) {
-    console.error("[Webhook] Failed to issue refund for:", paymentId, refundErr);
+    console.error("[Webhook] Failed to issue refund for:", payment.id, refundErr);
   }
   if (orderUid) {
     await markRefunded(orderUid);
@@ -58,7 +58,7 @@ export async function POST(req: NextRequest) {
       .where(eq(OrderTable.razorpayId, orderId));
 
     if (!order) {
-      await issueRefund(payment.id, payment.amount, `Order not found: ${orderId}`);
+      await issueRefund(payment, `Order not found: ${orderId}`);
       return NextResponse.json({ status: "refunded" });
     }
 
@@ -110,7 +110,7 @@ export async function POST(req: NextRequest) {
     });
 
     if (invalidItems.length > 0) {
-      await issueRefund(payment.id, payment.amount, `Invalid variant SKU: ${invalidItems.map((i) => i.skuId).join(", ")}`, orderId);
+      await issueRefund(payment, `Invalid variant SKU: ${invalidItems.map((i) => i.skuId).join(", ")}`, orderId);
       return NextResponse.json({ status: "refunded" });
     }
 
@@ -149,7 +149,7 @@ export async function POST(req: NextRequest) {
       await createQikinkOrder(order.id, order.amount, lineItems, shippingAddress);
     } catch (err) {
       console.error((err as Error).message)
-      await issueRefund(payment.id, payment.amount, "Qikink order creation failed", orderId);
+      await issueRefund(payment, "Qikink order creation failed", orderId);
     }
   }
 
